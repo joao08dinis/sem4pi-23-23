@@ -1,0 +1,19 @@
+@startuml
+
+autonumber
+actor "Manager" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Accept students enrollments
+activate SYS
+SYS --> MNG : Request data (status)
+deactivate SYS
+MNG -> SYS : Inputs data
+activate SYS
+SYS --> MNG : Confirm acception
+deactivate SYS
+deactivate MNG
+
+
+@enduml

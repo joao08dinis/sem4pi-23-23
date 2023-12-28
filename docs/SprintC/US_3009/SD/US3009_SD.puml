@@ -1,0 +1,73 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor user as "User"
+
+participant ":UsersUI" as ui <<presentation>>
+participant ":ViewHistorySharedBoardAction" as action <<application>>
+participant ":ViewHistorySharedBoardUI" as historyUI <<presentation>>
+participant ":SharedBoardController" as controller <<application>>
+participant ":ProfileController" as controllerProfile <<application>>
+participant ":SharedBoardService" as service <<application>>
+participant ":ProfileService" as serviceProfile <<application>>
+database ":SharedBoardRepository" as repository <<repository>>
+database ":ProfileRepository" as repositoryProfile <<repository>>
+
+activate user
+
+user -> ui : Asks to view the history of updates on a SharedBoard
+activate ui
+ui -> action : execute()
+activate action
+action -> historyUI : doShow()
+deactivate action
+deactivate ui
+activate historyUI
+historyUI -> controllerProfile : currentUserProfile = getUserProfile(authz.session().get().authenticatedUser()).get()
+activate controllerProfile
+controllerProfile -> serviceProfile : getProfileFromDatabase(user)
+activate serviceProfile
+serviceProfile -> repositoryProfile : findProfileByUser(user)
+activate repositoryProfile
+deactivate repositoryProfile
+deactivate serviceProfile
+deactivate controllerProfile
+historyUI -> controller : sharedBoardList = controller.getSharedBoardsByUser(currentUserProfile)
+activate controller
+controller -> controller : sharedBoards = getAll()
+activate controller
+controller -> service : service.getAllSharedBoard()
+activate service
+service -> repository : repository.getAllSharedBoard()
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+loop for (SharedBoard sharedBoard : sharedBoards)
+    alt (sharedBoard.getOwner().getOwnerProfile().equals(userProfile) || isParticipant(userProfile,sharedBoard))
+        controller -> controller : sharedBoardsByUser.add(sharedBoard)
+        activate controller
+        deactivate controller
+    end alt
+end loop
+deactivate controller
+historyUI --> user : Shows all SharedBoards available for the user
+deactivate historyUI
+user -> historyUI : Chooses SharedBoard
+activate historyUI
+historyUI -> historyUI : SharedBoard sharedBoard = sharedBoardList.get(option - 1)
+activate historyUI
+deactivate historyUI
+loop for (Modification modification : sharedBoard.getAuditLog().getAuditLogs())
+    historyUI -> historyUI : System.out.println(modification)
+    activate historyUI
+    deactivate historyUI
+end loop
+historyUI --> user : Shows history of updates
+deactivate historyUI
+deactivate user
+
+
+@enduml

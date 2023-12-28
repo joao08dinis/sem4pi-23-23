@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  h2-database:
+    image: oscarfonts/h2
+    ports:
+      - 2222:1521
+    environment:
+      - H2_TCP_PORT=1521
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.9.0.0/16

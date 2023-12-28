@@ -1,0 +1,92 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor manager as "Teacher"
+
+participant ":CoursesUi" as ui <<presentation>>
+participant ":ViewCoursesExamAction" as action <<application>>
+participant ":ViewCoursesExamUi" as viewUi <<presentation>>
+participant ":ExamController" as controller <<application>>
+participant ":TeacherRegistrationController" as registController <<application>>
+participant ":ExamService" as service <<application>>
+participant ":TeacherRegistrationService" as registService <<application>>
+participant "Exam" as exam <<domain>>
+participant PersistenceContext as persistence
+participant RepositoryFactory as factory
+database ":ExamRepository" as repository <<repository>>
+database ":TeacherRegistrationRepository" as userRepository <<repository>>
+
+
+
+activate manager
+
+manager -> ui : requests to view course exams
+activate ui
+ui -> action : execute()
+activate action
+action -> viewUi : doShow()
+deactivate action
+activate viewUi
+deactivate ui
+activate viewUi
+
+viewUi -> registController : teacherRegistrationList = getTeacherRegistrations()
+activate registController
+registController -> registService : getAll()
+activate registService
+registService -> persistence : repositories()
+activate persistence
+note right of persistence: repository can be either in memory or JPA
+persistence -> factory : teacherRegistrations()
+activate factory
+deactivate factory
+deactivate persistence
+registService -> userRepository : getAll()
+activate userRepository
+deactivate userRepository
+deactivate registService
+deactivate registController
+loop for each studentRegistration in teacherRegistrationList
+alt teacherRegistration.getTeacherProfile().equals(currentUserProfile)
+viewUi -> viewUi : availableCourseList.add(teacherRegistration.getCourse())
+end
+end
+loop for each course in availableCourseList
+viewUi --> manager : print course information
+end
+viewUi --> manager : requests to choose a course to view exams
+deactivate viewUi
+manager -> viewUi : inputs course number
+activate viewUi
+viewUi -> controller : examList = getAll()
+activate controller
+controller -> service : getAll()
+activate service
+service -> persistence : repositories()
+activate persistence
+persistence -> factory : exams()
+activate factory
+deactivate factory
+deactivate persistence
+service -> repository : getAll()
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+loop for each exam in examList
+alt exam.getCourse().equals(choosenCourse)
+viewUi -> viewUi : choosenCourseExams.add(exam)
+end
+end
+loop for each exam in choosenCourseExams
+viewUi --> manager : print exam information
+end
+deactivate viewUi
+
+
+
+
+
+@enduml

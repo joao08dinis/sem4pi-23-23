@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ScheduleExtraordinaryUI{
+}
+
+class ClasseController{
++addClass(duration,time_hour,time_min,title,teacherProfile)
+}
+
+class ClasseService{
++addNewClass(classe)
++getAllClasses()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database ClasseRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+ScheduleExtraordinaryUI --> ClasseController
+ClasseController-->PersistenceContext
+ClasseController-->TransactionalContext
+
+ClasseService --> ClasseRepository
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->ClasseService
+@enduml

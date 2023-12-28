@@ -1,0 +1,54 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor User as "User"
+
+participant ":UserUI" as ui <<presentation>>
+participant ":CreateSharedBoardAction" as action <<presentation>>
+participant "CreateSharedBoard:UI" as sharedBoardUI <<presentation>>
+participant ":CreateSharedBoardController" as controller <<application>>
+participant ":SharedBoardService" as service
+participant "SharedBoard" as sharedBoard <<domain>>
+database ":SharedBoardRepository" as repository <<repository>>
+
+
+activate User
+
+activate User
+
+User -> ui : request to accept students enrollments
+activate ui
+ui -> action : execute()
+activate action
+action -> sharedBoardUI : doShow()
+deactivate action
+deactivate ui
+activate sharedBoardUI
+
+sharedBoardUI --> User : requests data (title,numRows, numColumns,columnTitle, rowTitle, pathname, sharedBoardState)
+deactivate sharedBoardUI
+User -> sharedBoardUI : inputs requested data
+activate sharedBoardUI
+
+sharedBoardUI -> controller : addSharedBoard(SharedBoardState state, int maxnumrows, int maxnumcolluns, Set<SharedBoardRows> rows, Set<SharedBoardColumns> columns, String path , String title, Set<Cell> cells)
+activate controller
+controller -> sharedBoard : sharedboard = new SharedBoard(username, password, firstName, lastName, email, role, creationDate)
+activate sharedBoard
+deactivate sharedBoard
+controller ->service: addNewSharedBoard(sharedBoard)
+activate service
+
+service ->repository:save(sharedBoard)
+activate repository
+deactivate repository
+
+deactivate service
+deactivate sharedBoard
+deactivate controller
+sharedBoardUI --> User : informs operation success
+deactivate sharedBoardUI
+
+
+@enduml

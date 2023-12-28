@@ -1,0 +1,123 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor user as "User"
+
+participant ":UsersUI" as ui <<presentation>>
+participant ":PostSharedBoardAction" as action <<application>>
+participant ":PostSharedBoardUI" as sharedUI <<presentation>>
+participant ":SharedBoardController" as controller <<application>>
+participant ":ProfileController" as controllerProfile <<application>>
+participant ":SharedBoardService" as service <<application>>
+participant ":ProfileService" as serviceProfile <<application>>
+participant SharedBoard as board <<domain>>
+database ":SharedBoardRepository" as repository <<repository>>
+database ":ProfileRepository" as repositoryProfile <<repository>>
+
+activate user
+
+user -> ui : Asks to post in a shared board
+activate ui
+ui -> action : execute()
+activate action
+action -> sharedUI : doShow()
+deactivate action
+deactivate ui
+activate sharedUI
+alt (profile==student)
+sharedUI -> controllerProfile : currentUserProfile = (StudentProfile) getUserProfile(authz.session().get().authenticatedUser()).get()
+else (profile==teacher)
+sharedUI -> controllerProfile : currentUserProfile = (TeacherProfile) getUserProfile(authz.session().get().authenticatedUser()).get()
+end alt
+activate controllerProfile
+controllerProfile -> serviceProfile : getProfileFromDatabase(user)
+activate serviceProfile
+serviceProfile -> repositoryProfile : findProfileByUser(user)
+activate repositoryProfile
+deactivate repositoryProfile
+deactivate serviceProfile
+deactivate controllerProfile
+sharedUI -> sharedUI : getUserBoards()
+activate sharedUI
+sharedUI -> sharedUI : name = currentUserProfile.getUser().toString()
+sharedUI -> controller : boards = getAll();
+activate controller
+controller -> service : boards = getAllSharedBoard()
+activate service
+service -> repository : boards = getAllSharedBoard();
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+deactivate controller
+loop (for SharedBoard board : boards)
+    sharedUI -> sharedUI : Set<Participant> participants = board.getParticipants();
+    loop (for Participant participant : participants)
+    alt (participant.profile.getUser().toString().equals(name) && participant.getPermission()!= Permission.READ)
+        sharedUI -> sharedUI : userBoards.add(board);
+    end alt
+end loop
+deactivate sharedUI
+sharedUI -> sharedUI : getSharedBoard(userBoards)
+activate sharedUI
+alt (boards.isEmpty())
+    sharedUI --> user : This user does not has Shared Boards.
+end alt
+loop (for SharedBoard board : boards)
+    sharedUI -->  user : shows board
+end loop
+deactivate sharedUI
+user -> sharedUI : Chooses board
+activate sharedUI
+sharedUI -> sharedUI : getCell(sharedBoard)
+loop for (Cell cell : sharedBoard.getCells()
+    alt (cell.getCellState() == CellState.FREE)
+     sharedUI -->  user : shows cell
+    end alt
+end loop
+user -> sharedUI : Chooses cell
+deactivate sharedUI
+sharedUI --> user : Ask the type of post
+deactivate sharedUI
+user -> sharedUI : Choose type of post
+activate sharedUI
+alt (TypeOfPost.IMAGE)
+    sharedUI -> sharedUI : postImage()
+    activate sharedUI
+    sharedUI --> user : Ask the path
+    user -> sharedUI : Input the path
+    sharedUI -> controller : addPosts(sharedBoard,cell,new Post(null,new Notification(null,TypeOfNotification.from("SharedBoard")),new Description(content),TypeOfPost.IMAGE,null));
+    activate controller
+    controller -> service : addNewSharedBoard(sharedBoard)
+    activate service
+    service -> repository : save(sharedboard)
+    activate repository
+    deactivate repository
+    deactivate service
+    deactivate controller
+    deactivate sharedUI
+else (TypeOfPost.TEXT)
+    sharedUI -> sharedUI : postText()
+    activate sharedUI
+    sharedUI --> user : Ask the content
+    user -> sharedUI : Input the content
+    sharedUI -> controller : addPosts(sharedBoard,cell,new Post(null,new Notification(null, TypeOfNotification.from("SharedBoard")),new Description(content),TypeOfPost.TEXT,null));
+    activate controller
+    controller -> service : addNewSharedBoard(sharedBoard)
+    activate service
+    service -> repository : save(sharedboard)
+    activate repository
+    deactivate repository
+    deactivate service
+    deactivate controller
+    deactivate sharedUI
+end alt
+
+sharedUI --> user : informs the success of the operation
+deactivate sharedUI
+deactivate user
+
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+
+autonumber
+actor "Teacher" as teacher
+
+activate teacher
+
+teacher -> ":System" : Requests to update the schedule of a class
+activate ":System"
+
+":System" --> teacher : Shows all classes the teacher has access to and requests to choose one
+deactivate ":System"
+teacher -> ":System" : chooses class to update
+activate ":System"
+":System" --> teacher : requests new schedule of class (hours and minutes)
+deactivate ":System"
+teacher -> ":System" : inputs new schedule
+activate ":System"
+":System" --> teacher : informs operation success
+deactivate ":System"
+deactivate teacher
+
+
+
+@enduml

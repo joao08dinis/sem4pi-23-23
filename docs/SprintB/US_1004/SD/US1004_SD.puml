@@ -1,0 +1,66 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor manager as "Manager"
+
+participant ":UsersUI" as ui <<presentation>>
+participant ":OpenCloseCourseAction" as action <<application>>
+participant ":OpenCloseCourseUI" as courseUi <<presentation>>
+participant ":OpenCloseCourseController" as controller <<application>>
+participant ":CourseService" as service <<application>>
+participant "Course" as course <<domain>>
+database ":CourseRepository" as repository <<repository>>
+
+activate manager
+
+manager -> ui : requests to add change course state
+activate ui
+ui -> action : execute()
+activate action
+action -> courseUi : doShow()
+deactivate action
+deactivate ui
+activate courseUi
+courseUi -> controller : getAllCourses()
+activate controller
+controller -> service : getAllCourses()
+activate service
+service -> repository : getAllCourses()
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+courseUi -> manager : shows all courses and requests to choose one
+deactivate courseUi
+manager -> courseUi : choose one
+activate courseUi
+courseUi -> courseUi : course = get(course)
+activate courseUi
+deactivate courseUi
+courseUi -> course : state = getEnrollementsState()
+activate course
+deactivate course
+alt state = state.OPEN
+courseUi -> courseUi : state = state.CLOSE
+end
+alt state = state.CLOSE
+courseUi -> courseUi : state = state.OPEN
+end
+courseUi -> controller : openCloseCourse(course,state)
+activate controller
+controller -> course : setState(state)
+activate course
+deactivate course
+controller -> service : addNewCourse(course)
+activate service
+service -> repository : save(course)
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+courseUi --> manager : informs operation success
+
+
+@enduml

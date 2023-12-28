@@ -1,0 +1,72 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class AddUserUi{
+}
+
+class AddUserController{
++addUser(username, password, firstName, lastName, email, role, creationDate)
+
+}
+class ProfileController{
++createTeacherProfile()
++createStudentProfile()
++createManagerProfile()
++getUserProfile(user)
++getTeacherProfiles()
++getStudentProfiles()
++getManagerProfiles()
+}
+
+class ProfileService{
++addNewProfile(profile)
++getProfileFromDatabase(user)
+}
+
+class UserManagementService{
++registerNewUser(username, password, firstName, lastName, email, role, creationDate)
+}
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database ProfileRepository{
+}
+
+database UserRepository{
+}
+
+class Profile{
+}
+
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+AddUserUi --> AddUserController
+AddUserUi --> ProfileController
+AddUserController-->PersistenceContext
+AddUserController-->TransactionalContext
+ProfileController --> Profile
+ProfileController-->ProfileService
+ProfileService --> ProfileRepository
+AddUserController-->UserManagementService
+UserManagementService --> UserRepository
+
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->ProfileController
+RepositoryFactory-->UserRepository
+
+@enduml

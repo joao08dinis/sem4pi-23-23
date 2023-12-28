@@ -1,0 +1,17 @@
+@startuml
+
+autonumber
+actor "User" as User
+
+activate User
+
+User -> ":System" : Requests to view available courses
+activate ":System"
+":System" --> User : Shows all courses where user is registered
+deactivate ":System"
+
+deactivate User
+
+
+
+@enduml

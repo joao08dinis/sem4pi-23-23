@@ -1,0 +1,82 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ViewCourseExamsUi{
+}
+
+class ExamController{
++addExam(exam)
++getExams()
+
+}
+
+class TeacherRegistrationController{
++addTeacherRegistration(teacherRegistration)
++saveTeacherRegistration(teacherRegistration)
++getTeacherRegistrations()
+}
+
+class TeacherRegistrationService{
++addNewTeacherRegistration(teacherRegistration)
++getAll()}
+
+
+class ExamService{
++addNewExam(exam)
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++exams()
++teacherRegistrations()
++create(TransactionalContext ctx)
+}
+
+database ExamRepository{
+}
+
+database TeacherRegistrationRepository{
+}
+
+class Exam{
+}
+
+class TeacherRegistration{
+}
+
+
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+ViewCourseExamsUi --> ExamController
+ViewCourseExamsUi --> TeacherRegistrationController
+ExamService-->PersistenceContext
+ExamService-->TransactionalContext
+ExamService-->PersistenceContext
+ExamService-->TransactionalContext
+ExamService --> Exam
+ExamController-->ExamService
+ExamService --> ExamRepository
+TeacherRegistrationService-->PersistenceContext
+TeacherRegistrationService-->TransactionalContext
+TeacherRegistrationService --> TeacherRegistration
+TeacherRegistrationController-->TeacherRegistrationService
+TeacherRegistrationService --> TeacherRegistrationRepository
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->ExamRepository
+RepositoryFactory-->TeacherRegistrationRepository
+
+@enduml

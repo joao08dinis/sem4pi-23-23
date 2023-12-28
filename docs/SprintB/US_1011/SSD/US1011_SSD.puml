@@ -1,0 +1,18 @@
+@startuml
+
+autonumber
+actor "Teacher" as TCH
+actor ":System" as SYS
+
+activate TCH
+TCH -> SYS : Schedule a class
+activate SYS
+SYS --> TCH : Requests data (title, duration, hour)
+deactivate SYS
+TCH -> SYS : Inputs data
+activate SYS
+SYS --> TCH : Schedule a extraordinary class confirm
+deactivate SYS
+deactivate TCH
+
+@enduml

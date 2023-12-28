@@ -1,0 +1,55 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ListParticipantsInMeetingUI{
+}
+
+class MeetingController{
++getMeetings()
++getAuthz()
++getParticipants(Meeting meeting)
++getMeetingsByUser(Profile userProfile)
++isParticipant(Profile userProfile, Meeting meeting)
+}
+
+class MeetingService{
++getAllMeetings()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database MeetingRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+class Meeting{
+}
+
+class MeetingParticipant{
+}
+
+ListParticipantsInMeetingUI --> MeetingController
+MeetingController-->PersistenceContext
+MeetingController-->TransactionalContext
+
+MeetingService --> MeetingRepository
+MeetingController --> Meeting
+Meeting --> MeetingParticipant
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->MeetingService
+@enduml

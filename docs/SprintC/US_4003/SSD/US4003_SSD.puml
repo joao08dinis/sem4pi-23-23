@@ -1,0 +1,18 @@
+@startuml
+
+autonumber
+actor "User" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Asks to accept or reject a meeting
+activate SYS
+SYS --> MNG : Shows the meeting and ask for data(meetingParticipantState)
+deactivate SYS
+MNG -> SYS : Input data
+activate SYS
+SYS --> MNG : Inform success of operation
+deactivate SYS
+deactivate MNG
+
+@enduml

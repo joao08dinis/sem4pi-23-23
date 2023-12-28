@@ -1,0 +1,46 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor manager as "Manager"
+
+participant ":UsersUI" as ui <<presentation>>
+participant ":AddCourseAction" as action <<presentation>>
+participant ":AddCourseUI" as addUi <<presentation>>
+participant ":AddCourseController" as controller <<application>>
+participant ":CourseService" as service <<application>>
+participant "Course" as course <<domain>>
+database ":CourseRepository" as repository <<repository>>
+
+activate manager
+
+manager -> ui : requests to add new course
+activate ui
+ui -> action : execute()
+activate action
+action -> addUi : doShow()
+deactivate action
+deactivate ui
+
+activate addUi
+addUi --> manager : requests base data(title, state, minCapacity, maxCapacity, enrollmentsState)
+deactivate addUi
+manager -> addUi : inputs requested data
+activate addUi
+addUi -> controller : addCourse(title, state, minCapacity, maxCapacity, enrollmentsState)
+activate controller
+controller -> course : course = new Course(title, state, minCapacity, maxCapacity, enrollmentsState)
+activate course
+deactivate course
+controller -> service : addNewCourse(course)
+activate service
+service -> repository : save(course)
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+addUi --> manager : informs operation success
+
+
+@enduml

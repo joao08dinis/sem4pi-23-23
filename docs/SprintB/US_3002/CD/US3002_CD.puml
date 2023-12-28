@@ -1,0 +1,57 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class CreateSharedBoardUI{
+}
+
+class CreateSharedBoardController{
++addSharedBoard(SharedBoardState state, int maxnumrows, int maxnumcolluns, Set<SharedBoardRows> rows, Set<SharedBoardColumns> columns, String path , String title, Set<Cell> cells)
+}
+
+class SharedBoardService{
++addNewSharedBoard(sharedboard)
++getAllSharedBoard()
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+
+
+database SharedBoardRepository{
+}
+
+
+class SharedBoard{
+}
+
+
+
+CreateSharedBoardUI --> CreateSharedBoardController
+CreateSharedBoardController-->PersistenceContext
+CreateSharedBoardController-->TransactionalContext
+
+SharedBoardService --> SharedBoardRepository
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->SharedBoardService
+
+
+
+
+
+@enduml

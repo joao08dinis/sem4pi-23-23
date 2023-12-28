@@ -1,0 +1,109 @@
+@startuml
+
+actor Student
+activate Student
+activate Student
+Student->uui: Asks to cancel meeting
+activate uui
+uui -> Action : execute()
+activate Action
+Action -> UndoPostItUI : doShow()
+activate UndoPostItUI
+
+UndoPostItUI -> ProfileController: getUserProfile(authenticatedUser)
+activate ProfileController
+ProfileController --> UndoPostItUI: currentUserProfile
+deactivate ProfileController
+
+UndoPostItUI -> UndoPostItUI: getUserBoards()
+activate UndoPostItUI
+UndoPostItUI -> SharedBoardController: getAll()
+activate SharedBoardController
+SharedBoardController -> SharedBoardService: getAllSharedBoard()
+activate SharedBoardService
+SharedBoardService -> SharedBoardRepository: getAllSharedBoard()
+activate SharedBoardRepository
+SharedBoardRepository --> SharedBoardService: sharedBoards
+deactivate SharedBoardRepository
+SharedBoardService --> SharedBoardController: sharedBoards
+deactivate SharedBoardService
+SharedBoardController --> UndoPostItUI: userBoards
+deactivate SharedBoardController
+UndoPostItUI --> UndoPostItUI: userBoards
+deactivate UndoPostItUI
+
+alt userBoards.isEmpty()
+    UndoPostItUI --> Student: "This user does not have Shared Boards."
+    deactivate UndoPostItUI
+else
+    UndoPostItUI -> UndoPostItUI: getSharedBoard(userBoards)
+    activate UndoPostItUI
+    UndoPostItUI -> Console: readLong("Option(ID): ")
+    activate Console
+    Console --> UndoPostItUI: option
+    deactivate Console
+    UndoPostItUI --> UndoPostItUI: isValidOption
+    deactivate UndoPostItUI
+    UndoPostItUI -> UndoPostItUI: getSharedBoardById(option)
+    activate UndoPostItUI
+    UndoPostItUI -> SharedBoardController: getBoardById(option)
+    activate SharedBoardController
+    SharedBoardController -> SharedBoardService: getBoardById(option)
+    activate SharedBoardService
+    SharedBoardService -> SharedBoardRepository: findBoardById(option)
+    activate SharedBoardRepository
+    SharedBoardRepository --> SharedBoardService: sharedBoard
+    deactivate SharedBoardRepository
+    SharedBoardService --> SharedBoardController: sharedBoard
+    deactivate SharedBoardService
+    SharedBoardController --> UndoPostItUI: sharedBoard
+    deactivate SharedBoardController
+    UndoPostItUI --> UndoPostItUI: sharedBoard
+    deactivate UndoPostItUI
+
+    alt sharedBoard != null
+        UndoPostItUI -> UndoPostItUI: getCell(sharedBoard)
+        activate UndoPostItUI
+        UndoPostItUI -> Console: readLong("Option(ID): ")
+        activate Console
+        Console --> UndoPostItUI: option
+        deactivate Console
+        UndoPostItUI --> UndoPostItUI: isValidOption
+        deactivate UndoPostItUI
+        UndoPostItUI -> UndoPostItUI: getCellById(option)
+        activate UndoPostItUI
+        UndoPostItUI -> SharedBoardController: getCellById(option)
+        activate SharedBoardController
+        SharedBoardController -> SharedBoard: getCellById(option)
+        activate SharedBoard
+        SharedBoard --> SharedBoardController: cell
+        deactivate SharedBoard
+        SharedBoardController --> UndoPostItUI: cell
+        deactivate SharedBoardController
+        UndoPostItUI --> UndoPostItUI: cell
+        deactivate UndoPostItUI
+
+        alt cell != null
+            UndoPostItUI -> UndoPostItUI: Post(sharedBoard, cell)
+            activate UndoPostItUI
+            UndoPostItUI -> SharedBoardController: addUpdateToHistory(date, profile, change, sharedBoard)
+            activate SharedBoardController
+            SharedBoardController -> SharedBoard: addUpdateToHistory(date, profile, change, sharedBoard)
+            activate SharedBoard
+            SharedBoard --> SharedBoardController
+            deactivate SharedBoard
+            SharedBoardController --> UndoPostItUI
+            deactivate SharedBoardController
+            UndoPostItUI --> Student: "Post was changed with success!"
+            deactivate UndoPostItUI
+        else
+            UndoPostItUI --> Student: return false
+            deactivate UndoPostItUI
+        end
+    else
+        UndoPostItUI --> Student: "Invalid option. Please try again."
+        deactivate UndoPostItUI
+    end
+end
+
+@enduml

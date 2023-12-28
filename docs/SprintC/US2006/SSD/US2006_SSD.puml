@@ -1,0 +1,20 @@
+@startuml
+
+autonumber
+actor "Teacher" as teacher
+
+activate teacher
+
+teacher -> ":System" : Requests to view course grades
+activate ":System"
+":System" --> teacher : Shows all courses where user is registered and requests to choose one
+deactivate ":System"
+teacher -> ":System" : Inputs course to view grades
+activate ":System"
+":System" --> teacher : Shows list of grades of the selected course
+deactivate ":System"
+deactivate teacher
+
+
+
+@enduml

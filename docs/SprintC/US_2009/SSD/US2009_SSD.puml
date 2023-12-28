@@ -1,0 +1,20 @@
+
+
+@startuml
+
+actor "Student" as MNG
+actor ":System" as SYS
+autonumber
+activate MNG
+activate SYS
+
+MNG -> SYS : Asks to take formative exam
+MNG <-- SYS : Exam list
+MNG -> SYS : Selects an exam
+MNG <-- SYS : Exam details
+MNG -> SYS : Provides answers
+MNG <-- SYS : Evaluation and grade
+
+@enduml
+
+@enduml

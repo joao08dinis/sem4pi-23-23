@@ -1,0 +1,20 @@
+@startuml
+
+autonumber
+actor "Teacher" as teacher
+
+activate teacher
+
+teacher -> ":System" : Requests to view available exams in a course
+activate ":System"
+":System" --> teacher : Shows all courses where user is registered and requests to choose one
+deactivate ":System"
+teacher -> ":System" : Inputs course to view exams
+activate ":System"
+":System" --> teacher : Shows list of exams of the selected course
+deactivate ":System"
+deactivate teacher
+
+
+
+@enduml

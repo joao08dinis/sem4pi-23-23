@@ -1,0 +1,53 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class CancelMeetingUI {
+}
+
+class ProfileController {
+    + getUserProfile(authenticatedUser)
+}
+
+class MeetingController {
+    + getMeetingsByProfile(currentUserProfile)
+    + cancelMeeting(meeting)
+}
+
+class MeetingService {
+    + getMeetingsByProfile(currentUserProfile)
+    + cancelMeeting(meeting)
+}
+
+database MeetingRepository {
+}
+
+class Meeting {
+}
+
+class PersistenceContext {
+    + repositories()
+}
+
+class TransactionalContext {
+    + beginTransaction()
+    + commit()
+}
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+
+CancelMeetingUI --> ProfileController
+MeetingController --> PersistenceContext
+MeetingController --> TransactionalContext
+
+CancelMeetingUI --> MeetingController
+PersistenceContext-->RepositoryFactory
+RepositoryFactory-->MeetingService
+
+MeetingService --> MeetingRepository
+MeetingController --> Meeting
+
+@enduml

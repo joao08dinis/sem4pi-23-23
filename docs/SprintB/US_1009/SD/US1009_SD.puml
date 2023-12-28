@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor manager as "Manager"
+
+participant ":UsersUI" as ui <<presentation>>
+participant ":AcceptAction" as action <<presentation>>
+participant ":AcceeptUI" as addUi <<presentation>>
+participant ":StudentRegistrationController" as controller <<application>>
+participant ":StudentRegistrationService" as service <<application>>
+database ":StudentRegistrationRepository" as repository <<repository>>
+
+activate manager
+
+manager -> ui : request to accept students enrollments
+activate ui
+ui -> action : execute()
+activate action
+action -> addUi : doShow()
+deactivate action
+deactivate ui
+
+activate addUi
+addUi --> manager : request data (status)
+deactivate addUi
+manager -> addUi : inputs requested data
+activate addUi
+addUi -> controller :saveStudentRegistration(registration)
+activate controller
+controller -> service : addNewStudentRegistration(studentRegistration)
+activate service
+service -> repository : save(studentRegistration)
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+addUi --> manager : informs operation success
+deactivate addUi
+
+
+@enduml

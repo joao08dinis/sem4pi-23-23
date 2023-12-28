@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="307.2px" preserveAspectRatio="none" style="width:1574px;height:307px;background:#FFFFFF;" version="1.1" viewBox="0 0 1574 307" width="1574.4px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="190.6266" style="stroke:#181818;stroke-width:0.6;" width="6" x="10.5" y="55.3688"/><rect fill="#FFFFFF" height="17.1141" style="stroke:#181818;stroke-width:0.6;" width="6" x="138.3" y="67.6828"/><rect fill="#FFFFFF" height="17.1141" style="stroke:#181818;stroke-width:0.6;" width="6" x="371.1" y="84.7969"/><rect fill="#FFFFFF" height="121.5703" style="stroke:#181818;stroke-width:0.6;" width="6" x="371.1" y="119.025"/><rect fill="#FFFFFF" height="87.3422" style="stroke:#181818;stroke-width:0.6;" width="6" x="1059.3" y="136.1391"/><rect fill="#FFFFFF" height="35.1141" style="stroke:#181818;stroke-width:0.6;" width="6" x="1204.5" y="188.3672"/><rect fill="#FFFFFF" height="18" style="stroke:#181818;stroke-width:0.6;" width="6" x="1438.5" y="153.2531"/><rect fill="#FFFFFF" height="18" style="stroke:#181818;stroke-width:0.6;" width="6" x="1522.5" y="205.4813"/><line style="stroke:#181818;stroke-width:0.3;stroke-dasharray:5.0,5.0;" x1="13.2" x2="13.2" y1="49.3688" y2="251.3953"/><line style="stroke:#181818;stroke-width:0.3;stroke-dasharray:5.0,5.0;" x1="141" x2="141" y1="49.3688" y2="251.3953"/><line style="stroke:#181818;stroke-width:0.3;stroke-dasharray:5.0,5.0;" x1="373.8" x2="373.8" y1="49.3688" y2="251.3953"/><line style="stroke:#181818;stroke-width:0.3;stroke-dasharray:5.0,5.0;" x1="1062" x2="1062" y1="49.3688" y2="251.3953"/><line style="stroke:#181818;stroke-width:0.3;stroke-dasharray:5.0,5.0;" x1="1207.2" x2="1207.2" y1="49.3688" y2="251.3953"/><line style="stroke:#181818;stroke-width:0.3;stroke-dasharray:5.0,5.0;" x1="1441.5" x2="1441.5" y1="49.3688" y2="251.3953"/><line style="stroke:#181818;stroke-width:0.3;stroke-dasharray:5.0,5.0;" x1="1525.5" x2="1525.5" y1="49.3688" y2="251.3953"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="17.4" x="3" y="47.5887">User</text><ellipse cx="13.5" cy="9.0844" fill="#E2E2F0" rx="4.8" ry="4.8" style="stroke:#181818;stroke-width:0.3;"/><path d="M13.5,13.8844 L13.5,30.0844 M5.7,18.6844 L21.3,18.6844 M13.5,30.0844 L5.7,39.0844 M13.5,30.0844 L21.3,39.0844 " fill="none" style="stroke:#181818;stroke-width:0.3;"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="17.4" x="3" y="258.3996">User</text><ellipse cx="13.5" cy="265.2797" fill="#E2E2F0" rx="4.8" ry="4.8" style="stroke:#181818;stroke-width:0.3;"/><path d="M13.5,270.0797 L13.5,286.2797 M5.7,274.8797 L21.3,274.8797 M13.5,286.2797 L5.7,295.2797 M13.5,286.2797 L21.3,295.2797 " fill="none" style="stroke:#181818;stroke-width:0.3;"/><rect fill="#E2E2F0" height="27.1688" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="65.4" x="108.6" y="21.6"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="57" x="112.8" y="33.4043">«presentation»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="27" x="127.8" y="42.7887">:UserUI</text><rect fill="#E2E2F0" height="27.1688" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="65.4" x="108.6" y="250.7953"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="57" x="112.8" y="262.5996">«presentation»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="27" x="127.8" y="271.984">:UserUI</text><rect fill="#E2E2F0" height="27.1688" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="94.2" x="327" y="21.6"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="57" x="345.6" y="33.4043">«presentation»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="85.8" x="331.2" y="42.7887">CreateSharedBoard:UI</text><rect fill="#E2E2F0" height="27.1688" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="94.2" x="327" y="250.7953"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="57" x="345.6" y="262.5996">«presentation»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="85.8" x="331.2" y="271.984">CreateSharedBoard:UI</text><rect fill="#E2E2F0" height="27.1688" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="124.2" x="1000.2" y="21.6"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="50.4" x="1037.1" y="33.4043">«application»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="115.8" x="1004.4" y="42.7887">:CreateSharedBoardController</text><rect fill="#E2E2F0" height="27.1688" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="124.2" x="1000.2" y="250.7953"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="50.4" x="1037.1" y="262.5996">«application»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="115.8" x="1004.4" y="271.984">:CreateSharedBoardController</text><rect fill="#E2E2F0" height="17.7844" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="89.4" x="1162.8" y="30.9844"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="81" x="1167" y="42.7887">:SharedBoardService</text><rect fill="#E2E2F0" height="17.7844" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="89.4" x="1162.8" y="250.7953"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="81" x="1167" y="262.5996">:SharedBoardService</text><rect fill="#E2E2F0" height="27.1688" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="58.8" x="1412.1" y="21.6"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="37.2" x="1422.9" y="33.4043">«domain»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="50.4" x="1416.3" y="42.7887">SharedBoard</text><rect fill="#E2E2F0" height="27.1688" rx="1.5" ry="1.5" style="stroke:#181818;stroke-width:0.3;" width="58.8" x="1412.1" y="250.7953"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="37.2" x="1422.9" y="262.5996">«domain»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="50.4" x="1416.3" y="271.984">SharedBoard</text><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="47.4" x="1500" y="38.2043">«repository»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="93.6" x="1476.9" y="47.5887">:SharedBoardRepository</text><path d="M1514.7,9 C1514.7,3 1525.5,3 1525.5,3 C1525.5,3 1536.3,3 1536.3,9 L1536.3,24.6 C1536.3,30.6 1525.5,30.6 1525.5,30.6 C1525.5,30.6 1514.7,30.6 1514.7,24.6 L1514.7,9 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.8999999999999999;"/><path d="M1514.7,9 C1514.7,15 1525.5,15 1525.5,15 C1525.5,15 1536.3,15 1536.3,9 " fill="none" style="stroke:#181818;stroke-width:0.8999999999999999;"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-style="italic" lengthAdjust="spacing" textLength="47.4" x="1500" y="258.3996">«repository»</text><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="93.6" x="1476.9" y="267.784">:SharedBoardRepository</text><path d="M1514.7,275.5641 C1514.7,269.5641 1525.5,269.5641 1525.5,269.5641 C1525.5,269.5641 1536.3,269.5641 1536.3,275.5641 L1536.3,291.1641 C1536.3,297.1641 1525.5,297.1641 1525.5,297.1641 C1525.5,297.1641 1514.7,297.1641 1514.7,291.1641 L1514.7,275.5641 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.8999999999999999;"/><path d="M1514.7,275.5641 C1514.7,281.5641 1525.5,281.5641 1525.5,281.5641 C1525.5,281.5641 1536.3,281.5641 1536.3,275.5641 " fill="none" style="stroke:#181818;stroke-width:0.8999999999999999;"/><rect fill="#FFFFFF" height="190.6266" style="stroke:#181818;stroke-width:0.6;" width="6" x="10.5" y="55.3688"/><rect fill="#FFFFFF" height="17.1141" style="stroke:#181818;stroke-width:0.6;" width="6" x="138.3" y="67.6828"/><rect fill="#FFFFFF" height="17.1141" style="stroke:#181818;stroke-width:0.6;" width="6" x="371.1" y="84.7969"/><rect fill="#FFFFFF" height="121.5703" style="stroke:#181818;stroke-width:0.6;" width="6" x="371.1" y="119.025"/><rect fill="#FFFFFF" height="87.3422" style="stroke:#181818;stroke-width:0.6;" width="6" x="1059.3" y="136.1391"/><rect fill="#FFFFFF" height="35.1141" style="stroke:#181818;stroke-width:0.6;" width="6" x="1204.5" y="188.3672"/><rect fill="#FFFFFF" height="18" style="stroke:#181818;stroke-width:0.6;" width="6" x="1438.5" y="153.2531"/><rect fill="#FFFFFF" height="18" style="stroke:#181818;stroke-width:0.6;" width="6" x="1522.5" y="205.4813"/><polygon fill="#181818" points="131.1,65.2828,137.1,67.6828,131.1,70.0828,133.5,67.6828" style="stroke:#181818;stroke-width:0.6;"/><line style="stroke:#181818;stroke-width:0.6;" x1="16.5" x2="134.7" y1="67.6828" y2="67.6828"/><text fill="#000000" font-family="sans-serif" font-size="7.8" font-weight="bold" lengthAdjust="spacing" textLength="4.2" x="20.7" y="64.8299">1</text><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="103.8" x="27.3" y="64.8299">request create a SharedBoard</text><polygon fill="#181818" points="363.9,82.3969,369.9,84.7969,363.9,87.1969,366.3,84.7969" style="stroke:#181818;stroke-width:0.6;"/><line style="stroke:#181818;stroke-width:0.6;" x1="141.3" x2="367.5" y1="84.7969" y2="84.7969"/><text fill="#000000" font-family="sans-serif" font-size="7.8" font-weight="bold" lengthAdjust="spacing" textLength="4.2" x="145.5" y="81.9439">2</text><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="32.4" x="152.1" y="81.9439">doShow()</text><polygon fill="#181818" points="23.1,99.5109,17.1,101.9109,23.1,104.3109,20.7,101.9109" style="stroke:#181818;stroke-width:0.6;"/><line style="stroke:#181818;stroke-width:0.6;stroke-dasharray:2.0,2.0;" x1="19.5" x2="373.5" y1="101.9109" y2="101.9109"/><text fill="#000000" font-family="sans-serif" font-size="7.8" font-weight="bold" lengthAdjust="spacing" textLength="4.2" x="26.7" y="99.058">3</text><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="333.6" x="33.3" y="99.058">requests data (title,numRows, numColumns,columnTitle, rowTitle, pathname, sharedBoardState)</text><polygon fill="#181818" points="363.9,116.625,369.9,119.025,363.9,121.425,366.3,119.025" style="stroke:#181818;stroke-width:0.6;"/><line style="stroke:#181818;stroke-width:0.6;" x1="16.5" x2="367.5" y1="119.025" y2="119.025"/><text fill="#000000" font-family="sans-serif" font-size="7.8" font-weight="bold" lengthAdjust="spacing" textLength="4.2" x="20.7" y="116.1721">4</text><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="75" x="27.3" y="116.1721">inputs requested data</text><polygon fill="#181818" points="1052.1,133.7391,1058.1,136.1391,1052.1,138.5391,1054.5,136.1391" style="stroke:#181818;stroke-width:0.6;"/><line style="stroke:#181818;stroke-width:0.6;" x1="377.1" x2="1055.7" y1="136.1391" y2="136.1391"/><text fill="#000000" font-family="sans-serif" font-size="7.8" font-weight="bold" lengthAdjust="spacing" textLength="4.2" x="381.3" y="133.2861">5</text><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="664.2" x="387.9" y="133.2861">addSharedBoard(SharedBoardState state, int maxnumrows, int maxnumcolluns, Set&lt;SharedBoardRows&gt; rows, Set&lt;SharedBoardColumns&gt; columns, String path , String title, Set&lt;Cell&gt; cells)</text><polygon fill="#181818" points="1431.3,150.8531,1437.3,153.2531,1431.3,155.6531,1433.7,153.2531" style="stroke:#181818;stroke-width:0.6;"/><line style="stroke:#181818;stroke-width:0.6;" x1="1065.3" x2="1434.9" y1="153.2531" y2="153.2531"/><text fill="#000000" font-family="sans-serif" font-size="7.8" font-weight="bold" lengthAdjust="spacing" textLength="4.2" x="1069.5" y="150.4002">6</text><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="355.2" x="1076.1" y="150.4002">sharedboard = new SharedBoard(username, password, firstName, lastName, email, role, creationDate)</text><polygon fill="#181818" points="1197.3,185.9672,1203.3,188.3672,1197.3,190.7672,1199.7,188.3672" style="stroke:#181818;stroke-width:0.6;"/><line style="stroke:#181818;stroke-width:0.6;" x1="1065.3" x2="1200.9" y1="188.3672" y2="188.3672"/><text fill="#000000" font-family="sans-serif" font-size="7.8" font-weight="bold" lengthAdjust="spacing" textLength="4.2" x="1069.5" y="185.5143">7</text><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="121.2" x="1076.1" y="185.5143">addNewSharedBoard(sharedBoard)</text><polygon fill="#181818" points="1515.3,203.0812,1521.3,205.4813,1515.3,207.8813,1517.7,205.4813" style="stroke:#181818;stroke-width:0.6;"/><line style="stroke:#181818;stroke-width:0.6;" x1="1210.5" x2="1518.9" y1="205.4813" y2="205.4813"/><text fill="#000000" font-family="sans-serif" font-size="7.8" font-weight="bold" lengthAdjust="spacing" textLength="4.2" x="1214.7" y="202.6283">8</text><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="64.2" x="1221.3" y="202.6283">save(sharedBoard)</text><polygon fill="#181818" points="23.1,238.1953,17.1,240.5953,23.1,242.9953,20.7,240.5953" style="stroke:#181818;stroke-width:0.6;"/><line style="stroke:#181818;stroke-width:0.6;stroke-dasharray:2.0,2.0;" x1="19.5" x2="373.5" y1="240.5953" y2="240.5953"/><text fill="#000000" font-family="sans-serif" font-size="7.8" font-weight="bold" lengthAdjust="spacing" textLength="4.2" x="26.7" y="237.7424">9</text><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="91.2" x="33.3" y="237.7424">informs operation success</text><!--MD5=[5737978ff554840a6843bddf72a29be4]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor User as "User"
+
+participant ":UserUI" as ui <<presentation>>
+participant "CreateSharedBoard:UI" as sharedBoardUI <<presentation>>
+participant ":CreateSharedBoardController" as controller <<application>>
+participant ":SharedBoardService" as service
+participant "SharedBoard" as sharedBoard <<domain>>
+database ":SharedBoardRepository" as repository <<repository>>
+
+
+activate User
+
+User -> ui : request create a SharedBoard
+activate ui
+
+ui -> sharedBoardUI : doShow()
+deactivate ui
+
+activate sharedBoardUI
+
+sharedBoardUI - -> User : requests data (title,numRows, numColumns,columnTitle, rowTitle, pathname, sharedBoardState)
+deactivate sharedBoardUI
+User -> sharedBoardUI : inputs requested data
+activate sharedBoardUI
+
+sharedBoardUI -> controller : addSharedBoard(SharedBoardState state, int maxnumrows, int maxnumcolluns, Set<SharedBoardRows> rows, Set<SharedBoardColumns> columns, String path , String title, Set<Cell> cells)
+activate controller
+controller -> sharedBoard : sharedboard = new SharedBoard(username, password, firstName, lastName, email, role, creationDate)
+activate sharedBoard
+deactivate sharedBoard
+controller ->service: addNewSharedBoard(sharedBoard)
+activate service
+
+service ->repository:save(sharedBoard)
+activate repository
+deactivate repository
+
+deactivate service
+deactivate sharedBoard
+deactivate controller
+sharedBoardUI - -> User : informs operation success
+deactivate sharedBoardUI
+
+
+@enduml
+
+@startuml
+
+autonumber
+
+actor User as "User"
+
+participant ":UserUI" as ui <<presentation>>
+participant "CreateSharedBoard:UI" as sharedBoardUI <<presentation>>
+participant ":CreateSharedBoardController" as controller <<application>>
+participant ":SharedBoardService" as service
+participant "SharedBoard" as sharedBoard <<domain>>
+database ":SharedBoardRepository" as repository <<repository>>
+
+
+activate User
+
+User -> ui : request create a SharedBoard
+activate ui
+
+ui -> sharedBoardUI : doShow()
+deactivate ui
+
+activate sharedBoardUI
+
+sharedBoardUI - -> User : requests data (title,numRows, numColumns,columnTitle, rowTitle, pathname, sharedBoardState)
+deactivate sharedBoardUI
+User -> sharedBoardUI : inputs requested data
+activate sharedBoardUI
+
+sharedBoardUI -> controller : addSharedBoard(SharedBoardState state, int maxnumrows, int maxnumcolluns, Set<SharedBoardRows> rows, Set<SharedBoardColumns> columns, String path , String title, Set<Cell> cells)
+activate controller
+controller -> sharedBoard : sharedboard = new SharedBoard(username, password, firstName, lastName, email, role, creationDate)
+activate sharedBoard
+deactivate sharedBoard
+controller ->service: addNewSharedBoard(sharedBoard)
+activate service
+
+service ->repository:save(sharedBoard)
+activate repository
+deactivate repository
+
+deactivate service
+deactivate sharedBoard
+deactivate controller
+sharedBoardUI - -> User : informs operation success
+deactivate sharedBoardUI
+
+
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 19:12:26 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

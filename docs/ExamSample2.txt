@@ -1,0 +1,98 @@
+Exam: {
+
+ID: 4,
+Title: Math test.
+
+Section ID: 1, {
+
+Textual Description: Soma.
+Difficulty: 1
+Limit of Questions: 5
+Questions:
+
+Question
+ID: 21,
+Statement: Result of 5+5+5.
+Type of Question: Numerical
+Answer: 15
+Quotation: 3
+Difficulty: 1
+
+Question
+ID: 20,
+Statement: Which of this were a Mathmatic?
+Type of Question: Multiple Choice
+Options: [
+    Option 1: Doja Cat;
+    Option 2: Trump;
+    Option 3: Ronaldo;
+    Option 4: Pitagoras;
+]
+Answer: 4
+Quotation: 3
+Difficulty: 2
+}
+
+Section ID: 2, {
+
+Textual Description: Multiplication.
+Difficulty: 2
+Limit of Questions: 3
+Questions:
+
+Question
+ID: 22,
+Statement: Two times two is an ___1___ number and five times five is an ___2___ number?
+Type of Question: Missing Words
+Answer: {
+Answer 1: Even
+Answer 2: Odd
+}
+Quotation: 4
+Difficulty: 2
+
+Question
+ID: 24,
+Statement: Result of 8 times 1?
+Type of Question: Numerical
+Answer: 8
+Quotation: 3
+Difficulty: 3
+
+Question
+ID: 23,
+Statement: Result of 1 times 0?
+Type of Question: Numerical
+Answer: 0
+Quotation: 1
+Difficulty: 3
+
+Question
+ID: 26,
+Statement: Connect the matching table!
+Type of Question: Matching
+Table A: [
+Statement 1: Two times Eight.
+Statement 2: Nine times Five.
+]
+Table B: [
+Statement 1: Forty five.
+Statement 2: Eighteen.
+]
+Answer: Table A: 1 - Table B: 2 Table A: 2 - Table B: 1
+Quotation: 5
+Difficulty: 3
+
+Question
+ID: 25,
+Statement: Is 1 times -1 is equal to 1?
+Type of Question: True or False
+Answer: False
+Quotation: 1
+Difficulty: 3
+}
+
+
+Open Date: 12/05/2023 13:30
+Close Date: 06/10/2023 17:00
+}

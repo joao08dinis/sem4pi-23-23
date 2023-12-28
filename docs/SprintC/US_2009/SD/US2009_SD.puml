@@ -1,0 +1,155 @@
+@startuml
+
+actor Student
+activate Student
+Student->uui: Asks to take formative exam
+activate uui
+uui -> Action : execute()
+activate Action
+participant TakeAutomaticFormativeExamUI
+activate TakeAutomaticFormativeExamUI
+Action -> TakeAutomaticFormativeExamUI : doShow()
+
+
+TakeAutomaticFormativeExamUI -> ExamController: getAll()
+activate ExamController
+ExamController -> ExamService: getAll()
+activate ExamService
+ExamService -> ExamRepository: getAll()
+activate ExamRepository
+ExamRepository --> ExamService: exams
+
+alt exams empty
+    ExamService --> TakeAutomaticFormativeExamUI: exams empty
+    deactivate ExamService
+    TakeAutomaticFormativeExamUI -> Student: Display "Does not exist any exam created!"
+else exams not empty
+    TakeAutomaticFormativeExamUI -> Student: Display exams
+    TakeAutomaticFormativeExamUI -> Student: Prompt for option
+
+    alt invalid option
+        TakeAutomaticFormativeExamUI -> Student: Display "Invalid Option!"
+        TakeAutomaticFormativeExamUI -> TakeAutomaticFormativeExamUI: Retry selection
+    else valid option
+        TakeAutomaticFormativeExamUI -> ExamController: getExamsByCourse(course)
+        activate ExamController
+        ExamController -> ExamService: getExamsByCourse(course)
+        activate ExamService
+        ExamService -> ExamRepository: getAll()
+        activate ExamRepository
+        ExamRepository --> ExamService: examsByCourse
+        deactivate ExamRepository
+        ExamService --> ExamController: examsByCourse
+        deactivate ExamService
+        ExamController -> TakeAutomaticFormativeExamUI: Display chosen exam and sections
+        TakeAutomaticFormativeExamUI -> ExamController: getAllQuestions()
+        activate ExamController
+        ExamController -> QuestionService: getAll()
+        activate QuestionService
+
+        alt matching questions
+            QuestionService -> MatchingService: getAll()
+            activate MatchingService
+            MatchingService -> MatchingRepository: getAll()
+            activate MatchingRepository
+            MatchingRepository --> MatchingService: matchingQuestions
+            deactivate MatchingRepository
+            MatchingService --> QuestionService: matchingQuestions
+            deactivate MatchingService
+        else short answer questions
+            QuestionService -> ShortAnswerService: getAll()
+            activate ShortAnswerService
+            ShortAnswerService -> ShortAnswerRepository: getAll()
+            activate ShortAnswerRepository
+            ShortAnswerRepository --> ShortAnswerService: shortAnswerQuestions
+            deactivate ShortAnswerRepository
+            ShortAnswerService --> QuestionService: shortAnswerQuestions
+            deactivate ShortAnswerService
+        end
+
+        TakeAutomaticFormativeExamUI -> Section: getQuestions()
+        activate Section
+        Section -> Question: getStatement()
+        activate Question
+        Question --> Section: statement
+        deactivate Question
+        Section --> TakeAutomaticFormativeExamUI: questions
+        deactivate Section
+
+        TakeAutomaticFormativeExamUI -> Student: Display question type and prompt for answer
+
+        alt TrueOrFalse question
+            TakeAutomaticFormativeExamUI -> TrueOrFalseService: getAll()
+            activate TrueOrFalseService
+            TrueOrFalseService -> TrueOrFalseRepository: getAll()
+            activate TrueOrFalseRepository
+            TrueOrFalseRepository --> TrueOrFalseService: trueOrFalseQuestions
+            deactivate TrueOrFalseRepository
+            TrueOrFalseService --> TakeAutomaticFormativeExamUI: Display trueOrFalseQuestion
+            deactivate TrueOrFalseService
+            TakeAutomaticFormativeExamUI -> Student: Read answer
+        else MultipleChoice question
+            TakeAutomaticFormativeExamUI -> MultipleChoiceService: getAll()
+            activate MultipleChoiceService
+            MultipleChoiceService -> MultipleChoiceRepository: getAll()
+            activate MultipleChoiceRepository
+            MultipleChoiceRepository --> MultipleChoiceService: multipleChoiceQuestions
+            deactivate MultipleChoiceRepository
+            MultipleChoiceService --> TakeAutomaticFormativeExamUI: Display multipleChoiceQuestion
+            deactivate MultipleChoiceService
+            TakeAutomaticFormativeExamUI -> Student: Read answer
+        else MissingWords question
+            TakeAutomaticFormativeExamUI -> MissingWordsService: getAll()
+            activate MissingWordsService
+            MissingWordsService -> MissingWordsRepository: getAll()
+            activate MissingWordsRepository
+            MissingWordsRepository --> MissingWordsService: missingWordsQuestions
+            deactivate MissingWordsRepository
+            MissingWordsService --> TakeAutomaticFormativeExamUI: Display missingWordsQuestion
+            deactivate MissingWordsService
+            TakeAutomaticFormativeExamUI -> Student: Read answer
+        else Numerical question
+            TakeAutomaticFormativeExamUI -> NumericalService: getAll()
+            activate NumericalService
+            NumericalService -> NumericalRepository: getAll()
+            activate NumericalRepository
+            NumericalRepository --> NumericalService: numericalQuestions
+            deactivate NumericalRepository
+            NumericalService --> TakeAutomaticFormativeExamUI: Display numericalQuestion
+            deactivate NumericalService
+            TakeAutomaticFormativeExamUI -> Student: Read answer
+        else Matching question
+            TakeAutomaticFormativeExamUI -> MatchingService: getAll()
+            activate MatchingService
+            MatchingService -> MatchingRepository: getAll()
+            activate MatchingRepository
+            MatchingRepository --> MatchingService: matchingQuestions
+            deactivate MatchingRepository
+            MatchingService --> TakeAutomaticFormativeExamUI: Display matchingQuestion
+            deactivate MatchingService
+            TakeAutomaticFormativeExamUI -> Student: Read answer
+        end
+
+        TakeAutomaticFormativeExamUI -> Student: Store answer
+
+        TakeAutomaticFormativeExamUI -> Section: nextQuestion()
+        activate Section
+        Section -> TakeAutomaticFormativeExamUI: Display next question
+        deactivate Section
+
+        alt last question
+            TakeAutomaticFormativeExamUI -> Section: finish()
+            activate Section
+            Section --> TakeAutomaticFormativeExamUI: evaluation
+            deactivate Section
+            TakeAutomaticFormativeExamUI -> Student: Display evaluation and grade
+        else not last question
+            TakeAutomaticFormativeExamUI -> Section: nextQuestion()
+            activate Section
+            Section -> TakeAutomaticFormativeExamUI: Display next question
+            deactivate Section
+        end
+    end
+end
+
+@enduml

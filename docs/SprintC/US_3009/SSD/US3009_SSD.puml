@@ -1,0 +1,18 @@
+@startuml
+
+autonumber
+actor "User" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Asks to view the history of updates on a SharedBoard
+activate SYS
+SYS --> MNG : Shows all SharedBoards available for the user
+deactivate SYS
+MNG -> SYS : Chooses SharedBoard
+activate SYS
+SYS --> MNG : Shows history of updates
+deactivate SYS
+deactivate MNG
+
+@enduml

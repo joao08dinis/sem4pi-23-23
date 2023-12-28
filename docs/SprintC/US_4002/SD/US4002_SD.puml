@@ -1,0 +1,56 @@
+@startuml
+autonumber
+
+actor User
+participant ":UsersUI" as uui <<presentation>>
+participant "CancelMeetingAction" as Action
+participant "CancelMeetingUI" as UI
+
+participant "ProfileController" as ProfileCtrl <<application>>
+participant "MeetingController" as MeetingCtrl <<application>>
+participant "MeetingService" as MeetingSvc <<application>>
+participant "MeetingRepository" as MeetingRepo <<repository>>
+participant "Meeting" as Meeting <<domain>>
+
+activate User
+User->uui: Asks to cancel meeting
+activate uui
+uui -> Action : execute()
+activate Action
+Action -> UI : doShow()
+activate UI
+UI -> ProfileCtrl: getUserProfile(authz.session().get().authenticatedUser())
+activate ProfileCtrl
+ProfileCtrl -> ProfileCtrl: getProfile(authenticatedUser)
+activate ProfileCtrl
+ProfileCtrl -> ProfileRepo: findProfileByUser(authenticatedUser)
+activate ProfileRepo
+ProfileRepo --> ProfileCtrl: profile
+deactivate ProfileRepo
+deactivate ProfileCtrl
+UI -> MeetingCtrl: getMeetingsByProfile(currentUserProfile)
+activate MeetingCtrl
+MeetingCtrl -> MeetingSvc: getMeetingsByProfile(currentUserProfile)
+activate MeetingSvc
+MeetingSvc -> MeetingRepo: getAllMeetings()
+activate MeetingRepo
+MeetingRepo --> MeetingSvc: meetings
+deactivate MeetingRepo
+deactivate MeetingSvc
+MeetingCtrl --> UI: displayMeetings(meetings)
+deactivate MeetingCtrl
+UI -> MeetingCtrl: CancelMeeting(meeting)
+activate MeetingCtrl
+MeetingCtrl -> MeetingSvc: cancelMeeting(meeting)
+activate MeetingSvc
+MeetingSvc -> MeetingRepo: save(meeting)
+activate MeetingRepo
+MeetingRepo --> MeetingSvc: savedMeeting
+deactivate MeetingRepo
+deactivate MeetingSvc
+MeetingCtrl --> UI: displayCancellationResult(savedMeeting)
+deactivate MeetingCtrl
+UI --> User: Display cancellation result
+deactivate UI
+
+@enduml

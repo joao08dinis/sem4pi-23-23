@@ -1,0 +1,92 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor manager as "Manager"
+
+participant ":UsersUI" as ui <<presentation>>
+participant ":AddTeacherRegistrationAction" as action <<application>>
+participant ":AddTeacherRegistrationUI" as registrationUI <<presentation>>
+participant ":TeacherRegistrationController" as controller <<application>>
+participant ":TeacherRegistrationService" as service <<application>>
+participant ":CourseService" as serviceCourse <<application>>
+participant ":ProfileService" as serviceProfile <<application>>
+participant "TeacherRegistration" as teacherRegistration <<domain>>
+database ":TeacherRegistrationRepository" as repository <<repository>>
+database ":CourseRepository" as repositoryCourse <<repository>>
+database ":ProfileRepository" as repositoryProfile <<repository>>
+
+activate manager
+
+manager -> ui : Asks to set teachers of a course
+activate ui
+ui -> action : execute()
+activate action
+action -> registrationUI : doShow()
+deactivate action
+deactivate ui
+activate registrationUI
+registrationUI -> controller : getCourses()
+activate controller
+registrationUI -> controller : getTeachersProfiles()
+controller -> serviceCourse : getCourses()
+activate serviceCourse
+controller -> serviceProfile : getTeachersProfiles()
+activate serviceProfile
+serviceProfile -> repositoryProfile : getTeachersProfiles()
+activate repositoryProfile
+deactivate repositoryProfile
+deactivate serviceProfile
+serviceCourse -> repositoryCourse : getAllCourses()
+activate repositoryCourse
+deactivate repositoryCourse
+deactivate serviceCourse
+deactivate controller
+registrationUI -> manager : Shows all courses and request to choose one
+deactivate registrationUI
+manager -> registrationUI : Chooses course
+activate registrationUI
+registrationUI -> registrationUI : course = get(course)
+activate registrationUI
+deactivate registrationUI
+registrationUI -> manager : Shows all teachers and request to choose one
+deactivate registrationUI
+manager -> registrationUI : Chooses teacher
+activate registrationUI
+registrationUI -> registrationUI : teacherProfile = get(teacher)
+activate registrationUI
+deactivate registrationUI
+registrationUI --> manager : Asks to select role the role of teacher
+deactivate registrationUI
+manager -> registrationUI : Chooses role
+activate registrationUI
+alt course.getState().equals(State.OPEN)
+    alt (course.getEnrollmentsState().equals(EnrollmentsState.OPEN))
+        alt (!controller.hasRegentInCourse(course) && role.equals(Role.REGENT))
+            registrationUI -> controller : newTeacherRegistration = controller.addTeacherRegistration(teacherProfile, role, course)
+            activate controller
+            controller -> teacherRegistration : TeacherRegistration.from(null,teacherProfile,role, course)
+            activate teacherRegistration
+            deactivate teacherRegistration
+            deactivate controller
+            registrationUI -> controller : controller.saveTeacherRegistration(newTeacherRegistration)
+            activate controller
+            controller -> service : service.addNewTeacherRegistration(teacherRegistration)
+            activate service
+            service -> repository : repository.save(teacherRegistration)
+            activate repository
+            deactivate repository
+            deactivate service
+            deactivate controller
+
+        end
+    end
+end
+
+registrationUI --> manager : informs operation success
+deactivate registrationUI
+deactivate manager
+
+
+@enduml

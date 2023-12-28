@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ListGradesUI{
+}
+
+class GradeController{
++getAll()
+}
+
+class GradeService{
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database GradeRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+class Grade{
+}
+
+
+ListGradesUI --> GradeController
+GradeController-->PersistenceContext
+GradeController-->TransactionalContext
+
+GradeService --> GradeRepository
+GradeController --> Grade
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->GradeService
+@enduml

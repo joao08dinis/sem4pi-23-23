@@ -1,0 +1,14 @@
+@startuml
+
+autonumber
+actor "User" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Asks to cancel meeting
+activate SYS
+SYS --> MNG : Display cancellation result
+deactivate SYS
+deactivate MNG
+
+@enduml

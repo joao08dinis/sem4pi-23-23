@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ANTLRGenerationPreferences">
+    <option name="perGrammarGenerationSettings">
+      <list>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/base.core/src/main/java/eapli/base/question/domain/LabeledExpr.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\Joao Laptop\OneDrive - Instituto Superior de Engenharia do Porto\Documents\sem4pi-22-23-27\base.core\src\main\java\eapli\base\question\domain" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/base.core/src/main/java/eapli/base/question/domain/ExamANTLR.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\Joao Laptop\OneDrive - Instituto Superior de Engenharia do Porto\Documents\sem4pi-22-23-27\base.core\src\main\java\eapli\base\question\domain\ANTLRExam" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/base.core/src/main/java/eapli/base/question/domain/AnswerANTLR.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\Joao Laptop\OneDrive - Instituto Superior de Engenharia do Porto\Documents\sem4pi-22-23-27\base.core\src\main\java\eapli\base\question\domain\ANTLRAnswer" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+      </list>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK" />
+</project>

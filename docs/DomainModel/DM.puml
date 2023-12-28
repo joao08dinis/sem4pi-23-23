@@ -1,0 +1,279 @@
+@startuml
+
+hide methods
+
+skinparam packageStyle rectangle
+skinparam linetype ortho
+
+top to bottom direction
+
+title Domain Driven Design
+
+package "<<aggregate>> User" <<Folder>> #ffb380 {
+
+   entity User <<root>> <<entity>>{
+        String fullName
+        String shortName
+    }
+
+    class Role <<(V,#B8255F) value object>> {}
+    class Password <<(V,#B8255F) value object>> {}
+    class Email <<Id>> <<unique>> <<(V,#B8255F) value object>>  {}
+    entity Student <<entity>>{}
+    entity Teacher <<entity>>{}
+    entity Manager <<entity>>{}
+
+    User "1" *--> "1" Email : has
+    User "1" *--> "1" Password : has
+    User "1" *--> "1" Role : has
+    Manager "1" --> "*" User : creates
+    Manager --|> User
+    Student --|> User
+    Teacher --|> User
+}
+
+package "<<aggregate>> SharedBoard" <<Folder>> #aabbcc {
+   entity SharedBoard <<root>> <<entity>>{}
+   entity BoardConfig <<entity>>{}
+
+    entity Owner <<entity>>{}
+    entity Participant <<entity>>{}
+    class "Title" as SharedBoardTitle <<(V,#B8255F) value object>> <<unique>> {}
+    class Row <<entity>> {}
+    class Column <<entity>> {}
+    class Cell <<entity>> {}
+    entity Post <<entity>>{}
+    class PostDescription as "Description" <<(V,#B8255F) value object>> {}
+    class Permission <<(V,#B8255F) value object>> {}
+    class TypeOfPost <<(V,#B8255F) value object>> {}
+    entity AuditLog <<entity>>{}
+    class View <<entity>> {}
+    class CellState <<(V,#B8255F) value object>> {}
+    class Change <<(V,#B8255F) value object>> {}
+    class SharedBoardState <<(V,#B8255F) value object>> {}
+    class View {
+           File file
+    }
+
+    User "1" --> "1" Owner : is a
+    User "1" --> "1" Participant : is a
+    Owner "1" --> "1" SharedBoardState : changes
+    SharedBoard "1" *--> "1" Owner : has
+    SharedBoard "1" *--> "1" Participant : has
+    SharedBoard "1" *--> "1" BoardConfig : has
+    BoardConfig "1" *--> "*" Row : has max
+    BoardConfig "1" *--> "*" Column : has max
+    SharedBoard "1" *--> "*" Cell : has
+    Row "1" o--> "1" Cell : part of
+    Column "1" o--> "1" Cell : part of
+    Row "1" *--> "1" SharedBoardTitle : has
+    Column "1" *--> "1" SharedBoardTitle : has
+    SharedBoard "1" *--> "1" SharedBoardState : has
+    SharedBoard "1" *--> "1" SharedBoardTitle : has
+    Participant "1" *--> "*" Post : makes
+    Owner "1" *--> "*" Post : makes
+    Post "1" *--> "1" PostDescription : has
+    Post "1" *--> "1" TypeOfPost : has
+    Cell "1" *--> "1" Post : has
+    Cell "1" *--> "1" CellState : has
+    Participant "1" *--> "1" Permission : has
+    Owner "1" *--> "1" Permission : has
+    SharedBoard "1" *--> "1" AuditLog : has
+    AuditLog "1" -l-> "1..*" Change : has
+    SharedBoard "1" *--> "1" View : has
+    Owner "1" -r-> "1" Post : changes
+    Participant "1" --> "1" Post : changes
+
+}
+
+package "<<aggregate>> Profile" <<Folder>> #99b3ff {
+   entity Profile <<root>> <<entity>>{}
+
+    class TeacherProfile <<entity>> {}
+    class StudentProfile <<entity>> {}
+    class ManagerProfile <<entity>> <<NullObject>> {}
+    class TaxPayerNumber <<(V,#B8255F) value object>> {}
+    class DateOfBirth <<(V,#B8255F) value object>> {}
+    class MechanographicNumber <<(V,#B8255F) value object>> {}
+    class Acronym <<(V,#B8255F) value object>> {}
+    class Schedule <<entity>> {}
+    class "Day" as ProfileDay <<(V,#B8255F) value object>> {}
+
+    TeacherProfile --|> Profile
+    StudentProfile --|> Profile
+    ManagerProfile --|> Profile
+    TaxPayerNumber "1" <--* "1" Profile : has
+    DateOfBirth "1" <--* "1" Profile : has
+    MechanographicNumber "1" <--* "1" StudentProfile : has
+    Acronym "1" <--* "1" TeacherProfile : has
+    Schedule "1" <--* "1" Profile : has
+    ProfileDay "1..*" <--* "1" Schedule : has
+}
+Profile "1" *--> "1" User : has
+
+
+package "<<aggregate>> Student Registration" <<Folder>> #ddaaaa {
+    entity StudentRegistration <<root>> <<entity>>{
+        }
+     class "Status" as RegiStatusStudent <<(V,#B8255F) value object>> <<unique>> {}
+
+    StudentRegistration "1" <-- "1" User : enrolls
+    StudentRegistration "1" --> "1" User : has information of
+    StudentRegistration "1" *--> "1" RegiStatusStudent : has
+
+}
+
+package "<<aggregate>> Teacher Registration" <<Folder>> #ddaaaa {
+    entity TeacherRegistration <<root>> <<entity>>{
+        }
+    class TeacherRole <<(V,#B8255F) value object>> {}
+
+
+    User "1" --> "*" TeacherRegistration : manages
+    TeacherRegistration "1" --> "1" TeacherRole : has
+    TeacherRegistration "1" --> "1" User : has information of
+
+
+}
+
+package "<<aggregate>> Course" <<Folder>> #aabbbb {
+   entity Course <<root>> <<entity>>{
+    }
+    class "Title" as CourseTitle <<(V,#B8255F) value object>> <<unique>> {}
+    class Id <<(V,#B8255F) value object>> <<Id>> {}
+    class CourseState as "State" <<(V,#B8255F) value object>> {}
+    class Capacity <<(V,#B8255F) value object>> {}
+    class EnrollementsState <<(V,#B8255F) value object>> {}
+
+    CourseTitle "1" <--* "1" Course : has
+    Id "1" <--* "1" Course : has
+    CourseState "1" <--* "1" Course : has
+    Capacity "1" <--* "1" Course : has
+    EnrollementsState "1" <--* "1" Course : has
+    StudentRegistration "1" --> "1" Course : has
+    TeacherRegistration "1" --> "1" Course : has
+}
+
+package "<<aggregate>> Meeting" <<Folder>> #aabbaa {
+   entity Meeting <<root>> <<entity>>{
+    }
+
+    class "Title" as MeetingTitle <<(V,#B8255F) value object>> <<unique>> {}
+    class Duration <<(V,#B8255F) value object>> {}
+    class Time <<(V,#B8255F) value object>> {}
+    class MeetingState <<(V,#B8255F) value object>> {}
+    class MeetingParticipant <<entity>> {}
+    class MeetingParticipantState <<(V,#B8255F) value object>> {}
+
+    Schedule "1" --> "1" Meeting : map of
+    MeetingTitle "1" <--* "1" Meeting : has
+    Duration "1" <--* "1" Meeting : has
+    Time "1" <--* "1" Meeting : has
+    Meeting "1" *--> "*" User : has
+    Meeting "1" <-- "1" User : schedule and manages
+    Meeting "1" --> "1" MeetingState : has
+    Meeting "1" --> "1..*" MeetingParticipant : has
+    MeetingParticipant "1" --> "1" MeetingParticipantState : has
+}
+
+package "<<aggregate>> Notification" <<Folder>> #aaccaa{
+    entity Notification <<root>> <<entity>>{}
+    class TypeOfNotification <<(V,#B8255F) value object>> {}
+
+    Notification "1" *--> "1" TypeOfNotification : has
+    Post "1" *-u-> "1" Notification : sends
+    Meeting "1" *--> "1" Notification : sends
+}
+
+package "<<aggregate>> Classe" <<Folder>> #aacbca {
+   entity Classe <<root>> <<entity>>{
+    }
+
+    class "Title" as ClasseTitle <<(V,#B8255F) value object>> <<unique>> {}
+    class Duration <<(V,#B8255F) value object>> {}
+    class ClassTime <<(V,#B8255F) value object>> {}
+    class ClasseParticipant <<entity>> {}
+    class Class_Day <<(V,#B8255F) value object>> {}
+
+    Schedule "1" --> "1" Classe : map of
+    ClasseTitle "1" <--* "1" Classe : has
+    Duration "1" <--* "1" Classe : has
+    ClassTime "1" <--* "1" Classe : has
+    Classe "1" *--> "*" User : has
+    Classe "1" <-- "1" User : schedule and manages
+    Classe "1" *--> "1" Notification : sends
+    Classe "1" --> "*" ClasseParticipant : has
+    Classe "1" --> "1" Class_Day : has
+}
+
+package "<<aggregate>> Exam" <<Folder>> #bbbbaa {
+   entity Exam <<root>> <<entity>>{
+    }
+    class "Title" as ExamTitle <<(V,#B8255F) value object>> <<unique>> {}
+    class Section <<entity>> {}
+    class Header <<entity>> {}
+    class TextualDescription <<(V,#B8255F) value object>> {}
+    class OpenDate <<(V,#B8255F) value object>> {}
+    class CloseDate <<(V,#B8255F) value object>> {}
+    class ExamDescription <<(V,#B8255F) value object>> {}
+    class FeedbackExam <<(V,#B8255F) value object>> {}
+    class Difficulty <<(V,#B8255F) value object>> {}
+
+    Header "1" *--> "1" ExamDescription : has
+    Header "1" *--> "1" FeedbackExam :has
+    Exam "1" *--> "1" OpenDate : has
+    Exam "1" *--> "1" CloseDate : has
+    Exam "1" *--> "1" ExamTitle : has
+
+    Section "1" *--> "1" TextualDescription : has
+    Section "1" *-u-> "1" Difficulty : has grade of
+
+    Exam "1" *--> "1..*" Section : has
+    Exam "1" *--> "1" Header :has
+    Course "1" *--> "1..*" Exam : has
+    User "1" --> "1" Exam : creates
+}
+
+package "<<aggregate>> Question" <<Folder>> #cccccc {
+    entity Question <<root>> <<entity>> {}
+    class Statement <<(V,#B8255F) value object>> {}
+    class Feedback <<(V,#B8255F) value object>> {}
+    class Quotation <<(V,#B8255F) value object>> {}
+    class Answer <<(V,#B8255F) value object>>
+    class Difficulty <<(V,#B8255F) value object>> {}
+    class MatchingQuestion <<entity>> {}
+    class MultipleChoiceQuestion <<entity>> {}
+    class ShortAnswerQuestion <<entity>> {}
+    class NumericalQuestion <<entity>> {}
+    class MissingWordsQuestion <<entity>> {}
+    class TrueFalseQuestion <<entity>> {}
+
+
+    Exam "1" *--> "1..*" Question : has various
+    Question "1" *--> "1" Statement : has
+    Question "1" *--> "1" Answer : has
+    Question "1" *--> "1" Quotation : has
+    Question "1" *--> "1" Feedback : has
+    Question "1" *--> "1" Difficulty : has grade of
+    MatchingQuestion --|> Question
+    MultipleChoiceQuestion --|> Question
+    ShortAnswerQuestion --|> Question
+    NumericalQuestion --|> Question
+    MissingWordsQuestion --|> Question
+    TrueFalseQuestion --|> Question
+
+}
+
+package "<<aggregate>> Grade" <<Folder>> #eeeaaa {
+    entity Grade <<root>> <<entity>> {}
+    class TypeOfGrade <<(V,#B8255F) value object>> {}
+
+    Grade "1" --> "1" TypeOfGrade : defines
+    Exam "1" --> "1" Grade : has
+    Profile "1" -u-> "*" Grade : contains
+
+}
+
+    User "1" -> "1..*" Course : create/open/close
+
+@enduml

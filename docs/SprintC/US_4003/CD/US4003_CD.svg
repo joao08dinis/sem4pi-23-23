@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="599.2px" preserveAspectRatio="none" style="width:419px;height:599px;background:#FFFFFF;" version="1.1" viewBox="0 0 419 599" width="419.2px" zoomAndPan="magnify"><defs/><g><!--MD5=[e4a1c52babb0b319f73698d1dd08a9c7]
+entity MeetingRepository--><g id="elem_MeetingRepository"><path d="M42.8,558.4 C42.8,550.4 98,550.4 98,550.4 C98,550.4 153.2,550.4 153.2,558.4 L153.2,578.1125 C153.2,586.1125 98,586.1125 98,586.1125 C98,586.1125 42.8,586.1125 42.8,578.1125 L42.8,558.4 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.4000000000000001;"/><path d="M42.8,558.4 C42.8,566.4 98,566.4 98,566.4 C98,566.4 153.2,566.4 153.2,558.4 " fill="none" style="stroke:#181818;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="94.4" x="50.8" y="579.7391">MeetingRepository</text></g><!--MD5=[e672cca8e480307870a533cb1a6c3b68]
+class AcceptMeetingRequestUI--><g id="elem_AcceptMeetingRequestUI"><rect codeLine="3" fill="#F1F1F1" height="38.4" id="AcceptMeetingRequestUI" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="152" x="178" y="5.6"/><ellipse cx="190" cy="18.4" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M192.2125,15.1 Q192.3375,14.925 192.4875,14.8375 Q192.6375,14.75 192.8125,14.75 Q193.1125,14.75 193.3,14.9625 Q193.4875,15.1625 193.4875,15.65 L193.4875,16.8125 Q193.4875,17.3 193.3,17.5125 Q193.1125,17.725 192.8125,17.725 Q192.5375,17.725 192.375,17.5625 Q192.2125,17.4125 192.125,17 Q192.0875,16.7125 191.9375,16.5625 Q191.675,16.2625 191.1875,16.0875 Q190.7,15.9125 190.2,15.9125 Q189.5875,15.9125 189.075,16.175 Q188.575,16.4375 188.175,17.0375 Q187.7875,17.6375 187.7875,18.4625 L187.7875,19.3375 Q187.7875,20.325 188.5,20.9875 Q189.2125,21.6375 190.4875,21.6375 Q191.2375,21.6375 191.7625,21.4375 Q192.075,21.3125 192.4125,20.9625 Q192.625,20.75 192.7375,20.6875 Q192.8625,20.625 193.025,20.625 Q193.2875,20.625 193.4875,20.8375 Q193.7,21.0375 193.7,21.3125 Q193.7,21.5875 193.425,21.9125 Q193.025,22.375 192.3875,22.6375 Q191.525,23 190.4875,23 Q189.275,23 188.3125,22.5 Q187.525,22.1 186.975,21.25 Q186.425,20.3875 186.425,19.3625 L186.425,18.4375 Q186.425,17.375 186.9125,16.4625 Q187.4125,15.5375 188.2875,15.05 Q189.1625,14.55 190.15,14.55 Q190.7375,14.55 191.25,14.6875 Q191.775,14.8125 192.2125,15.1 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="126.4" x="201.2" y="22.2828">AcceptMeetingRequestUI</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="178.8" x2="329.2" y1="31.2" y2="31.2"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="178.8" x2="329.2" y1="37.6" y2="37.6"/></g><!--MD5=[362c0ff8f150ada764c915bb2f5b3c65]
+class MeetingController--><g id="elem_MeetingController"><rect codeLine="6" fill="#F1F1F1" height="75.9375" id="MeetingController" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="115.2" x="196.4" y="92"/><ellipse cx="208.4" cy="104.8" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M210.6125,101.5 Q210.7375,101.325 210.8875,101.2375 Q211.0375,101.15 211.2125,101.15 Q211.5125,101.15 211.7,101.3625 Q211.8875,101.5625 211.8875,102.05 L211.8875,103.2125 Q211.8875,103.7 211.7,103.9125 Q211.5125,104.125 211.2125,104.125 Q210.9375,104.125 210.775,103.9625 Q210.6125,103.8125 210.525,103.4 Q210.4875,103.1125 210.3375,102.9625 Q210.075,102.6625 209.5875,102.4875 Q209.1,102.3125 208.6,102.3125 Q207.9875,102.3125 207.475,102.575 Q206.975,102.8375 206.575,103.4375 Q206.1875,104.0375 206.1875,104.8625 L206.1875,105.7375 Q206.1875,106.725 206.9,107.3875 Q207.6125,108.0375 208.8875,108.0375 Q209.6375,108.0375 210.1625,107.8375 Q210.475,107.7125 210.8125,107.3625 Q211.025,107.15 211.1375,107.0875 Q211.2625,107.025 211.425,107.025 Q211.6875,107.025 211.8875,107.2375 Q212.1,107.4375 212.1,107.7125 Q212.1,107.9875 211.825,108.3125 Q211.425,108.775 210.7875,109.0375 Q209.925,109.4 208.8875,109.4 Q207.675,109.4 206.7125,108.9 Q205.925,108.5 205.375,107.65 Q204.825,106.7875 204.825,105.7625 L204.825,104.8375 Q204.825,103.775 205.3125,102.8625 Q205.8125,101.9375 206.6875,101.45 Q207.5625,100.95 208.55,100.95 Q209.1375,100.95 209.65,101.0875 Q210.175,101.2125 210.6125,101.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="89.6" x="219.6" y="108.6828">MeetingController</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="197.2" x2="310.8" y1="117.6" y2="117.6"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="197.2" x2="310.8" y1="124" y2="124"/><ellipse cx="205.2" cy="134.6563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="67.2" x="212.4" y="137.3391">addMeeting()</text><ellipse cx="205.2" cy="147.1688" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="72" x="212.4" y="149.8516">saveMeeting()</text><ellipse cx="205.2" cy="159.6813" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="36" x="212.4" y="162.3641">getAll()</text></g><!--MD5=[7897e1b28f1e662a149555fb615b5a04]
+class MeetingService--><g id="elem_MeetingService"><rect codeLine="12" fill="#F1F1F1" height="50.9125" id="MeetingService" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="103.2" x="46.4" y="451.2"/><ellipse cx="58.4" cy="464" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M60.6125,460.7 Q60.7375,460.525 60.8875,460.4375 Q61.0375,460.35 61.2125,460.35 Q61.5125,460.35 61.7,460.5625 Q61.8875,460.7625 61.8875,461.25 L61.8875,462.4125 Q61.8875,462.9 61.7,463.1125 Q61.5125,463.325 61.2125,463.325 Q60.9375,463.325 60.775,463.1625 Q60.6125,463.0125 60.525,462.6 Q60.4875,462.3125 60.3375,462.1625 Q60.075,461.8625 59.5875,461.6875 Q59.1,461.5125 58.6,461.5125 Q57.9875,461.5125 57.475,461.775 Q56.975,462.0375 56.575,462.6375 Q56.1875,463.2375 56.1875,464.0625 L56.1875,464.9375 Q56.1875,465.925 56.9,466.5875 Q57.6125,467.2375 58.8875,467.2375 Q59.6375,467.2375 60.1625,467.0375 Q60.475,466.9125 60.8125,466.5625 Q61.025,466.35 61.1375,466.2875 Q61.2625,466.225 61.425,466.225 Q61.6875,466.225 61.8875,466.4375 Q62.1,466.6375 62.1,466.9125 Q62.1,467.1875 61.825,467.5125 Q61.425,467.975 60.7875,468.2375 Q59.925,468.6 58.8875,468.6 Q57.675,468.6 56.7125,468.1 Q55.925,467.7 55.375,466.85 Q54.825,465.9875 54.825,464.9625 L54.825,464.0375 Q54.825,462.975 55.3125,462.0625 Q55.8125,461.1375 56.6875,460.65 Q57.5625,460.15 58.55,460.15 Q59.1375,460.15 59.65,460.2875 Q60.175,460.4125 60.6125,460.7 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="77.6" x="69.6" y="467.8828">MeetingService</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="47.2" x2="148.8" y1="476.8" y2="476.8"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="47.2" x2="148.8" y1="483.2" y2="483.2"/><ellipse cx="55.2" cy="493.8563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="81.6" x="62.4" y="496.5391">getAllMeetings()</text></g><!--MD5=[e8c189551b7885b999ad7cefb30fc2a3]
+class PersistenceContext--><g id="elem_PersistenceContext"><rect codeLine="17" fill="#F1F1F1" height="50.9125" id="PersistenceContext" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="123.2" x="36.4" y="222"/><ellipse cx="48.4" cy="234.8" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M50.6125,231.5 Q50.7375,231.325 50.8875,231.2375 Q51.0375,231.15 51.2125,231.15 Q51.5125,231.15 51.7,231.3625 Q51.8875,231.5625 51.8875,232.05 L51.8875,233.2125 Q51.8875,233.7 51.7,233.9125 Q51.5125,234.125 51.2125,234.125 Q50.9375,234.125 50.775,233.9625 Q50.6125,233.8125 50.525,233.4 Q50.4875,233.1125 50.3375,232.9625 Q50.075,232.6625 49.5875,232.4875 Q49.1,232.3125 48.6,232.3125 Q47.9875,232.3125 47.475,232.575 Q46.975,232.8375 46.575,233.4375 Q46.1875,234.0375 46.1875,234.8625 L46.1875,235.7375 Q46.1875,236.725 46.9,237.3875 Q47.6125,238.0375 48.8875,238.0375 Q49.6375,238.0375 50.1625,237.8375 Q50.475,237.7125 50.8125,237.3625 Q51.025,237.15 51.1375,237.0875 Q51.2625,237.025 51.425,237.025 Q51.6875,237.025 51.8875,237.2375 Q52.1,237.4375 52.1,237.7125 Q52.1,237.9875 51.825,238.3125 Q51.425,238.775 50.7875,239.0375 Q49.925,239.4 48.8875,239.4 Q47.675,239.4 46.7125,238.9 Q45.925,238.5 45.375,237.65 Q44.825,236.7875 44.825,235.7625 L44.825,234.8375 Q44.825,233.775 45.3125,232.8625 Q45.8125,231.9375 46.6875,231.45 Q47.5625,230.95 48.55,230.95 Q49.1375,230.95 49.65,231.0875 Q50.175,231.2125 50.6125,231.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="97.6" x="59.6" y="238.6828">PersistenceContext</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="37.2" x2="158.8" y1="247.6" y2="247.6"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="37.2" x2="158.8" y1="254" y2="254"/><ellipse cx="45.2" cy="264.6563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="67.2" x="52.4" y="267.3391">repositories()</text></g><!--MD5=[48590afff58a68e2fcba47824d6f8a11]
+class RepositoryFactory--><g id="elem_RepositoryFactory"><rect codeLine="21" fill="#F1F1F1" height="75.9375" id="RepositoryFactory" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="184.8" x="5.6" y="327.2"/><ellipse cx="48.2" cy="340" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M50.4125,336.7 Q50.5375,336.525 50.6875,336.4375 Q50.8375,336.35 51.0125,336.35 Q51.3125,336.35 51.5,336.5625 Q51.6875,336.7625 51.6875,337.25 L51.6875,338.4125 Q51.6875,338.9 51.5,339.1125 Q51.3125,339.325 51.0125,339.325 Q50.7375,339.325 50.575,339.1625 Q50.4125,339.0125 50.325,338.6 Q50.2875,338.3125 50.1375,338.1625 Q49.875,337.8625 49.3875,337.6875 Q48.9,337.5125 48.4,337.5125 Q47.7875,337.5125 47.275,337.775 Q46.775,338.0375 46.375,338.6375 Q45.9875,339.2375 45.9875,340.0625 L45.9875,340.9375 Q45.9875,341.925 46.7,342.5875 Q47.4125,343.2375 48.6875,343.2375 Q49.4375,343.2375 49.9625,343.0375 Q50.275,342.9125 50.6125,342.5625 Q50.825,342.35 50.9375,342.2875 Q51.0625,342.225 51.225,342.225 Q51.4875,342.225 51.6875,342.4375 Q51.9,342.6375 51.9,342.9125 Q51.9,343.1875 51.625,343.5125 Q51.225,343.975 50.5875,344.2375 Q49.725,344.6 48.6875,344.6 Q47.475,344.6 46.5125,344.1 Q45.725,343.7 45.175,342.85 Q44.625,341.9875 44.625,340.9625 L44.625,340.0375 Q44.625,338.975 45.1125,338.0625 Q45.6125,337.1375 46.4875,336.65 Q47.3625,336.15 48.35,336.15 Q48.9375,336.15 49.45,336.2875 Q49.975,336.4125 50.4125,336.7 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="92.8" x="64.6" y="343.8828">RepositoryFactory</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="6.4" x2="189.6" y1="352.8" y2="352.8"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="6.4" x2="189.6" y1="359.2" y2="359.2"/><ellipse cx="14.4" cy="369.8563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="40" x="21.6" y="372.5391">create()</text><ellipse cx="14.4" cy="382.3688" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="135.2" x="21.6" y="385.0516">newTransactionalContext()</text><ellipse cx="14.4" cy="394.8813" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="164" x="21.6" y="397.5641">create(TransactionalContext ctx)</text></g><!--MD5=[288bffab58163169a8d16c57b889bc0c]
+class TransactionalContext--><g id="elem_TransactionalContext"><rect codeLine="30" fill="#F1F1F1" height="63.425" id="TransactionalContext" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="132.8" x="187.6" y="216"/><ellipse cx="199.6" cy="228.8" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M201.8125,225.5 Q201.9375,225.325 202.0875,225.2375 Q202.2375,225.15 202.4125,225.15 Q202.7125,225.15 202.9,225.3625 Q203.0875,225.5625 203.0875,226.05 L203.0875,227.2125 Q203.0875,227.7 202.9,227.9125 Q202.7125,228.125 202.4125,228.125 Q202.1375,228.125 201.975,227.9625 Q201.8125,227.8125 201.725,227.4 Q201.6875,227.1125 201.5375,226.9625 Q201.275,226.6625 200.7875,226.4875 Q200.3,226.3125 199.8,226.3125 Q199.1875,226.3125 198.675,226.575 Q198.175,226.8375 197.775,227.4375 Q197.3875,228.0375 197.3875,228.8625 L197.3875,229.7375 Q197.3875,230.725 198.1,231.3875 Q198.8125,232.0375 200.0875,232.0375 Q200.8375,232.0375 201.3625,231.8375 Q201.675,231.7125 202.0125,231.3625 Q202.225,231.15 202.3375,231.0875 Q202.4625,231.025 202.625,231.025 Q202.8875,231.025 203.0875,231.2375 Q203.3,231.4375 203.3,231.7125 Q203.3,231.9875 203.025,232.3125 Q202.625,232.775 201.9875,233.0375 Q201.125,233.4 200.0875,233.4 Q198.875,233.4 197.9125,232.9 Q197.125,232.5 196.575,231.65 Q196.025,230.7875 196.025,229.7625 L196.025,228.8375 Q196.025,227.775 196.5125,226.8625 Q197.0125,225.9375 197.8875,225.45 Q198.7625,224.95 199.75,224.95 Q200.3375,224.95 200.85,225.0875 Q201.375,225.2125 201.8125,225.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="107.2" x="210.8" y="232.6828">TransactionalContext</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="188.4" x2="319.6" y1="241.6" y2="241.6"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="188.4" x2="319.6" y1="248" y2="248"/><ellipse cx="196.4" cy="258.6563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="96" x="203.6" y="261.3391">beginTransaction()</text><ellipse cx="196.4" cy="271.1688" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="43.2" x="203.6" y="273.8516">commit()</text></g><!--MD5=[a78031611904abe1e5cbb3fd0b6ea028]
+class Meeting--><g id="elem_Meeting"><rect codeLine="35" fill="#F1F1F1" height="38.4" id="Meeting" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="65.6" x="348.4" y="228.4"/><ellipse cx="360.4" cy="241.2" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M362.6125,237.9 Q362.7375,237.725 362.8875,237.6375 Q363.0375,237.55 363.2125,237.55 Q363.5125,237.55 363.7,237.7625 Q363.8875,237.9625 363.8875,238.45 L363.8875,239.6125 Q363.8875,240.1 363.7,240.3125 Q363.5125,240.525 363.2125,240.525 Q362.9375,240.525 362.775,240.3625 Q362.6125,240.2125 362.525,239.8 Q362.4875,239.5125 362.3375,239.3625 Q362.075,239.0625 361.5875,238.8875 Q361.1,238.7125 360.6,238.7125 Q359.9875,238.7125 359.475,238.975 Q358.975,239.2375 358.575,239.8375 Q358.1875,240.4375 358.1875,241.2625 L358.1875,242.1375 Q358.1875,243.125 358.9,243.7875 Q359.6125,244.4375 360.8875,244.4375 Q361.6375,244.4375 362.1625,244.2375 Q362.475,244.1125 362.8125,243.7625 Q363.025,243.55 363.1375,243.4875 Q363.2625,243.425 363.425,243.425 Q363.6875,243.425 363.8875,243.6375 Q364.1,243.8375 364.1,244.1125 Q364.1,244.3875 363.825,244.7125 Q363.425,245.175 362.7875,245.4375 Q361.925,245.8 360.8875,245.8 Q359.675,245.8 358.7125,245.3 Q357.925,244.9 357.375,244.05 Q356.825,243.1875 356.825,242.1625 L356.825,241.2375 Q356.825,240.175 357.3125,239.2625 Q357.8125,238.3375 358.6875,237.85 Q359.5625,237.35 360.55,237.35 Q361.1375,237.35 361.65,237.4875 Q362.175,237.6125 362.6125,237.9 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="40" x="371.6" y="245.0828">Meeting</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="349.2" x2="413.2" y1="254" y2="254"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="349.2" x2="413.2" y1="260.4" y2="260.4"/></g><!--MD5=[3359abb2d789c65ad48eb6ede586cb32]
+link AcceptMeetingRequestUI to MeetingController--><g id="link_AcceptMeetingRequestUI_MeetingController"><path codeLine="39" d="M254,44.12 C254,56.248 254,72.6 254,87.728 " fill="none" id="AcceptMeetingRequestUI-to-MeetingController" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="254,91.96,257.2,84.76,254,87.96,250.8,84.76,254,91.96" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[d51141fd743f075d3c36671eb384ce08]
+link MeetingController to PersistenceContext--><g id="link_MeetingController_PersistenceContext"><path codeLine="40" d="M203.784,168.144 C181.296,184.864 155.256,204.224 134.648,219.552 " fill="none" id="MeetingController-to-PersistenceContext" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="131.384,221.976,139.071,220.2467,134.5936,219.5888,135.2515,215.1114,131.384,221.976" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[d275164f038e50acc216d5c3ff82e8fd]
+link MeetingController to TransactionalContext--><g id="link_MeetingController_TransactionalContext"><path codeLine="41" d="M254,168.144 C254,182.064 254,197.816 254,211.552 " fill="none" id="MeetingController-to-TransactionalContext" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="254,215.744,257.2,208.544,254,211.744,250.8,208.544,254,215.744" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[433a4255ee5be1172e66dfd5a2cefdd0]
+link MeetingService to MeetingRepository--><g id="link_MeetingService_MeetingRepository"><path codeLine="43" d="M98,502.432 C98,516.08 98,532.856 98,545.96 " fill="none" id="MeetingService-to-MeetingRepository" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="98,550.256,101.2,543.056,98,546.256,94.8,543.056,98,550.256" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[dc2419402dffa815c95b0deb9231d4c5]
+link MeetingController to Meeting--><g id="link_MeetingController_Meeting"><path codeLine="44" d="M294.944,168.144 C315.816,187.176 340.432,209.624 358.016,225.656 " fill="none" id="MeetingController-to-Meeting" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="360.992,228.368,357.8101,221.16,358.0297,225.6802,353.5095,225.8998,360.992,228.368" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[754b775031405e096442b27febffa290]
+link PersistenceContext to RepositoryFactory--><g id="link_PersistenceContext_RepositoryFactory"><path codeLine="46" d="M98,273.288 C98,287.704 98,306.24 98,322.816 " fill="none" id="PersistenceContext-to-RepositoryFactory" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="98,326.984,101.2,319.784,98,322.984,94.8,319.784,98,326.984" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[e5e66dfe6473ea1bd1bdb60fe9b95ef6]
+link RepositoryFactory to MeetingService--><g id="link_RepositoryFactory_MeetingService"><path codeLine="48" d="M98,403.24 C98,417.472 98,433.488 98,446.856 " fill="none" id="RepositoryFactory-to-MeetingService" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="98,450.92,101.2,443.72,98,446.92,94.8,443.72,98,450.92" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[39e7d0950708f5e3e44bf67595ea84ed]
+@startuml
+'https://plantuml.com/class-diagram
+
+class AcceptMeetingRequestUI{
+}
+
+class MeetingController{
++addMeeting()
++saveMeeting()
++getAll()
+}
+
+class MeetingService{
++getAllMeetings()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database MeetingRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+class Meeting{
+}
+
+
+AcceptMeetingRequestUI - -> MeetingController
+MeetingController- ->PersistenceContext
+MeetingController- ->TransactionalContext
+
+MeetingService - -> MeetingRepository
+MeetingController - -> Meeting
+
+PersistenceContext- ->RepositoryFactory
+
+RepositoryFactory- ->MeetingService
+@enduml
+
+@startuml
+
+class AcceptMeetingRequestUI{
+}
+
+class MeetingController{
++addMeeting()
++saveMeeting()
++getAll()
+}
+
+class MeetingService{
++getAllMeetings()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database MeetingRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+class Meeting{
+}
+
+
+AcceptMeetingRequestUI - -> MeetingController
+MeetingController- ->PersistenceContext
+MeetingController- ->TransactionalContext
+
+MeetingService - -> MeetingRepository
+MeetingController - -> Meeting
+
+PersistenceContext- ->RepositoryFactory
+
+RepositoryFactory- ->MeetingService
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 19:12:26 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

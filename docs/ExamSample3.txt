@@ -1,0 +1,99 @@
+Exam: {
+
+ID: 1,
+Title: History.
+
+Section ID: 1, {
+
+Textual Description: Past.
+Difficulty: 3
+Limit of Questions: 5
+Questions:
+
+Question
+ID: 1,
+Statement: Who was the first President of the United States?
+Type of Question: Multiple Choice
+Options: [
+    Option 1: Benjamin Franklin;
+    Option 2: Thomas Jefferson;
+    Option 3: George Washington;
+    Option 4: John Adams;
+]
+Answer: 2
+Quotation: 3
+Difficulty: 2
+
+Question
+ID: 2,
+Statement: Who led the Bolshevik Revolution in Russia in 1917?
+Type of Question: Short Answer
+Answer: Vladimir Lenin.
+Quotation: 3
+Difficulty: 1
+}
+
+Section ID: 2, {
+
+Textual Description: Past.
+Difficulty: 2
+Limit of Questions: 3
+Questions:
+
+Question
+ID: 3,
+Statement: The United States Declaration of Independence was adopted on July 4, 1776, declaring the thirteen ___1___ colonies to be free and independent from ___2___ ___3___.
+Type of Question: Missing Words
+Answer: {
+Answer 1: British
+Answer 2: Great
+Answer 3: Britain
+}
+Quotation: 4
+Difficulty: 2
+
+Question
+ID: 4,
+Statement: When did World War II begin?
+Type of Question: Short Answer
+Answer: September 1, 1939.
+Quotation: 1
+Difficulty: 3
+
+Question
+ID: 5,
+Statement: In what year did the United States land the first humans on the moon?
+Type of Question: Numerical
+Answer: 1969
+Quotation: 2
+Difficulty: 3
+
+Question
+ID: 6,
+Statement: The Industrial Revolution began in the 18th century.
+Type of Question: True or False
+Answer: True
+Quotation: 2
+Difficulty: 3
+
+Question
+ID: 7,
+Statement: Connect the matching table!
+Type of Question: Matching
+Table A: [
+Statement 1: Leonardo da Vinci.
+Statement 2: Marie Curie.
+]
+Table B: [
+Statement 1: Nobel Prize-winning scientist.
+Statement 2: Renaissance artist and inventor.
+]
+Answer: Table A: 1 - Table B: 2 Table A: 2 - Table B: 1
+Quotation: 5
+Difficulty: 3
+}
+
+
+Open Date: 30/05/2023 09:00
+Close Date: 06/10/2023 17:00
+}

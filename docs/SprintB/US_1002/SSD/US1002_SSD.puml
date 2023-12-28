@@ -1,0 +1,19 @@
+@startuml
+
+autonumber
+actor "Manager" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Starts add course process
+activate SYS
+SYS --> MNG : Requests data (title, state, minCapacity, maxCapacity, enrollmentsState)
+deactivate SYS
+MNG -> SYS : Inputs data
+activate SYS
+SYS --> MNG : Confirm creation
+deactivate SYS
+deactivate MNG
+
+
+@enduml

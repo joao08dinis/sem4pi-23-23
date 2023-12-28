@@ -1,0 +1,92 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor manager as "Manager"
+
+participant ":UsersUi" as ui <<presentation>>
+participant ":AddUserAction" as action <<application>>
+participant ":AddUserUi" as addUi <<presentation>>
+participant ":AddUserController" as controller <<application>>
+participant ":ProfileController" as profileController <<application>>
+participant "SystemUser" as user <<domain>>
+participant ":UserManagementService" as userService
+participant ":UserBuilder" as builder <<application>>
+participant ":ProfileService" as service <<application>>
+participant "Profile" as profile <<domain>>
+participant PersistenceContext as persistence
+participant RepositoryFactory as factory
+database ":UserRepository" as userRepository <<repository>>
+database ":ProfileRepository" as repository <<repository>>
+
+
+activate manager
+
+manager -> ui : requests to add new user
+activate ui
+ui -> action : execute()
+activate action
+action -> addUi : doShow()
+deactivate action
+deactivate ui
+
+activate addUi
+addUi --> manager : requests base data(username, password, firstName, lastName, email, role)
+deactivate addUi
+manager -> addUi : inputs requested data
+activate addUi
+addUi -> controller : addUser(username, password, firstName, lastName, email, role)
+activate controller
+controller -> userService : registerNewUser(username, password, firstName, lastName, email, role, creationDate)
+activate userService
+userService -> builder : newUser = with.(username, password, firstName, lastName, email, role, creationDate)
+activate builder
+deactivate builder
+userService -> persistence : repositories()
+activate persistence
+note right of persistence: repository can be either in memory or JPA
+persistence -> factory : users()
+activate factory
+deactivate factory
+deactivate persistence
+userService -> userRepository : save(newUser)
+activate userRepository
+deactivate userRepository
+deactivate userService
+deactivate controller
+
+alt role.toString().equals("STUDENT")
+addUi --> manager : request student data(mecanographicNumber, taxPayerNumber, birthDate)
+end
+alt role.toString().equals("TEACHER")
+addUi --> manager : request teacher data(acronym, taxPayerNumber, birthDate)
+end
+alt role.toString().equals("MANAGER")
+addUi --> manager : request manager data(taxPayerNumber, birthDate)
+end
+deactivate addUi
+manager -> addUi : inputs requested data
+activate addUi
+addUi -> profileController : createProfile(user, id, taxPayerNumber, dateOfBirth, profileInfo)
+activate profileController
+profileController -> profile : profile = new Profile(user, id, taxPayerNumber, dateOfBirth, profileInfo)
+activate profile
+deactivate profile
+profileController -> service : addNewProfile(profile)
+activate service
+service -> persistence : repositories()
+activate persistence
+persistence -> factory : profiles()
+activate factory
+deactivate factory
+deactivate persistence
+service -> repository : save(profile)
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+addUi --> manager : informs operation success
+
+
+@enduml

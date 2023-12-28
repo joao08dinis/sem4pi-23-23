@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class OpenCloseCourseUI{
+}
+
+class OpenCloseCourseController{
++OpenCloseCourse(course, state)
++getAllCourses()
+}
+
+class CourseService{
++getAllCourses()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database CourseRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+class Course{
++setState(state)
+}
+
+OpenCloseCourseUI --> OpenCloseCourseController
+OpenCloseCourseController-->PersistenceContext
+OpenCloseCourseController-->TransactionalContext
+
+CourseService --> CourseRepository
+OpenCloseCourseController --> Course
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->CourseService
+@enduml

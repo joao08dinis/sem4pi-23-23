@@ -1,0 +1,14 @@
+@startuml
+
+autonumber
+actor "User" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Asks to list my grades
+activate SYS
+SYS --> MNG : Shows all grades of the user
+deactivate SYS
+deactivate MNG
+
+@enduml

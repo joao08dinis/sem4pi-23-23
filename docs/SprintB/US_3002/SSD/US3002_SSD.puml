@@ -1,0 +1,17 @@
+@startuml
+
+autonumber
+actor "User" as User
+
+activate User
+
+User -> ":System" : Create a SharedBoard
+activate ":System"
+":System" --> User : Requests data (title,numRows, numColumns,columnTitle, rowTitle, pathname, sharedBoardState)
+deactivate ":System"
+User -> ":System" : inputs data
+activate ":System"
+":System" --> User :Confirms registration
+deactivate User
+
+@enduml

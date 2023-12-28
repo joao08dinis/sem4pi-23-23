@@ -1,0 +1,73 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor user as "User"
+
+participant ":UsersUI" as ui <<presentation>>
+participant ":ListParticipantsInMeetingAction" as action <<application>>
+participant ":ListParticipantsInMeetingUI" as listingUI <<presentation>>
+participant ":MeetingController" as controller <<application>>
+participant ":ProfileController" as controllerProfile <<application>>
+participant ":MeetingService" as service <<application>>
+participant ":ProfileService" as serviceProfile <<application>>
+participant "Meeting" as meeting <<domain>>
+database ":MeetingRepository" as repository <<repository>>
+database ":ProfileRepository" as repositoryProfile <<repository>>
+
+activate user
+
+user -> ui : Asks to list the participants of its meeting
+activate ui
+ui -> action : execute()
+activate action
+action -> listingUI : doShow()
+deactivate action
+deactivate ui
+activate listingUI
+listingUI -> controllerProfile : currentUserProfile = (StudentProfile) getUserProfile(authz.session().get().authenticatedUser()).get()
+activate controllerProfile
+controllerProfile -> serviceProfile : getProfileFromDatabase(user)
+activate serviceProfile
+serviceProfile -> repositoryProfile : findProfileByUser(user)
+activate repositoryProfile
+deactivate repositoryProfile
+deactivate serviceProfile
+deactivate controllerProfile
+listingUI -> controller : getMeetingsByUser(currentUserProfile)
+activate controller
+controller -> controller : meetings = getMeetings()
+activate controller
+deactivate controller
+loop for (Meeting meeting : meetings)
+    alt (meeting.getUserProfile().equals(userProfile) || isParticipant(userProfile, meeting))
+        controller -> controller : meetingsByUser.add(meeting)
+        activate controller
+        deactivate controller
+    end alt
+end loop
+deactivate controller
+listingUI --> user : Shows all meetings available for the user
+deactivate listingUI
+user -> listingUI : Chooses meeting
+activate listingUI
+listingUI -> controller : getParticipants(meeting)
+activate controller
+controller -> meeting : meetingParticipants = getMeetingParticipants()
+activate meeting
+deactivate meeting
+loop for (MeetingParticipant meetingParticipant : meetingParticipants)
+    alt (!meetingParticipant.getMeetingParticipantState().equals(MeetingParticipantState.PENDING))
+        controller -> controller : participants.add(meetingParticipant)
+        activate controller
+        deactivate controller
+    end alt
+end loop
+deactivate controller
+listingUI --> user : Shows all participants
+deactivate listingUI
+deactivate user
+
+
+@enduml

@@ -1,0 +1,4 @@
+http_server\HTTPmessage.class
+http_server\HttpAjaxVotingRequest.class
+http_server\DemoConsumer.class
+http_server\HttpServerAjaxVoting.class

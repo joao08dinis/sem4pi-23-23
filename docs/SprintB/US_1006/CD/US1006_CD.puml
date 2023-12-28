@@ -1,0 +1,78 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ViewCoursesUi{
+}
+
+class StudentRegistrationController{
++addStudentRegistration(StudentRegistration)
++saveStudentRegistration(StudentRegistration)
++getStudentRegistrations()
+
+}
+class TeacherRegistrationController{
++addTeacherRegistration(teacherRegistration)
++saveTeacherRegistration(teacherRegistration)
++getTeacherRegistrations()
+}
+
+class StudentRegistrationService{
++addNewStudentRegistration(studentRegistration)
++getAll()
+}
+
+class TeacherRegistrationService{
++addNewTeacherRegistration(teacherRegistration)
++getAll()}
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++teacherRegistrations()
++studentRegistrations()
++create(TransactionalContext ctx)
+}
+
+database StudentRegistrationRepository{
+}
+
+database TeacherRegistrationRepository{
+}
+
+class StudentRegistration{
+}
+class TeacherRegistration{
+}
+
+
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+ViewCoursesUi --> StudentRegistrationController
+ViewCoursesUi --> TeacherRegistrationController
+StudentRegistrationService-->PersistenceContext
+StudentRegistrationService-->TransactionalContext
+TeacherRegistrationService-->PersistenceContext
+TeacherRegistrationService-->TransactionalContext
+TeacherRegistrationService --> TeacherRegistration
+TeacherRegistrationController-->TeacherRegistrationService
+TeacherRegistrationService --> TeacherRegistrationRepository
+StudentRegistrationController-->StudentRegistrationService
+StudentRegistrationService --> StudentRegistration
+StudentRegistrationService --> StudentRegistrationRepository
+
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->StudentRegistrationRepository
+RepositoryFactory-->TeacherRegistrationRepository
+
+@enduml

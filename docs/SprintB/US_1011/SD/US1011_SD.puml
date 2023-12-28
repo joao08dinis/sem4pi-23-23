@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor teacher as "Teacher"
+
+participant ":UserUI" as ui <<presentation>>
+participant ":ScheduleExtraordinaryAction" as action <<presentation>>
+participant ":ScheduleExtraordinaryUI" as addUi <<presentation>>
+participant ":ClasseController" as controller <<application>>
+participant ":ClasseService" as service <<application>>
+participant "Classe" as classe <<domain>>
+database ":ClasseRepository" as repository <<repository>>
+
+activate teacher
+
+teacher -> ui : schedule an extraordinary class
+activate ui
+ui -> action : execute()
+activate action
+action -> addUi : doShow()
+deactivate action
+deactivate ui
+
+activate addUi
+addUi --> teacher : requests data (title, duration, hour)
+deactivate addUi
+teacher -> addUi : inputs requested data
+activate addUi
+addUi -> controller :addClass(duration,time_hour,time_min,title,teacherProfile)
+activate controller
+controller -> classe :classe = new Classe(duration, classeTime, title, teacherProfile)
+activate classe
+deactivate classe
+controller -> service : addNewClasse(classe)
+activate service
+service -> repository : save(classe)
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+addUi --> teacher : informs operation success
+deactivate teacher
+
+
+@enduml

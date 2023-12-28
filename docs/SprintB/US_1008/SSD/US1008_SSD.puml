@@ -1,0 +1,18 @@
+@startuml
+
+autonumber
+actor "Student" as STD
+actor ":System" as SYS
+
+activate STD
+STD -> SYS : Asks to request enrollment in course
+activate SYS
+SYS --> STD : Shows all courses and requests to choose one
+deactivate SYS
+STD -> SYS : Choose course
+activate SYS
+SYS --> STD : Informs operation success
+deactivate SYS
+deactivate STD
+
+@enduml

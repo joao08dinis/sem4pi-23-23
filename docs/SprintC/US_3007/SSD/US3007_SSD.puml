@@ -1,0 +1,36 @@
+@startuml
+
+autonumber
+actor "User" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Asks to change a post in a shared board
+activate SYS
+SYS --> MNG : Shows all shared boards available for the user
+deactivate SYS
+MNG -> SYS : Choose one
+activate SYS
+SYS --> MNG : Shows all cells occupied with a post
+deactivate SYS
+MNG -> SYS : Choose one
+activate SYS
+SYS --> MNG : Ask the type of post
+deactivate SYS
+MNG -> SYS : Choose one
+alt (TypeOfPost.IMAGE)
+activate SYS
+SYS --> MNG : Ask the path
+deactivate SYS
+MNG -> SYS : Input path
+else (TypeOfPost.Text)
+SYS --> MNG : Ask the content
+deactivate SYS
+MNG -> SYS : Input content
+end alt
+activate SYS
+SYS --> MNG : Inform success of operation
+deactivate SYS
+deactivate MNG
+
+@enduml

@@ -1,0 +1,55 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor user as "User"
+
+participant ":UsersUI" as uui <<presentation>>
+participant ":ListGradesAction" as action <<application>>
+participant ":ListGradesUI" as ui <<presentation>>
+participant ":GradesController" as controller <<application>>
+participant ":ProfileController" as controllerProfile <<application>>
+participant ":GradeService" as service <<application>>
+participant ":ProfileService" as serviceProfile <<application>>
+database ":GradeRepository" as repository <<repository>>
+database ":ProfileRepository" as repositoryProfile <<repository>>
+
+activate user
+
+user -> uui : Asks to list the grades
+activate uui
+uui -> action : execute()
+activate action
+action -> ui : doShow()
+deactivate action
+deactivate uui
+activate ui
+ui -> controllerProfile : currentUserProfile = (StudentProfile) getUserProfile(authz.session().get().authenticatedUser()).get()
+activate controllerProfile
+controllerProfile -> serviceProfile : getProfileFromDatabase(user)
+activate serviceProfile
+serviceProfile -> repositoryProfile : findProfileByUser(user)
+activate repositoryProfile
+deactivate repositoryProfile
+deactivate serviceProfile
+deactivate controllerProfile
+ui -> controller : grades = getAll()
+activate controller
+controller -> service : grades = getAll()
+activate service
+service -> repository : grades = getAll()
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+loop for (Grade grade : grades)
+    alt (grade.getStudent() == currentUserProfile)
+        ui --> user : show grade
+    end alt
+end loop
+deactivate ui
+deactivate user
+
+
+@enduml

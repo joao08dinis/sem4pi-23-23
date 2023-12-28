@@ -1,0 +1,39 @@
+@startuml
+
+autonumber
+actor "Manager" as Manager
+
+activate Manager
+Manager -> ":System" : Starts add user process
+activate ":System"
+":System" --> Manager : Requests data (username, password, firstName, lastName, email, role)
+deactivate ":System"
+Manager -> ":System" : inputs data
+
+activate ":System"
+alt Student
+    ":System" --> Manager : Requests studentData(mecanographicNumber, taxPayerNumber, dateOfBirth)
+    deactivate ":System"
+    Manager -> ":System" : inputs data
+    activate ":System"
+    ":System" --> Manager: Confirms registration
+
+autonumber stop
+else Teacher
+
+    ":System" --> Manager : **4** Requests studentData(acronym, taxPayerNumber, dateOfBirth)
+        Manager -> ":System" : **5** inputs data
+        ":System" --> Manager: **6** Confirms registration
+else Manager
+        ":System" --> Manager : **4** Requests studentData(taxPayerNumber, dateOfBirth)
+        Manager -> ":System" : **5** inputs data
+        ":System" --> Manager: **6** Confirms registration
+end
+deactivate ":System"
+activate ":System"
+":System" --> Manager :
+deactivate Manager
+deactivate ":System"
+
+
+@enduml

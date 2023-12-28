@@ -1,0 +1,129 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class TakeAutomaticFormativeExamUI {
+}
+
+class ExamController {
+    - service: ExamService
+    - questionService: QuestionService
+    - shortAnswerService: ShortAnswerService
+    - matchingService: MatchingService
+    - trueOrFalseService: TrueOrFalseService
+    - multipleChoiceService: MultipleChoiceService
+    - missingWordsService: MissingWordsService
+    - numericalService: NumericalService
+    + getExamsByCourse(course)
+    + saveExam(exam)
+    + getAll()
+    + getAllQuestions()
+    + getShortAnswerQuestions()
+    + getMatchingQuestions()
+    + getTrueOrFalseQuestions()
+    + getMultipleChoiceQuestions()
+    + getMissingWordsQuestions()
+    + getNumericalQuestions()
+}
+
+class ExamService {
+    - repository: ExamRepository
+    + addNewExam(exam)
+    + getAll()
+}
+
+database ExamRepository {
+}
+
+class QuestionService {
+    - repository: QuestionRepository
+    + addNewQuestion(question)
+    + getAll()
+}
+
+database QuestionRepository {
+}
+
+class ShortAnswerService {
+    - repository: ShortAnswerRepository
+    + getAll()
+}
+
+database ShortAnswerRepository {
+}
+
+class MatchingService {
+    - repository: MatchingRepository
+    + getAll()
+}
+
+database MatchingRepository {
+}
+
+class TrueOrFalseService {
+    - repository: TrueOrFalseRepository
+    + getAll()
+}
+
+database TrueOrFalseRepository {
+}
+
+class MultipleChoiceService {
+    - repository: MultipleChoiceRepository
+    + getAll()
+}
+
+database MultipleChoiceRepository {
+}
+
+class MissingWordsService {
+    - repository: MissingWordsRepository
+    + getAll()
+}
+
+database MissingWordsRepository {
+}
+
+class NumericalService {
+    - repository: NumericalRepository
+    + getAll()
+}
+
+database NumericalRepository {
+}
+
+class RepositoryFactory {
+    + create()
+}
+
+class PersistenceContext {
+    + repositories()
+}
+
+class TransactionalContext {
+    + beginTransaction()
+    + commit()
+}
+
+
+TakeAutomaticFormativeExamUI --> ExamController
+ExamController-->PersistenceContext
+ExamController-->TransactionalContext
+ExamController --> RepositoryFactory
+RepositoryFactory --> ExamService
+RepositoryFactory --> QuestionService
+RepositoryFactory --> ShortAnswerService
+RepositoryFactory --> MatchingService
+RepositoryFactory --> TrueOrFalseService
+RepositoryFactory --> MultipleChoiceService
+RepositoryFactory --> MissingWordsService
+RepositoryFactory --> NumericalService
+ExamService --> ExamRepository
+QuestionService --> QuestionRepository
+ShortAnswerService --> ShortAnswerRepository
+MatchingService --> MatchingRepository
+TrueOrFalseService --> TrueOrFalseRepository
+MultipleChoiceService --> MultipleChoiceRepository
+MissingWordsService --> MissingWordsRepository
+NumericalService --> NumericalRepository
+
+@enduml

@@ -1,0 +1,59 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ViewHistorySharedBoardUI{
+}
+
+class SharedBoardController{
++saveSharedBoard(SharedBoard sharedBoard)
++getAll()
++addUpdateToHistory(Date date, Profile profile, Change change, SharedBoard sharedBoard)
++getSharedBoardsByUser(Profile userProfile)
++isParticipant(Profile userProfile, SharedBoard sharedBoard)
+}
+
+class SharedBoardService{
++addNewSharedBoard(SharedBoard sharedboard)
++getAllSharedBoard()
+}
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database SharedBoardRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+class SharedBoard{
+}
+
+class AuditLog{
+}
+
+class Change{
+}
+
+ViewHistorySharedBoardUI --> SharedBoardController
+SharedBoardController-->PersistenceContext
+SharedBoardController-->TransactionalContext
+
+SharedBoardService --> SharedBoardRepository
+SharedBoardController --> SharedBoard
+SharedBoard --> AuditLog
+AuditLog --> Change
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->SharedBoardService
+@enduml

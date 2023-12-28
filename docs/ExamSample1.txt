@@ -1,0 +1,98 @@
+Exam: {
+
+ID: 1,
+Title: English Literature Final Exam.
+
+Section ID: 1, {
+
+Textual Description: Poetry Analysis.
+Difficulty: 3
+Limit of Questions: 5
+Questions:
+
+Question
+ID: 1,
+Statement: What is the theme of the poem 'The Raven'?
+Type of Question: Multiple Choice
+Options: [
+    Option 1: Love;
+    Option 2: Despair;
+    Option 3: Hope;
+    Option 4: Joy;
+]
+Answer: 2
+Quotation: 2
+Difficulty: 2
+
+Question
+ID: 2,
+Statement: Identify the poetic device used in the line 'To be or not to be'.
+Type of Question: Short Answer
+Answer: Metaphor.
+Quotation: 2
+Difficulty: 1
+}
+
+Section ID: 2, {
+
+Textual Description: Prose Analysis.
+Difficulty: 2
+Limit of Questions: 3
+Questions:
+
+Question
+ID: 3,
+Statement: The author of the novel 'Pride and Prejudice' is ___1___ ___2___?
+Type of Question: Missing Words
+Answer: {
+Answer 1: Jane
+Answer 2: Austen
+}
+Quotation: 4
+Difficulty: 2
+
+Question
+ID: 4,
+Statement: State the significance of the green light in 'The Great Gatsby'.
+Type of Question: Short Answer
+Answer: Symbolizes hope and the American Dream.
+Quotation: 3
+Difficulty: 3
+
+Question
+ID: 5,
+Statement: How many leagues does Benfica have?
+Type of Question: Numerical
+Answer: 38
+Quotation: 3
+Difficulty: 3
+
+Question
+ID: 6,
+Statement: Is the sky blue?
+Type of Question: True or False
+Answer: True
+Quotation: 1
+Difficulty: 3
+
+Question
+ID: 7,
+Statement: Connect the matching table!
+Type of Question: Matching
+Table A: [
+Statement 1: Is APROG.
+Statement 2: Is Chocolate.
+]
+Table B: [
+Statement 1: good.
+Statement 2: easy.
+]
+Answer: Table A: 1 - Table B: 2 Table A: 2 - Table B: 1
+Quotation: 5
+Difficulty: 3
+}
+
+
+Open Date: 30/05/2023 09:00
+Close Date: 06/10/2023 17:00
+}

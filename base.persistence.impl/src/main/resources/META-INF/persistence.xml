@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+  <persistence-unit name="eapli.base">
+    <!--
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    -->
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <class>eapli.framework.infrastructure.authz.domain.model.SystemUser</class>
+    <class>eapli.framework.infrastructure.authz.domain.model.Role</class>
+    <class>eapli.framework.infrastructure.authz.domain.model.RoleSet</class>
+    <class>eapli.framework.infrastructure.authz.domain.model.RoleAssignment</class>
+    <class>eapli.base.clientusermanagement.domain.ClientUser</class>
+    <class>eapli.base.clientusermanagement.domain.SignupRequest</class>
+    <class>eapli.base.profile.domain.TeacherProfile</class>
+    <class>eapli.base.profile.domain.StudentProfile</class>
+    <class>eapli.base.profile.domain.AdminProfile</class>
+    <class>eapli.base.profile.domain.Profile</class>
+    <class>eapli.base.course.domain.Course</class>
+    <class>eapli.base.TeacherRegistration.domain.TeacherRegistration</class>
+    <class>eapli.base.StudentRegistration.domain.StudentRegistration</class>
+    <class>eapli.base.exam.domain.Exam</class>
+    <class>eapli.base.exam.domain.Section</class>
+    <class>eapli.base.question.domain.Question</class>
+    <class>eapli.base.question.domain.Answer</class>
+    <class>eapli.base.question.domain.TrueOrFalse</class>
+    <class>eapli.base.question.domain.ShortAnswer</class>
+    <class>eapli.base.question.domain.Numerical</class>
+    <class>eapli.base.question.domain.MultipleChoice</class>
+    <class>eapli.base.question.domain.MissingWords</class>
+    <class>eapli.base.question.domain.Matching</class>
+    <class>eapli.base.exam.domain.OpenDate</class>
+    <class>eapli.base.exam.domain.CloseDate</class>
+    <class>eapli.base.sharedboard.domain.SharedBoard</class>
+    <class>eapli.base.sharedboard.domain.AuditLog</class>
+    <class>eapli.base.sharedboard.domain.Modification</class>
+    <class>eapli.base.sharedboard.domain.View</class>
+    <class>eapli.base.sharedboard.domain.Owner</class>
+    <class>eapli.base.sharedboard.domain.Participant</class>
+    <class>eapli.base.sharedboard.domain.BoardConfig</class>
+    <class>eapli.base.sharedboard.domain.SharedBoardRows</class>
+    <class>eapli.base.sharedboard.domain.SharedBoardColumns</class>
+    <class>eapli.base.sharedboard.domain.Cell</class>
+    <class>eapli.base.sharedboard.domain.Post</class>
+    <class>eapli.base.notification.domain.Notification</class>
+    <class>eapli.base.clientusermanagement.domain.MecanographicNumber</class>
+    <class>eapli.base.exam.domain.Section</class>
+    <class>eapli.base.meeting.domain.Title</class>
+    <class>eapli.base.meeting.domain.Meeting</class>
+    <class>eapli.base.meeting.domain.MeetingTime</class>
+    <class>eapli.base.meeting.domain.Duration</class>
+    <class>eapli.base.meeting.domain.MeetingParticipant</class>
+    <class>eapli.base.meeting.domain.MeetingState</class>
+    <class>eapli.base.classe.domain.Classe</class>
+    <class>eapli.base.classe.domain.Title</class>
+    <class>eapli.base.classe.domain.ClasseTime</class>
+    <class>eapli.base.classe.domain.Class_Day</class>
+    <class>eapli.base.classe.domain.ClasseParticipant</class>
+    <class>eapli.base.grade.domain.Grade</class>
+    <class>eapli.base.sharedboard.utils.BoardLock</class>
+
+    <!--    <class>eapli.framework.infrastructure.authz.domain.model.Username</class>-->
+    <!--    <class>eapli.framework.infrastructure.authz.domain.model.Password</class>-->
+    <!--    <class>eapli.framework.infrastructure.authz.domain.model.Name</class>-->
+    <!--    <class>eapli.framework.general.domain.model.EmailAddress</class>-->
+    <!--    <class>eapli.base.clientusermanagement.domain.ApprovalStatus</class>-->
+
+
+
+    <properties>
+      <!--<property name="javax.persistence.jdbc.url" value="jdbc:h2:./db/bdad@vsgate-s2.dei.isep.ipp.pt"/>-->
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://isepserver1.mysql.database.azure.com:3306/lapr4?useSSL=true&amp;requireSSL=false&amp;serverTimezone=UTC"/>
+      <property name="javax.persistence.jdbc.user" value="systemadmin"/>
+      <property name="javax.persistence.jdbc.password" value="Monstro1234"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <!--<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>-->
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+      <!--<property name="eclipselink.logging.level" value="FINE"/>
+      <property name = "hibernate.show_sql" value = "true" />-->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+
+    </properties>
+  </persistence-unit>
+</persistence>

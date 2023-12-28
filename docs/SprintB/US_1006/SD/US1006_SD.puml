@@ -1,0 +1,57 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor manager as "User"
+
+participant ":CoursesUi" as ui <<presentation>>
+participant ":ViewCoursesAction" as action <<application>>
+participant ":ViewCoursesUi" as viewUi <<presentation>>
+participant ":StudentRegistrationController" as controller <<application>>
+participant ":StudentRegistrationService" as service <<application>>
+participant PersistenceContext as persistence
+participant RepositoryFactory as factory
+database ":StudentRegistrationRepository" as userRepository <<repository>>
+
+
+activate manager
+
+manager -> ui : requests to view user courses
+activate ui
+ui -> action : execute()
+activate action
+action -> viewUi : doShow()
+deactivate action
+activate viewUi
+deactivate ui
+activate viewUi
+viewUi -> controller : studentRegistrationList = getStudentRegistrations()
+activate controller
+controller -> service : getAll()
+activate service
+service -> persistence : repositories()
+activate persistence
+note right of persistence: repository can be either in memory or JPA
+persistence -> factory : studentRegistrations()
+activate factory
+deactivate factory
+deactivate persistence
+service -> userRepository : getAll()
+activate userRepository
+deactivate userRepository
+deactivate service
+deactivate controller
+loop for each studentRegistration in studentRegistrationList
+alt studentRegistration.getStudentProfile().equals(currentUserProfile) && studentRegistration.getStatus() == Status.ACCEPT
+viewUi -> viewUi : availableCourseList.add(studentRegistration.getCourse())
+end
+end
+loop for each Course in availableCourseList
+viewUi --> manager : print course information
+end
+deactivate viewUi
+
+
+
+@enduml

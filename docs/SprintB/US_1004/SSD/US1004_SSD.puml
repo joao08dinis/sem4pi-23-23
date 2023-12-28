@@ -1,0 +1,20 @@
+@startuml
+
+autonumber
+actor "Manager" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Starts change the course state
+activate SYS
+SYS --> MNG : Show all courses and request to choose one
+deactivate SYS
+MNG -> SYS : Choose one
+activate SYS
+SYS --> MNG : Change the state and confirm the action
+deactivate SYS
+deactivate MNG
+
+
+
+@enduml

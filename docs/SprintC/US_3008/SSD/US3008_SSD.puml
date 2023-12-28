@@ -1,0 +1,41 @@
+@startuml
+
+actor User
+activate User
+autonumber
+
+User -> System: User requests to undo a Post-It
+activate System
+
+User <-- System: Check if user has boards to modify
+deactivate System
+
+User -> System: User retrieves their available boards
+activate System
+Note over System: System fetches the user's boards
+
+User <-- System: List of user boards
+deactivate System
+
+User -> System: User selects a board to modify
+activate System
+Note over System: System displays the available boards
+
+User <-- System: Selected board
+deactivate System
+
+User -> System: User selects a cell to modify
+activate System
+Note over System: System displays the available cells
+
+User <-- System: Selected cell
+deactivate System
+
+User -> System: User confirms the undo operation
+activate System
+Note over System: System performs the undo operation
+
+User <-- System: "Post-It was successfully undone!"
+deactivate System
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+
+autonumber
+actor "Manager" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Asks to enroll students using a csv file
+activate SYS
+SYS --> MNG : Asks for the path of the file with the students data
+deactivate SYS
+MNG -> SYS : Writes path file
+activate SYS
+SYS --> MNG : Shows all courses and requests to choose one
+deactivate SYS
+MNG -> SYS : Chooses course
+activate SYS
+SYS --> MNG : Informs operation success
+deactivate SYS
+
+deactivate MNG
+
+@enduml

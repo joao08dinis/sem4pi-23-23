@@ -1,0 +1,77 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor user as "User"
+
+participant ":UsersUI" as ui <<presentation>>
+participant ":AcceptMeetingRequestAction" as action <<application>>
+participant ":AcceptMeetingRequestUI" as meetUI <<presentation>>
+participant ":MeetingController" as controller <<application>>
+participant ":MeetingService" as service <<application>>
+participant Profile as prof <<domain>>
+database ":MeetingRepository" as repository <<repository>>
+
+activate user
+
+user -> ui : Ask to accept or reject a meeting
+activate ui
+ui -> action : execute()
+activate action
+action -> meetUI : doShow()
+deactivate action
+deactivate ui
+activate meetUI
+meetUI -> controller:meetings=getMeetings()
+activate controller
+controller -> service :allMeetings=getAllMeetings()
+activate service
+service -> repository : getAllMeetings()
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+meetUI -> meetUI : getUserBoards()
+meetUI -> meetUI : name = currentUserProfile.getUser().toString()
+meetUI -> controller : boards = getAll();
+activate controller
+controller -> service : boards = getAllSharedBoard()
+activate service
+service -> repository : boards = getAllSharedBoard();
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+loop (for Meeting meeting : meetings)
+    alt (meeting.getMeetingState() == MeetingState.ACCEPTED)
+            meetUI -> meetUI : meetingParticipants = meeting.getMeetingParticipants();
+
+        loop (MeetingParticipant meetingParticipant : meetingParticipants)
+            meetUI->prof: user1=getParticipantProfile()
+            activate prof
+            deactivate prof
+            alt (user1.equals(user)&& meetingParticipant.getMeetingParticipantState() == MeetingParticipantState.PENDING)
+                meetUI --> user:Shows the meeting and ask for data(meetingParticipantState)
+                deactivate meetUI
+                user ->meetUI:Input data
+                activate meetUI
+                meetUI ->controller: saveMeeting(meeting)
+                activate controller
+                controller -> service:addNewMeeting(meeting)
+                activate service
+                service -> repository:save(meeting)
+                activate repository
+                deactivate repository
+                deactivate service
+                deactivate controller
+            end alt
+        end loop
+    end alt
+end loop
+meetUI --> user : informs the success of the operation
+deactivate meetUI
+deactivate user
+
+
+@enduml

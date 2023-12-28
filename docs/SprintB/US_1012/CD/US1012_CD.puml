@@ -1,0 +1,60 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class UpdateClassScheduleUi{
+}
+
+class ClassController{
++addClass(class)
++getClasses()
+
+}
+
+
+class ClassService{
++addNewClass(class)
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++classes()
++create(TransactionalContext ctx)
+}
+
+database ClassRepository{
+}
+
+
+class Class{
+}
+
+
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+UpdateClassScheduleUi --> ClassController
+ClassService-->PersistenceContext
+ClassService-->TransactionalContext
+ClassService-->PersistenceContext
+ClassService-->TransactionalContext
+ClassService --> Class
+ClassController-->ClassService
+ClassService --> ClassRepository
+
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->ClassRepository
+
+@enduml

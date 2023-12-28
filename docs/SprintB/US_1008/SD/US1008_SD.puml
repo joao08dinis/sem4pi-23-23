@@ -1,0 +1,78 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor student as "Student"
+
+participant ":UsersUI" as ui <<presentation>>
+participant ":AddStudentRegistrationAction" as action <<application>>
+participant ":AddStudentRegistrationUI" as registrationUI <<presentation>>
+participant ":StudentRegistrationController" as controller <<application>>
+participant ":StudentRegistrationService" as service <<application>>
+participant ":CourseService" as serviceCourse <<application>>
+participant "StudentRegistration" as studentRegistration <<domain>>
+database ":StudentRegistrationRepository" as repository <<repository>>
+database ":CourseRepository" as repositoryCourse <<repository>>
+
+activate student
+
+student -> ui : Asks to request enrollment in course
+activate ui
+ui -> action : execute()
+activate action
+action -> registrationUI : doShow()
+deactivate action
+deactivate ui
+activate registrationUI
+registrationUI -> controller : getCourses()
+activate controller
+controller -> serviceCourse : getCourses()
+activate serviceCourse
+serviceCourse -> repositoryCourse : getAllCourses()
+activate repositoryCourse
+deactivate repositoryCourse
+deactivate serviceCourse
+deactivate controller
+registrationUI -> student : Shows all courses and request to choose one
+deactivate registrationUI
+student -> registrationUI : Chooses course
+activate registrationUI
+registrationUI -> registrationUI : course = get(course)
+activate registrationUI
+deactivate registrationUI
+registrationUI -> registrationUI : status = Status.PENDING
+activate registrationUI
+deactivate registrationUI
+registrationUI -> controller : List<StudentRegistration> studentRegistrationsByCourse = controller.getStudentRegistrationsByCourse(course)
+activate controller
+deactivate controller
+alt course.getState().equals(State.OPEN)
+    alt (course.getEnrollmentsState().equals(EnrollmentsState.OPEN))
+        alt (course.getCapacity().getMaxCapacity() != studentRegistrationsByCourse.size())
+            registrationUI -> controller : newStudentRegistration = controller.addStudentRegistration(currentUserProfile, status, course)
+            activate controller
+            controller -> studentRegistration : StudentRegistration.from(null,studentProfile,status, course)
+            activate studentRegistration
+            deactivate studentRegistration
+            deactivate controller
+            registrationUI -> controller : controller.saveStudentRegistration(newStudentRegistration)
+            activate controller
+            controller -> service : service.addNewStudentRegistration(studentRegistration)
+            activate service
+            service -> repository : repository.save(studentRegistration)
+            activate repository
+            deactivate repository
+            deactivate service
+            deactivate controller
+
+        end
+    end
+end
+
+registrationUI --> student : informs operation success
+deactivate registrationUI
+deactivate student
+
+
+@enduml

@@ -1,0 +1,6 @@
+Username,Password,First Name,Last Name,Email,MechanographicNumber,TaxPayerNumber,Day of Birth,Month of Birth,Year of Birth
+johndoe123,Password123,John,Doe,johndoe@example.com,12345678,123456789,10,1,2000
+janedoe456,P@ssw0rd1231,Jane,Doe,janedoe@example.com,98765432,987654321,15,2,2001
+mikesmith789,Secure123,Mike,Smith,mikesmith@example.com,87654321,876543210,5,3,1999
+sarahjones567,Pass123,Sarah,Jones,sarahjones@example.com,56789012,567890123,20,4,2002
+davidbrown321,Password456,David,Brown,davidbrown@example.com,34567890,345678901,25,5,1998

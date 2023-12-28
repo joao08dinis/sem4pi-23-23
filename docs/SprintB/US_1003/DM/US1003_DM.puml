@@ -1,0 +1,77 @@
+@startuml
+
+hide methods
+
+skinparam packageStyle rectangle
+skinparam linetype ortho
+
+top to bottom direction
+
+title Domain Driven Design
+
+package "<<aggregate>> User" <<Folder>> #ffb380 {
+
+   entity User <<root>> <<entity>>{
+        String fullName
+        String shortName
+    }
+
+    class Role <<(V,#B8255F) value object>> {}
+    class Password <<(V,#B8255F) value object>> {}
+    class Email <<Id>> <<unique>> <<(V,#B8255F) value object>>  {}
+    entity Student <<entity>>{}
+    entity Teacher <<entity>>{}
+    entity Manager <<entity>>{}
+
+    User "1" *--> "1" Email : has
+    User "1" *--> "1" Password : has
+    User "1" *--> "1" Role : has
+    Manager "1" --> "*" User : creates
+    Manager --|> User
+    Student --|> User
+    Teacher --|> User
+}
+
+
+package "<<aggregate>> Student Registration" <<Folder>> #ddaaaa {
+    entity StudentRegistration <<root>> <<entity>>{
+        }
+     class "Status" as RegiStatusStudent <<(V,#B8255F) value object>> <<unique>> {}
+
+    StudentRegistration "1" <-- "1" User : enrolls
+    User "1" --> "1" StudentRegistration : manages
+    StudentRegistration "1" *--> "1" RegiStatusStudent : has
+
+}
+
+package "<<aggregate>> Teacher Registration" <<Folder>> #ddaaaa {
+    entity TeacherRegistration <<root>> <<entity>>{
+        }
+     enum TeacherRole <<enum>> {
+     ASSISTANT
+     REGENT
+     }
+
+    User "1" --> "*" TeacherRegistration : manages
+    TeacherRegistration "1" --> "1" TeacherRole : has
+
+}
+package "<<aggregate>> Course" <<Folder>> #aabbbb {
+   entity Course <<root>> <<entity>>{
+    }
+    class "Title" as CourseTitle <<(V,#B8255F) value object>> <<unique>> {}
+    class Id <<(V,#B8255F) value object>> <<Id>> {}
+    class CourseState as "State" <<(V,#B8255F) value object>> {}
+    class Capacity <<(V,#B8255F) value object>> {}
+    class EnrollementsState <<(V,#B8255F) value object>> {}
+
+    CourseTitle "1" <--* "1" Course : has
+    Id "1" <--* "1" Course : has
+    CourseState "1" <--* "1" Course : has
+    Capacity "1" <--* "1" Course : has
+    EnrollementsState "1" <--* "1" Course : has
+    StudentRegistration "1" --> "1" Course : has
+    TeacherRegistration "1" -l-> "1" Course : has
+}
+
+@enduml

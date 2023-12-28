@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class AddCourseUI{
+}
+
+class AddCourseController{
++addCourse(title, state, minCapacity, maxCapacity, enrollmentsState1)
+}
+
+class CourseService{
++addNewCourse(course)
++getAllCourses()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database CourseRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+AddCourseUI --> AddCourseController
+AddCourseController-->PersistenceContext
+AddCourseController-->TransactionalContext
+
+CourseService --> CourseRepository
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->CourseService
+@enduml

@@ -1,0 +1,88 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor manager as "User"
+
+participant ":SharedBoardUi" as ui <<presentation>>
+participant ":ArchiveBoardAction" as action <<application>>
+participant ":ArchiveBoardUi" as viewUi <<presentation>>
+participant ":SharedBoardController" as controller <<application>>
+participant ":ProfileController" as profController <<application>>
+participant ":TeacherRegistrationController" as registController <<application>>
+participant ":SharedBoardService" as service <<application>>
+participant ":ProfileService" as profService <<application>>
+participant ":TeacherRegistrationService" as registService <<application>>
+participant ":StudentProfile" as profile <<domain>>
+participant "SharedBoard" as board <<domain>>
+participant "Grade" as grade <<domain>>
+participant PersistenceContext as persistence
+participant RepositoryFactory as factory
+database ":ProfileRepository" as profRepo <<repository>>
+database ":SharedBoardRepository" as repository <<repository>>
+database ":TeacherRegistrationRepository" as userRepository <<repository>>
+
+
+
+activate manager
+
+manager -> ui : requests to archive a board
+activate ui
+ui -> action : execute()
+activate action
+action -> viewUi : doShow()
+deactivate action
+activate viewUi
+deactivate ui
+activate viewUi
+
+viewUi -> controller : sharedBoardList = getAll()
+activate controller
+controller -> service : getAll()
+activate service
+service -> persistence : repositories()
+activate persistence
+note right of persistence: repository can be either in memory or JPA
+persistence -> factory : sharedBoards()
+activate factory
+deactivate factory
+deactivate persistence
+service -> repository : sharedBoards = getAll()
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+loop for each sharedBoard in sharedBoards
+alt board.getOwner().getOwnerProfile().equals(currentUserProfile) && board.getSharedBoardState().equals(SharedBoardState.OPEN
+viewUi -> viewUi : userBoardList.add(board)
+end
+end
+loop for each board in userBoardList
+viewUi --> manager : print board information
+end
+viewUi --> manager : requests to choose a board to archive
+deactivate viewUi
+manager -> viewUi : inputs board id
+activate viewUi
+viewUi -> viewUi : state=SharedBoardState.ARCHIVED
+viewUi -> board : choosenBoard.setSharedBoardState(state)
+activate board
+deactivate  board
+viewUi -> controller : saveSharedBoard(choosenBoard)
+activate controller
+controller -> service : saveSharedBoard(choosenBoard)
+activate service
+service -> repository : save(choosenBoard)
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+viewUi --> manager : informs operation success
+deactivate viewUi
+
+
+
+
+
+@enduml

@@ -1,0 +1,161 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor manager as "Teacher"
+
+participant ":ClassesUi" as ui <<presentation>>
+participant ":UpdateClassScheduleAction" as action <<application>>
+participant ":UpdateClassScheduleUi" as updateUi <<presentation>>
+participant ":ClassController" as controller <<application>>
+participant ":ClassService" as service <<application>>
+participant "Class" as classe <<domain>>
+participant PersistenceContext as persistence
+participant RepositoryFactory as factory
+database ":ClassRepository" as repository <<repository>>
+
+
+activate manager
+
+manager -> ui : requests to update class schedule
+activate ui
+ui -> action : execute()
+activate action
+action -> updateUi : doShow()
+deactivate action
+activate updateUi
+deactivate ui
+activate updateUi
+updateUi -> controller : classList = getClasses()
+activate controller
+controller -> service : getAll()
+activate service
+service -> persistence : repositories()
+activate persistence
+note right of persistence: repository can be either in memory or JPA
+persistence -> factory : classes()
+activate factory
+deactivate factory
+deactivate persistence
+service -> repository : getAll()
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+loop for each class in classList
+alt classe.getTeacherProfile().equals(currentUserProfile)
+updateUi -> updateUi : availableClassList.add(class)
+end
+end
+loop for each class in availableClassList
+updateUi --> manager : print class information
+end
+updateUi --> manager : requests to choose a class to be updated
+deactivate updateUi
+manager -> updateUi : inputs class number
+activate updateUi
+updateUi --> manager : requests to choose new class time
+deactivate updateUi
+manager -> updateUi : inputs new class time
+activate updateUi
+updateUi -> classe : setClassTime(newTime)
+activate classe
+deactivate classe
+updateUi -> controller : saveClass(selectedClass)
+activate controller
+controller -> service : addNewClass(selectedClass)
+activate service
+service -> repository : save(selectedClass)
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+updateUi --> manager : informs operation success
+deactivate updateUi
+
+
+
+
+
+@enduml
+
+@startuml
+
+autonumber
+
+actor manager as "Teacher"
+
+participant ":ClassesUi" as ui <<presentation>>
+participant ":UpdateClassScheduleAction" as action <<application>>
+participant ":UpdateClassScheduleUi" as updateUi <<presentation>>
+participant ":ClassController" as controller <<application>>
+participant ":ClassService" as service <<application>>
+participant "Class" as classe <<domain>>
+participant PersistenceContext as persistence
+participant RepositoryFactory as factory
+database ":ClassRepository" as repository <<repository>>
+
+
+activate manager
+
+manager -> ui : requests to view user courses
+activate ui
+ui -> action : execute()
+activate action
+action -> updateUi : doShow()
+deactivate action
+activate updateUi
+deactivate ui
+activate updateUi
+updateUi -> controller : classList = getClasses()
+activate controller
+controller -> service : getAll()
+activate service
+service -> persistence : repositories()
+activate persistence
+note right of persistence: repository can be either in memory or JPA
+persistence -> factory : classes()
+activate factory
+deactivate factory
+deactivate persistence
+service -> repository : getAll()
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+loop for each class in classList
+alt classe.getTeacherProfile().equals(currentUserProfile)
+updateUi -> updateUi : availableClassList.add(class)
+end
+end
+loop for each class in availableClassList
+updateUi --> manager : print class information
+end
+updateUi --> manager : requests to choose a class to be updated
+deactivate updateUi
+manager -> updateUi : inputs class number
+activate updateUi
+updateUi --> manager : requests to choose new class time
+deactivate updateUi
+manager -> updateUi : inputs new class time
+activate updateUi
+updateUi -> classe : setClassTime(newTime)
+activate classe
+deactivate classe
+updateUi -> controller : saveClass(selectedClass)
+activate controller
+controller -> service : addNewClass(selectedClass)
+activate service
+service -> repository : save(selectedClass)
+activate repository
+deactivate repository
+deactivate service
+deactivate controller
+updateUi --> manager : informs operation success
+deactivate updateUi
+
+
+
+
+@enduml

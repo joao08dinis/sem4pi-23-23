@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="546px" preserveAspectRatio="none" style="width:446px;height:545px;background:#FFFFFF;" version="1.1" viewBox="0 0 446 545" width="446.6px" zoomAndPan="magnify"><defs/><g><!--MD5=[18518ca873b43c9c3f5e834526d412e8]
+entity ProfileRepository--><g id="elem_ProfileRepository"><path d="M85.4,510.3 C85.4,503.3 130.2,503.3 130.2,503.3 C130.2,503.3 175,503.3 175,510.3 L175,527.5484 C175,534.5484 130.2,534.5484 130.2,534.5484 C130.2,534.5484 85.4,534.5484 85.4,527.5484 L85.4,510.3 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.3499999999999999;"/><path d="M85.4,510.3 C85.4,517.3 130.2,517.3 130.2,517.3 C130.2,517.3 175,517.3 175,510.3 " fill="none" style="stroke:#181818;stroke-width:0.3499999999999999;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="75.6" x="92.4" y="528.9717">ProfileRepository</text></g><!--MD5=[104d529babd685aafc94ed09d49648e3]
+entity SharedBoardRepository--><g id="elem_SharedBoardRepository"><path d="M250.6,510.3 C250.6,503.3 310.8,503.3 310.8,503.3 C310.8,503.3 371,503.3 371,510.3 L371,527.5484 C371,534.5484 310.8,534.5484 310.8,534.5484 C310.8,534.5484 250.6,534.5484 250.6,527.5484 L250.6,510.3 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.3499999999999999;"/><path d="M250.6,510.3 C250.6,517.3 310.8,517.3 310.8,517.3 C310.8,517.3 371,517.3 371,510.3 " fill="none" style="stroke:#181818;stroke-width:0.3499999999999999;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="106.4" x="257.6" y="528.9717">SharedBoardRepository</text></g><!--MD5=[32cb3b20cb274b8d9e4337d2bbe5864a]
+class ArchiveBoardUi--><g id="elem_ArchiveBoardUi"><rect codeLine="3" fill="#F1F1F1" height="33.6" id="ArchiveBoardUi" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="90.3" x="108.85" y="4.9"/><ellipse cx="119.35" cy="16.1" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M121.2859,13.2125 Q121.3953,13.0594 121.5266,12.9828 Q121.6578,12.9062 121.8109,12.9062 Q122.0734,12.9062 122.2375,13.0922 Q122.4016,13.2672 122.4016,13.6937 L122.4016,14.7109 Q122.4016,15.1375 122.2375,15.3234 Q122.0734,15.5094 121.8109,15.5094 Q121.5703,15.5094 121.4281,15.3672 Q121.2859,15.2359 121.2094,14.875 Q121.1766,14.6234 121.0453,14.4922 Q120.8156,14.2297 120.3891,14.0766 Q119.9625,13.9234 119.525,13.9234 Q118.9891,13.9234 118.5406,14.1531 Q118.1031,14.3828 117.7531,14.9078 Q117.4141,15.4328 117.4141,16.1547 L117.4141,16.9203 Q117.4141,17.7844 118.0375,18.3641 Q118.6609,18.9328 119.7766,18.9328 Q120.4328,18.9328 120.8922,18.7578 Q121.1656,18.6484 121.4609,18.3422 Q121.6469,18.1562 121.7453,18.1016 Q121.8547,18.0469 121.9969,18.0469 Q122.2266,18.0469 122.4016,18.2328 Q122.5875,18.4078 122.5875,18.6484 Q122.5875,18.8891 122.3469,19.1734 Q121.9969,19.5781 121.4391,19.8078 Q120.6844,20.125 119.7766,20.125 Q118.7156,20.125 117.8734,19.6875 Q117.1844,19.3375 116.7031,18.5937 Q116.2219,17.8391 116.2219,16.9422 L116.2219,16.1328 Q116.2219,15.2031 116.6484,14.4047 Q117.0859,13.5953 117.8516,13.1687 Q118.6172,12.7312 119.4812,12.7312 Q119.9953,12.7312 120.4437,12.8516 Q120.9031,12.9609 121.2859,13.2125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="67.9" x="129.15" y="19.4975">ArchiveBoardUi</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="109.55" x2="198.45" y1="27.3" y2="27.3"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="109.55" x2="198.45" y1="32.9" y2="32.9"/></g><!--MD5=[15c059d44716eddb1c36cc3cfe9e7e81]
+class ProfileController--><g id="elem_ProfileController"><rect codeLine="6" fill="#F1F1F1" height="44.5484" id="ProfileController" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="106.4" x="30.8" y="80.5"/><ellipse cx="46.97" cy="91.7" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M48.9059,88.8125 Q49.0153,88.6594 49.1466,88.5828 Q49.2778,88.5062 49.4309,88.5062 Q49.6934,88.5062 49.8575,88.6922 Q50.0216,88.8672 50.0216,89.2937 L50.0216,90.3109 Q50.0216,90.7375 49.8575,90.9234 Q49.6934,91.1094 49.4309,91.1094 Q49.1903,91.1094 49.0481,90.9672 Q48.9059,90.8359 48.8294,90.475 Q48.7966,90.2234 48.6653,90.0922 Q48.4356,89.8297 48.0091,89.6766 Q47.5825,89.5234 47.145,89.5234 Q46.6091,89.5234 46.1606,89.7531 Q45.7231,89.9828 45.3731,90.5078 Q45.0341,91.0328 45.0341,91.7547 L45.0341,92.5203 Q45.0341,93.3844 45.6575,93.9641 Q46.2809,94.5328 47.3966,94.5328 Q48.0528,94.5328 48.5122,94.3578 Q48.7856,94.2484 49.0809,93.9422 Q49.2669,93.7562 49.3653,93.7016 Q49.4747,93.6469 49.6169,93.6469 Q49.8466,93.6469 50.0216,93.8328 Q50.2075,94.0078 50.2075,94.2484 Q50.2075,94.4891 49.9669,94.7734 Q49.6169,95.1781 49.0591,95.4078 Q48.3044,95.725 47.3966,95.725 Q46.3356,95.725 45.4934,95.2875 Q44.8044,94.9375 44.3231,94.1937 Q43.8419,93.4391 43.8419,92.5422 L43.8419,91.7328 Q43.8419,90.8031 44.2684,90.0047 Q44.7059,89.1953 45.4716,88.7687 Q46.2372,88.3312 47.1012,88.3312 Q47.6153,88.3312 48.0637,88.4516 Q48.5231,88.5609 48.9059,88.8125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="71.4" x="58.03" y="95.0975">ProfileController</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="31.5" x2="136.5" y1="102.9" y2="102.9"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="31.5" x2="136.5" y1="108.5" y2="108.5"/><ellipse cx="38.5" cy="117.8242" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="88.2" x="44.8" y="120.1717">getStudentProfiles()</text></g><!--MD5=[e6bf157d58e00a609e1668e5c7d416e1]
+class SharedBoardController--><g id="elem_SharedBoardController"><rect codeLine="10" fill="#F1F1F1" height="33.6" id="SharedBoardController" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="124.6" x="161.7" y="86.1"/><ellipse cx="172.2" cy="97.3" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M174.1359,94.4125 Q174.2453,94.2594 174.3766,94.1828 Q174.5078,94.1062 174.6609,94.1062 Q174.9234,94.1062 175.0875,94.2922 Q175.2516,94.4672 175.2516,94.8937 L175.2516,95.9109 Q175.2516,96.3375 175.0875,96.5234 Q174.9234,96.7094 174.6609,96.7094 Q174.4203,96.7094 174.2781,96.5672 Q174.1359,96.4359 174.0594,96.075 Q174.0266,95.8234 173.8953,95.6922 Q173.6656,95.4297 173.2391,95.2766 Q172.8125,95.1234 172.375,95.1234 Q171.8391,95.1234 171.3906,95.3531 Q170.9531,95.5828 170.6031,96.1078 Q170.2641,96.6328 170.2641,97.3547 L170.2641,98.1203 Q170.2641,98.9844 170.8875,99.5641 Q171.5109,100.1328 172.6266,100.1328 Q173.2828,100.1328 173.7422,99.9578 Q174.0156,99.8484 174.3109,99.5422 Q174.4969,99.3562 174.5953,99.3016 Q174.7047,99.2469 174.8469,99.2469 Q175.0766,99.2469 175.2516,99.4328 Q175.4375,99.6078 175.4375,99.8484 Q175.4375,100.0891 175.1969,100.3734 Q174.8469,100.7781 174.2891,101.0078 Q173.5344,101.325 172.6266,101.325 Q171.5656,101.325 170.7234,100.8875 Q170.0344,100.5375 169.5531,99.7937 Q169.0719,99.0391 169.0719,98.1422 L169.0719,97.3328 Q169.0719,96.4031 169.4984,95.6047 Q169.9359,94.7953 170.7016,94.3687 Q171.4672,93.9312 172.3312,93.9312 Q172.8453,93.9312 173.2937,94.0516 Q173.7531,94.1609 174.1359,94.4125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="102.2" x="182" y="100.6975">SharedBoardController</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="162.4" x2="285.6" y1="108.5" y2="108.5"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="162.4" x2="285.6" y1="114.1" y2="114.1"/></g><!--MD5=[631a408429f696e3d99d668a29e41713]
+class SharedBoardService--><g id="elem_SharedBoardService"><rect codeLine="14" fill="#F1F1F1" height="66.4453" id="SharedBoardService" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="114.1" x="166.95" y="167.3"/><ellipse cx="177.45" cy="178.5" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M179.3859,175.6125 Q179.4953,175.4594 179.6266,175.3828 Q179.7578,175.3062 179.9109,175.3062 Q180.1734,175.3062 180.3375,175.4922 Q180.5016,175.6672 180.5016,176.0937 L180.5016,177.1109 Q180.5016,177.5375 180.3375,177.7234 Q180.1734,177.9094 179.9109,177.9094 Q179.6703,177.9094 179.5281,177.7672 Q179.3859,177.6359 179.3094,177.275 Q179.2766,177.0234 179.1453,176.8922 Q178.9156,176.6297 178.4891,176.4766 Q178.0625,176.3234 177.625,176.3234 Q177.0891,176.3234 176.6406,176.5531 Q176.2031,176.7828 175.8531,177.3078 Q175.5141,177.8328 175.5141,178.5547 L175.5141,179.3203 Q175.5141,180.1844 176.1375,180.7641 Q176.7609,181.3328 177.8766,181.3328 Q178.5328,181.3328 178.9922,181.1578 Q179.2656,181.0484 179.5609,180.7422 Q179.7469,180.5562 179.8453,180.5016 Q179.9547,180.4469 180.0969,180.4469 Q180.3266,180.4469 180.5016,180.6328 Q180.6875,180.8078 180.6875,181.0484 Q180.6875,181.2891 180.4469,181.5734 Q180.0969,181.9781 179.5391,182.2078 Q178.7844,182.525 177.8766,182.525 Q176.8156,182.525 175.9734,182.0875 Q175.2844,181.7375 174.8031,180.9937 Q174.3219,180.2391 174.3219,179.3422 L174.3219,178.5328 Q174.3219,177.6031 174.7484,176.8047 Q175.1859,175.9953 175.9516,175.5687 Q176.7172,175.1312 177.5812,175.1312 Q178.0953,175.1312 178.5437,175.2516 Q179.0031,175.3609 179.3859,175.6125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="91.7" x="187.25" y="181.8975">SharedBoardService</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="167.65" x2="280.35" y1="189.7" y2="189.7"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="89.6" x="171.15" y="201.3717">class ProfileService{</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="167.65" x2="280.35" y1="206.2484" y2="206.2484"/><ellipse cx="174.65" cy="215.5727" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="35" x="180.95" y="217.9201">getAll()}</text><ellipse cx="174.65" cy="226.5211" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="31.5" x="180.95" y="228.8686">getAll()</text></g><!--MD5=[e8c189551b7885b999ad7cefb30fc2a3]
+class PersistenceContext--><g id="elem_PersistenceContext"><rect codeLine="23" fill="#F1F1F1" height="44.5484" id="PersistenceContext" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="107.8" x="166.6" y="281.05"/><ellipse cx="177.1" cy="292.25" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M179.0359,289.3625 Q179.1453,289.2094 179.2766,289.1328 Q179.4078,289.0562 179.5609,289.0562 Q179.8234,289.0562 179.9875,289.2422 Q180.1516,289.4172 180.1516,289.8437 L180.1516,290.8609 Q180.1516,291.2875 179.9875,291.4734 Q179.8234,291.6594 179.5609,291.6594 Q179.3203,291.6594 179.1781,291.5172 Q179.0359,291.3859 178.9594,291.025 Q178.9266,290.7734 178.7953,290.6422 Q178.5656,290.3797 178.1391,290.2266 Q177.7125,290.0734 177.275,290.0734 Q176.7391,290.0734 176.2906,290.3031 Q175.8531,290.5328 175.5031,291.0578 Q175.1641,291.5828 175.1641,292.3047 L175.1641,293.0703 Q175.1641,293.9344 175.7875,294.5141 Q176.4109,295.0828 177.5266,295.0828 Q178.1828,295.0828 178.6422,294.9078 Q178.9156,294.7984 179.2109,294.4922 Q179.3969,294.3062 179.4953,294.2516 Q179.6047,294.1969 179.7469,294.1969 Q179.9766,294.1969 180.1516,294.3828 Q180.3375,294.5578 180.3375,294.7984 Q180.3375,295.0391 180.0969,295.3234 Q179.7469,295.7281 179.1891,295.9578 Q178.4344,296.275 177.5266,296.275 Q176.4656,296.275 175.6234,295.8375 Q174.9344,295.4875 174.4531,294.7437 Q173.9719,293.9891 173.9719,293.0922 L173.9719,292.2828 Q173.9719,291.3531 174.3984,290.5547 Q174.8359,289.7453 175.6016,289.3187 Q176.3672,288.8812 177.2312,288.8812 Q177.7453,288.8812 178.1937,289.0016 Q178.6531,289.1109 179.0359,289.3625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="85.4" x="186.9" y="295.6475">PersistenceContext</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="167.3" x2="273.7" y1="303.45" y2="303.45"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="167.3" x2="273.7" y1="309.05" y2="309.05"/><ellipse cx="174.3" cy="318.3742" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="58.8" x="180.6" y="320.7217">repositories()</text></g><!--MD5=[48590afff58a68e2fcba47824d6f8a11]
+class RepositoryFactory--><g id="elem_RepositoryFactory"><rect codeLine="27" fill="#F1F1F1" height="88.3422" id="RepositoryFactory" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="161.7" x="139.65" y="373.1"/><ellipse cx="176.925" cy="384.3" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M178.8609,381.4125 Q178.9703,381.2594 179.1016,381.1828 Q179.2328,381.1062 179.3859,381.1062 Q179.6484,381.1062 179.8125,381.2922 Q179.9766,381.4672 179.9766,381.8937 L179.9766,382.9109 Q179.9766,383.3375 179.8125,383.5234 Q179.6484,383.7094 179.3859,383.7094 Q179.1453,383.7094 179.0031,383.5672 Q178.8609,383.4359 178.7844,383.075 Q178.7516,382.8234 178.6203,382.6922 Q178.3906,382.4297 177.9641,382.2766 Q177.5375,382.1234 177.1,382.1234 Q176.5641,382.1234 176.1156,382.3531 Q175.6781,382.5828 175.3281,383.1078 Q174.9891,383.6328 174.9891,384.3547 L174.9891,385.1203 Q174.9891,385.9844 175.6125,386.5641 Q176.2359,387.1328 177.3516,387.1328 Q178.0078,387.1328 178.4672,386.9578 Q178.7406,386.8484 179.0359,386.5422 Q179.2219,386.3562 179.3203,386.3016 Q179.4297,386.2469 179.5719,386.2469 Q179.8016,386.2469 179.9766,386.4328 Q180.1625,386.6078 180.1625,386.8484 Q180.1625,387.0891 179.9219,387.3734 Q179.5719,387.7781 179.0141,388.0078 Q178.2594,388.325 177.3516,388.325 Q176.2906,388.325 175.4484,387.8875 Q174.7594,387.5375 174.2781,386.7937 Q173.7969,386.0391 173.7969,385.1422 L173.7969,384.3328 Q173.7969,383.4031 174.2234,382.6047 Q174.6609,381.7953 175.4266,381.3687 Q176.1922,380.9312 177.0562,380.9312 Q177.5703,380.9312 178.0187,381.0516 Q178.4781,381.1609 178.8609,381.4125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="81.2" x="191.275" y="387.6975">RepositoryFactory</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="140.35" x2="300.65" y1="395.5" y2="395.5"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="140.35" x2="300.65" y1="401.1" y2="401.1"/><ellipse cx="147.35" cy="410.4242" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="35" x="153.65" y="412.7717">create()</text><ellipse cx="147.35" cy="421.3727" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="118.3" x="153.65" y="423.7201">newTransactionalContext()</text><ellipse cx="147.35" cy="432.3211" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="35" x="153.65" y="434.6686">exams()</text><ellipse cx="147.35" cy="443.2695" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="98.7" x="153.65" y="445.617">teacherRegistrations()</text><ellipse cx="147.35" cy="454.218" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="143.5" x="153.65" y="456.5654">create(TransactionalContext ctx)</text></g><!--MD5=[3762909e135fb728396985e200594027]
+class SharedBoard--><g id="elem_SharedBoard"><rect codeLine="43" fill="#F1F1F1" height="33.6" id="SharedBoard" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="81.2" x="298.9" y="286.65"/><ellipse cx="309.4" cy="297.85" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M311.3359,294.9625 Q311.4453,294.8094 311.5766,294.7328 Q311.7078,294.6562 311.8609,294.6562 Q312.1234,294.6562 312.2875,294.8422 Q312.4516,295.0172 312.4516,295.4437 L312.4516,296.4609 Q312.4516,296.8875 312.2875,297.0734 Q312.1234,297.2594 311.8609,297.2594 Q311.6203,297.2594 311.4781,297.1172 Q311.3359,296.9859 311.2594,296.625 Q311.2266,296.3734 311.0953,296.2422 Q310.8656,295.9797 310.4391,295.8266 Q310.0125,295.6734 309.575,295.6734 Q309.0391,295.6734 308.5906,295.9031 Q308.1531,296.1328 307.8031,296.6578 Q307.4641,297.1828 307.4641,297.9047 L307.4641,298.6703 Q307.4641,299.5344 308.0875,300.1141 Q308.7109,300.6828 309.8266,300.6828 Q310.4828,300.6828 310.9422,300.5078 Q311.2156,300.3984 311.5109,300.0922 Q311.6969,299.9062 311.7953,299.8516 Q311.9047,299.7969 312.0469,299.7969 Q312.2766,299.7969 312.4516,299.9828 Q312.6375,300.1578 312.6375,300.3984 Q312.6375,300.6391 312.3969,300.9234 Q312.0469,301.3281 311.4891,301.5578 Q310.7344,301.875 309.8266,301.875 Q308.7656,301.875 307.9234,301.4375 Q307.2344,301.0875 306.7531,300.3437 Q306.2719,299.5891 306.2719,298.6922 L306.2719,297.8828 Q306.2719,296.9531 306.6984,296.1547 Q307.1359,295.3453 307.9016,294.9187 Q308.6672,294.4812 309.5312,294.4812 Q310.0453,294.4812 310.4937,294.6016 Q310.9531,294.7109 311.3359,294.9625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="58.8" x="319.2" y="301.2475">SharedBoard</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="299.6" x2="379.4" y1="309.05" y2="309.05"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="299.6" x2="379.4" y1="314.65" y2="314.65"/></g><!--MD5=[288bffab58163169a8d16c57b889bc0c]
+class TransactionalContext--><g id="elem_TransactionalContext"><rect codeLine="48" fill="#F1F1F1" height="55.4969" id="TransactionalContext" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="116.2" x="25.9" y="275.8"/><ellipse cx="36.4" cy="287" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M38.3359,284.1125 Q38.4453,283.9594 38.5766,283.8828 Q38.7078,283.8062 38.8609,283.8062 Q39.1234,283.8062 39.2875,283.9922 Q39.4516,284.1672 39.4516,284.5937 L39.4516,285.6109 Q39.4516,286.0375 39.2875,286.2234 Q39.1234,286.4094 38.8609,286.4094 Q38.6203,286.4094 38.4781,286.2672 Q38.3359,286.1359 38.2594,285.775 Q38.2266,285.5234 38.0953,285.3922 Q37.8656,285.1297 37.4391,284.9766 Q37.0125,284.8234 36.575,284.8234 Q36.0391,284.8234 35.5906,285.0531 Q35.1531,285.2828 34.8031,285.8078 Q34.4641,286.3328 34.4641,287.0547 L34.4641,287.8203 Q34.4641,288.6844 35.0875,289.2641 Q35.7109,289.8328 36.8266,289.8328 Q37.4828,289.8328 37.9422,289.6578 Q38.2156,289.5484 38.5109,289.2422 Q38.6969,289.0562 38.7953,289.0016 Q38.9047,288.9469 39.0469,288.9469 Q39.2766,288.9469 39.4516,289.1328 Q39.6375,289.3078 39.6375,289.5484 Q39.6375,289.7891 39.3969,290.0734 Q39.0469,290.4781 38.4891,290.7078 Q37.7344,291.025 36.8266,291.025 Q35.7656,291.025 34.9234,290.5875 Q34.2344,290.2375 33.7531,289.4937 Q33.2719,288.7391 33.2719,287.8422 L33.2719,287.0328 Q33.2719,286.1031 33.6984,285.3047 Q34.1359,284.4953 34.9016,284.0687 Q35.6672,283.6312 36.5312,283.6312 Q37.0453,283.6312 37.4937,283.7516 Q37.9531,283.8609 38.3359,284.1125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="93.8" x="46.2" y="290.3975">TransactionalContext</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="26.6" x2="141.4" y1="298.2" y2="298.2"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="26.6" x2="141.4" y1="303.8" y2="303.8"/><ellipse cx="33.6" cy="313.1242" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="84" x="39.9" y="315.4717">beginTransaction()</text><ellipse cx="33.6" cy="324.0727" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="37.8" x="39.9" y="326.4201">commit()</text></g><!--MD5=[096d94367fb870bbe0aa0f9957000745]
+class ProfileService--><g id="elem_ProfileService"><rect fill="#F1F1F1" height="33.6" id="ProfileService" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="83.3" x="42.35" y="183.75"/><ellipse cx="52.85" cy="194.95" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M54.7859,192.0625 Q54.8953,191.9094 55.0266,191.8328 Q55.1578,191.7562 55.3109,191.7562 Q55.5734,191.7562 55.7375,191.9422 Q55.9016,192.1172 55.9016,192.5437 L55.9016,193.5609 Q55.9016,193.9875 55.7375,194.1734 Q55.5734,194.3594 55.3109,194.3594 Q55.0703,194.3594 54.9281,194.2172 Q54.7859,194.0859 54.7094,193.725 Q54.6766,193.4734 54.5453,193.3422 Q54.3156,193.0797 53.8891,192.9266 Q53.4625,192.7734 53.025,192.7734 Q52.4891,192.7734 52.0406,193.0031 Q51.6031,193.2328 51.2531,193.7578 Q50.9141,194.2828 50.9141,195.0047 L50.9141,195.7703 Q50.9141,196.6344 51.5375,197.2141 Q52.1609,197.7828 53.2766,197.7828 Q53.9328,197.7828 54.3922,197.6078 Q54.6656,197.4984 54.9609,197.1922 Q55.1469,197.0062 55.2453,196.9516 Q55.3547,196.8969 55.4969,196.8969 Q55.7266,196.8969 55.9016,197.0828 Q56.0875,197.2578 56.0875,197.4984 Q56.0875,197.7391 55.8469,198.0234 Q55.4969,198.4281 54.9391,198.6578 Q54.1844,198.975 53.2766,198.975 Q52.2156,198.975 51.3734,198.5375 Q50.6844,198.1875 50.2031,197.4437 Q49.7219,196.6891 49.7219,195.7922 L49.7219,194.9828 Q49.7219,194.0531 50.1484,193.2547 Q50.5859,192.4453 51.3516,192.0187 Q52.1172,191.5812 52.9812,191.5812 Q53.4953,191.5812 53.9437,191.7016 Q54.4031,191.8109 54.7859,192.0625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="60.9" x="62.65" y="198.3475">ProfileService</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="43.05" x2="124.95" y1="206.15" y2="206.15"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="43.05" x2="124.95" y1="211.75" y2="211.75"/></g><!--MD5=[4f63ea928d5f4c5b666f00d4778277a3]
+link ArchiveBoardUi to ProfileController--><g id="link_ArchiveBoardUi_ProfileController"><path codeLine="54" d="M139.839,38.549 C130.032,49.728 116.795,64.813 105.672,77.497 " fill="none" id="ArchiveBoardUi-to-ProfileController" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="103.187,80.325,109.4482,77.4394,105.4967,77.6953,105.2407,73.7438,103.187,80.325" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[06112fa8e783799ba7087c7564e3c377]
+link ArchiveBoardUi to SharedBoardController--><g id="link_ArchiveBoardUi_SharedBoardController"><path codeLine="55" d="M168.168,38.549 C179.55,51.527 195.566,69.783 207.522,83.412 " fill="none" id="ArchiveBoardUi-to-SharedBoardController" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="209.86,86.072,207.8063,79.4908,207.5503,83.4423,203.5988,83.1864,209.86,86.072" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[b10ff098a94f5b8009db086be7abaf61]
+link ProfileService to PersistenceContext--><g id="link_ProfileService_PersistenceContext"><path codeLine="56" d="M99.169,217.56 C118.965,234.157 153.496,260.064 180.803,278.95 " fill="none" id="ProfileService-to-PersistenceContext" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="183.757,280.987,180.1561,275.1079,180.8743,279.002,176.9802,279.7202,183.757,280.987" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[b10ff098a94f5b8009db086be7abaf61]
+link ProfileService to PersistenceContext--><g id="link_ProfileService_PersistenceContext"><path codeLine="58" d="M113.092,217.56 C137.991,234.087 172.977,259.854 196.364,278.726 " fill="none" id="ProfileService-to-PersistenceContext-1" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="199.157,280.987,196.0331,274.8411,196.4406,278.7799,192.5018,279.1874,199.157,280.987" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[d2fa62668c25ca25bd25102b24fae854]
+link ProfileService to TransactionalContext--><g id="link_ProfileService_TransactionalContext"><path codeLine="57" d="M77.238,217.56 C74.998,232.267 74.501,254.289 75.74,272.258 " fill="none" id="ProfileService-to-TransactionalContext" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="76.013,275.793,78.3187,269.2958,75.743,272.3034,72.7354,269.7277,76.013,275.793" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[d2fa62668c25ca25bd25102b24fae854]
+link ProfileService to TransactionalContext--><g id="link_ProfileService_TransactionalContext"><path codeLine="59" d="M91.161,217.56 C93.534,232.267 94.066,254.289 92.75,272.258 " fill="none" id="ProfileService-to-TransactionalContext-1" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="92.463,275.793,95.7751,269.7465,92.7528,272.305,90.1943,269.2828,92.463,275.793" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[7273625c1d7a185b6aa262baf7c4d383]
+link ProfileController to ProfileService--><g id="link_ProfileController_ProfileService"><path codeLine="60" d="M84,125.44 C84,141.771 84,163.919 84,179.802 " fill="none" id="ProfileController-to-ProfileService" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="84,183.491,86.8,177.191,84,179.991,81.2,177.191,84,183.491" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[cd4ed33cf49b80d81d427628ee2ae2d9]
+link ProfileService to ProfileRepository--><g id="link_ProfileService_ProfileRepository"><path codeLine="61" d="M61.054,217.595 C44.289,231.049 22.883,251.776 13.3,275.8 C4.2,298.627 6.531,307.475 13.3,331.1 C33.18,400.477 87.073,469.112 114.177,500.556 " fill="none" id="ProfileService-to-ProfileRepository" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="116.557,503.3,114.5564,496.7025,114.2686,500.6518,110.3192,500.364,116.557,503.3" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[3561eb3ffb5d02a87dbf2c21f2d59994]
+link SharedBoardService to PersistenceContext--><g id="link_SharedBoardService_PersistenceContext"><path codeLine="62" d="M222.873,233.926 C222.39,248.017 221.83,264.243 221.375,277.403 " fill="none" id="SharedBoardService-to-PersistenceContext" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="221.249,281.029,224.2638,274.8289,221.3693,277.5311,218.6671,274.6365,221.249,281.029" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[a642672152d374b6e88eeced913921c2]
+link SharedBoardService to TransactionalContext--><g id="link_SharedBoardService_TransactionalContext"><path codeLine="63" d="M178.934,233.926 C161.329,246.687 141.302,261.205 124.194,273.609 " fill="none" id="SharedBoardService-to-TransactionalContext" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="121.254,275.737,127.9977,274.3045,124.0872,273.682,124.7097,269.7714,121.254,275.737" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[c0bd6e54184645a1dc10e9dac90f7f42]
+link SharedBoardService to SharedBoard--><g id="link_SharedBoardService_SharedBoard"><path codeLine="64" d="M261.184,233.926 C280.133,250.579 302.484,270.221 318.451,284.249 " fill="none" id="SharedBoardService-to-SharedBoard" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="321.153,286.622,318.2674,280.3608,318.5233,284.3123,314.5718,284.5683,321.153,286.622" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[e3b7ca59f99ae85734ffb603f481dac7]
+link SharedBoardController to SharedBoardService--><g id="link_SharedBoardController_SharedBoardService"><path codeLine="65" d="M224,119.707 C224,131.649 224,148.4 224,163.506 " fill="none" id="SharedBoardController-to-SharedBoardService" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="224,167.104,226.8,160.804,224,163.604,221.2,160.804,224,167.104" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[105bb5bfc4718d346a4b8f9b68115746]
+link SharedBoardService to SharedBoardRepository--><g id="link_SharedBoardService_SharedBoardRepository"><path codeLine="66" d="M281.246,210.112 C319.9,219.394 368.193,238.168 392.7,275.8 C441.721,351.05 362.334,458.619 326.704,500.605 " fill="none" id="SharedBoardService-to-SharedBoardRepository" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="324.422,503.279,330.6415,500.3044,326.694,500.6167,326.3817,496.6692,324.422,503.279" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[754b775031405e096442b27febffa290]
+link PersistenceContext to RepositoryFactory--><g id="link_PersistenceContext_RepositoryFactory"><path codeLine="68" d="M220.5,326.081 C220.5,338.436 220.5,354.368 220.5,369.404 " fill="none" id="PersistenceContext-to-RepositoryFactory" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="220.5,373.002,223.3,366.702,220.5,369.502,217.7,366.702,220.5,373.002" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[0c95a5919311b4f5a84818594e507d0a]
+link RepositoryFactory to ProfileRepository--><g id="link_RepositoryFactory_ProfileRepository"><path codeLine="70" d="M181.419,461.377 C169.029,475.16 156.016,489.636 146.209,500.542 " fill="none" id="RepositoryFactory-to-ProfileRepository" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="143.787,503.237,150.0767,500.414,146.1228,500.6305,145.9063,496.6766,143.787,503.237" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[ec5ad66faac0add80430b7bc4ec38b87]
+link RepositoryFactory to SharedBoardRepository--><g id="link_RepositoryFactory_SharedBoardRepository"><path codeLine="71" d="M259.581,461.377 C271.978,475.16 284.984,489.636 294.798,500.542 " fill="none" id="RepositoryFactory-to-SharedBoardRepository" style="stroke:#181818;stroke-width:0.6999999999999998;"/><polygon fill="#181818" points="297.22,503.237,295.1132,496.6726,294.8891,500.626,290.9357,500.402,297.22,503.237" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[4c762cc6a20ada96ec87f74434a7da4e]
+@startuml
+'https://plantuml.com/class-diagram
+
+class ArchiveBoardUi{
+}
+
+class ProfileController{
++getStudentProfiles()
+}
+
+class SharedBoardController{
+
+}
+
+class SharedBoardService{
++getAll()}
+
+
+class ProfileService{
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++exams()
++teacherRegistrations()
++create(TransactionalContext ctx)
+}
+
+database ProfileRepository{
+}
+
+database SharedBoardRepository{
+}
+
+
+
+class SharedBoard{
+}
+
+
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+ArchiveBoardUi - -> ProfileController
+ArchiveBoardUi - -> SharedBoardController
+ProfileService- ->PersistenceContext
+ProfileService- ->TransactionalContext
+ProfileService- ->PersistenceContext
+ProfileService- ->TransactionalContext
+ProfileController- ->ProfileService
+ProfileService - -> ProfileRepository
+SharedBoardService- ->PersistenceContext
+SharedBoardService- ->TransactionalContext
+SharedBoardService - -> SharedBoard
+SharedBoardController- ->SharedBoardService
+SharedBoardService - -> SharedBoardRepository
+
+PersistenceContext- ->RepositoryFactory
+
+RepositoryFactory- ->ProfileRepository
+RepositoryFactory- ->SharedBoardRepository
+
+@enduml
+
+@startuml
+
+class ArchiveBoardUi{
+}
+
+class ProfileController{
++getStudentProfiles()
+}
+
+class SharedBoardController{
+
+}
+
+class SharedBoardService{
++getAll()}
+
+
+class ProfileService{
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++exams()
++teacherRegistrations()
++create(TransactionalContext ctx)
+}
+
+database ProfileRepository{
+}
+
+database SharedBoardRepository{
+}
+
+
+
+class SharedBoard{
+}
+
+
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+ArchiveBoardUi - -> ProfileController
+ArchiveBoardUi - -> SharedBoardController
+ProfileService- ->PersistenceContext
+ProfileService- ->TransactionalContext
+ProfileService- ->PersistenceContext
+ProfileService- ->TransactionalContext
+ProfileController- ->ProfileService
+ProfileService - -> ProfileRepository
+SharedBoardService- ->PersistenceContext
+SharedBoardService- ->TransactionalContext
+SharedBoardService - -> SharedBoard
+SharedBoardController- ->SharedBoardService
+SharedBoardService - -> SharedBoardRepository
+
+PersistenceContext- ->RepositoryFactory
+
+RepositoryFactory- ->ProfileRepository
+RepositoryFactory- ->SharedBoardRepository
+
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 19:12:26 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>

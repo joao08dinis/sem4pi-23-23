@@ -1,0 +1,168 @@
+@startuml
+
+hide methods
+
+skinparam packageStyle rectangle
+skinparam linetype ortho
+
+top to bottom direction
+
+title Domain Driven Design
+
+package "<<aggregate>> User" <<Folder>> #ffb380 {
+
+   entity User <<root>> <<entity>>{
+        String fullName
+        String shortName
+    }
+
+    class Role <<(V,#B8255F) value object>> {}
+    class Password <<(V,#B8255F) value object>> {}
+    class Email <<Id>> <<unique>> <<(V,#B8255F) value object>>  {}
+    entity Student <<entity>>{}
+    entity Teacher <<entity>>{}
+    entity Manager <<entity>>{}
+
+    User "1" *--> "1" Email : has
+    User "1" *--> "1" Password : has
+    User "1" *--> "1" Role : has
+    Manager "1" --> "*" User : creates
+    Manager --|> User
+    Student --|> User
+    Teacher --|> User
+}
+
+
+package "<<aggregate>> Profile" <<Folder>> #99b3ff {
+   entity Profile <<root>> <<entity>>{}
+
+    class TeacherProfile <<entity>> {}
+    class StudentProfile <<entity>> {}
+    class ManagerProfile <<entity>> <<NullObject>> {}
+    class TaxPayerNumber <<(V,#B8255F) value object>> {}
+    class DateOfBirth <<(V,#B8255F) value object>> {}
+    class MechanographicNumber <<(V,#B8255F) value object>> {}
+    class Acronym <<(V,#B8255F) value object>> {}
+    class Schedule <<entity>> {}
+    class "Day" as ProfileDay <<(V,#B8255F) value object>> {}
+
+    TeacherProfile --|> Profile
+    StudentProfile --|> Profile
+    ManagerProfile --|> Profile
+    TaxPayerNumber "1" <--* "1" Profile : has
+    DateOfBirth "1" <--* "1" Profile : has
+    MechanographicNumber "1" <--* "1" StudentProfile : has
+    Acronym "1" <--* "1" TeacherProfile : has
+    Schedule "1" <--* "1" Profile : has
+    ProfileDay "1..*" <--* "1" Schedule : has
+}
+Profile "1" *--> "1" User : has
+
+
+package "<<aggregate>> Teacher Registration" <<Folder>> #ddaaaa {
+    entity TeacherRegistration <<root>> <<entity>>{
+        }
+     enum TeacherRole <<enum>> {
+     ASSISTANT
+     REGENT
+     }
+
+    User "1" --> "*" TeacherRegistration : manages
+    TeacherRegistration "1" --> "1" TeacherRole : has
+
+}
+
+package "<<aggregate>> Course" <<Folder>> #aabbbb {
+   entity Course <<root>> <<entity>>{
+    }
+    class "Title" as CourseTitle <<(V,#B8255F) value object>> <<unique>> {}
+    class Id <<(V,#B8255F) value object>> <<Id>> {}
+    class CourseState as "State" <<(V,#B8255F) value object>> {}
+    class Capacity <<(V,#B8255F) value object>> {}
+    class EnrollementsState <<(V,#B8255F) value object>> {}
+
+    CourseTitle "1" <--* "1" Course : has
+    Id "1" <--* "1" Course : has
+    CourseState "1" <--* "1" Course : has
+    Capacity "1" <--* "1" Course : has
+    EnrollementsState "1" <--* "1" Course : has
+    StudentRegistration "1" --> "1" Course : has
+    TeacherRegistration "1" -l-> "1" Course : has
+}
+
+
+package "<<aggregate>> Exam" <<Folder>> #bbbbaa {
+   entity Exam <<root>> <<entity>>{
+    }
+    enum TypeOfGrade <<enum>> {
+    APPROVED
+    DISAPPROVED
+    }
+    class "Title" as ExamTitle <<(V,#B8255F) value object>> <<unique>> {}
+    class Section <<entity>> {}
+    class Header <<entity>> {}
+    class TextualDescription <<(V,#B8255F) value object>> {}
+    class OpenDate <<(V,#B8255F) value object>> {}
+    class CloseDate <<(V,#B8255F) value object>> {}
+    class ExamDescription <<(V,#B8255F) value object>> {}
+    class FeedbackExam <<(V,#B8255F) value object>> {}
+    class Difficulty <<(V,#B8255F) value object>> {}
+
+    Header "1" *--> "1" ExamDescription : has
+    Header "1" *--> "1" TypeOfGrade : has
+    Header "1" *--> "1" FeedbackExam :has
+    Exam "1" *--> "1" OpenDate : has
+    Exam "1" *--> "1" CloseDate : has
+    Exam "1" *--> "1" ExamTitle : has
+
+    Section "1" *--> "1" TextualDescription : has
+    Section "1" *-u-> "1" Difficulty : has grade of
+
+    Exam "1" *--> "1..*" Section : has
+    Exam "1" *--> "1" Header :has
+    Course "1" *--> "1..*" Exam : has
+    Teacher "1" --> "1" Exam : creates
+}
+
+package "<<aggregate>> Question" <<Folder>> #cccccc {
+    entity Question <<root>> <<entity>> {}
+    class QuestionDescription <<(V,#B8255F) value object>> {}
+    class Feedback <<(V,#B8255F) value object>> {}
+    class Grade <<(V,#B8255F) value object>> {}
+    class Answer <<(V,#B8255F) value object>>
+    class Difficulty <<(V,#B8255F) value object>> {}
+    class MatchingQuestion <<entity>> {}
+    class MultipleChoiceQuestion <<entity>> {}
+    class ShortAnswerQuestion <<entity>> {}
+    class NumericalQuestion <<entity>> {}
+    class MissingWordsQuestion <<entity>> {}
+    class TrueFalseQuestion <<entity>> {}
+
+    enum TypeOfQuestion <<enum>> {
+        MATCHING
+        MULTIPLE_CHOICE
+        SHORT_ANSWER
+        NUMERICAL
+        MISSING_WORDS
+        TRUE_FALSE
+        }
+
+    Exam "1" *--> "1..*" Question : has various
+    Question "1" *--> "1" TypeOfQuestion : has
+    Question "1" *--> "1" QuestionDescription : has
+    Question "1" *--> "1" Answer : has
+    Question "1" *--> "1" Grade : has
+    Question "1" *--> "1" Feedback : has
+    Question "1" *--> "1" Difficulty : has grade of
+    MatchingQuestion --|> Question
+    MultipleChoiceQuestion --|> Question
+    ShortAnswerQuestion --|> Question
+    NumericalQuestion --|> Question
+    MissingWordsQuestion --|> Question
+    TrueFalseQuestion --|> Question
+
+}
+
+    User "1" -> "1..*" Course : create/open/close
+
+@enduml

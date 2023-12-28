@@ -1,0 +1,18 @@
+@startuml
+
+autonumber
+actor "User" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Asks to list the participants of its meeting
+activate SYS
+SYS --> MNG : Shows all meetings available for the user
+deactivate SYS
+MNG -> SYS : Chooses meeting
+activate SYS
+SYS --> MNG : Shows all participants
+deactivate SYS
+deactivate MNG
+
+@enduml

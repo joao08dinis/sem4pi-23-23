@@ -1,0 +1,20 @@
+@startuml
+
+autonumber
+actor "User" as teacher
+
+activate teacher
+
+teacher -> ":System" : Requests to archive a board
+activate ":System"
+":System" --> teacher : Shows all boards the user owns
+deactivate ":System"
+teacher -> ":System" : Inputs board to archive
+activate ":System"
+":System" --> teacher : Shows operation success
+deactivate ":System"
+deactivate teacher
+
+
+
+@enduml

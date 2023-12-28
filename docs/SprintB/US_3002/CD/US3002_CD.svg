@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="439px" preserveAspectRatio="none" style="width:1230px;height:439px;background:#FFFFFF;" version="1.1" viewBox="0 0 1230 439" width="1230px" zoomAndPan="magnify"><defs/><g><!--MD5=[104d529babd685aafc94ed09d49648e3]
+entity SharedBoardRepository--><g id="elem_SharedBoardRepository"><path d="M420,388 C420,378 506,378 506,378 C506,378 592,378 592,388 L592,412.6406 C592,422.6406 506,422.6406 506,422.6406 C506,422.6406 420,422.6406 420,412.6406 L420,388 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M420,388 C420,398 506,398 506,398 C506,398 592,398 592,388 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="430" y="414.6738">SharedBoardRepository</text></g><!--MD5=[e7080a22b1a1d353a04e8c3fb13a11e4]
+class CreateSharedBoardUI--><g id="elem_CreateSharedBoardUI"><rect codeLine="3" fill="#F1F1F1" height="48" id="CreateSharedBoardUI" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="171" x="529.5" y="7"/><ellipse cx="544.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M547.2656,18.875 Q547.4219,18.6563 547.6094,18.5469 Q547.7969,18.4375 548.0156,18.4375 Q548.3906,18.4375 548.625,18.7031 Q548.8594,18.9531 548.8594,19.5625 L548.8594,21.0156 Q548.8594,21.625 548.625,21.8906 Q548.3906,22.1563 548.0156,22.1563 Q547.6719,22.1563 547.4688,21.9531 Q547.2656,21.7656 547.1563,21.25 Q547.1094,20.8906 546.9219,20.7031 Q546.5938,20.3281 545.9844,20.1094 Q545.375,19.8906 544.75,19.8906 Q543.9844,19.8906 543.3438,20.2188 Q542.7188,20.5469 542.2188,21.2969 Q541.7344,22.0469 541.7344,23.0781 L541.7344,24.1719 Q541.7344,25.4063 542.625,26.2344 Q543.5156,27.0469 545.1094,27.0469 Q546.0469,27.0469 546.7031,26.7969 Q547.0938,26.6406 547.5156,26.2031 Q547.7813,25.9375 547.9219,25.8594 Q548.0781,25.7813 548.2813,25.7813 Q548.6094,25.7813 548.8594,26.0469 Q549.125,26.2969 549.125,26.6406 Q549.125,26.9844 548.7813,27.3906 Q548.2813,27.9688 547.4844,28.2969 Q546.4063,28.75 545.1094,28.75 Q543.5938,28.75 542.3906,28.125 Q541.4063,27.625 540.7188,26.5625 Q540.0313,25.4844 540.0313,24.2031 L540.0313,23.0469 Q540.0313,21.7188 540.6406,20.5781 Q541.2656,19.4219 542.3594,18.8125 Q543.4531,18.1875 544.6875,18.1875 Q545.4219,18.1875 546.0625,18.3594 Q546.7188,18.5156 547.2656,18.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="558.5" y="27.8535">CreateSharedBoardUI</text><line style="stroke:#181818;stroke-width:0.5;" x1="530.5" x2="699.5" y1="39" y2="39"/><line style="stroke:#181818;stroke-width:0.5;" x1="530.5" x2="699.5" y1="47" y2="47"/></g><!--MD5=[8ff42d842c8ce9d5fcfdd468b5d5be33]
+class CreateSharedBoardController--><g id="elem_CreateSharedBoardController"><rect codeLine="6" fill="#F1F1F1" height="63.6406" id="CreateSharedBoardController" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="1216" x="7" y="115"/><ellipse cx="516.25" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M519.0156,126.875 Q519.1719,126.6563 519.3594,126.5469 Q519.5469,126.4375 519.7656,126.4375 Q520.1406,126.4375 520.375,126.7031 Q520.6094,126.9531 520.6094,127.5625 L520.6094,129.0156 Q520.6094,129.625 520.375,129.8906 Q520.1406,130.1563 519.7656,130.1563 Q519.4219,130.1563 519.2188,129.9531 Q519.0156,129.7656 518.9063,129.25 Q518.8594,128.8906 518.6719,128.7031 Q518.3438,128.3281 517.7344,128.1094 Q517.125,127.8906 516.5,127.8906 Q515.7344,127.8906 515.0938,128.2188 Q514.4688,128.5469 513.9688,129.2969 Q513.4844,130.0469 513.4844,131.0781 L513.4844,132.1719 Q513.4844,133.4063 514.375,134.2344 Q515.2656,135.0469 516.8594,135.0469 Q517.7969,135.0469 518.4531,134.7969 Q518.8438,134.6406 519.2656,134.2031 Q519.5313,133.9375 519.6719,133.8594 Q519.8281,133.7813 520.0313,133.7813 Q520.3594,133.7813 520.6094,134.0469 Q520.875,134.2969 520.875,134.6406 Q520.875,134.9844 520.5313,135.3906 Q520.0313,135.9688 519.2344,136.2969 Q518.1563,136.75 516.8594,136.75 Q515.3438,136.75 514.1406,136.125 Q513.1563,135.625 512.4688,134.5625 Q511.7813,133.4844 511.7813,132.2031 L511.7813,131.0469 Q511.7813,129.7188 512.3906,128.5781 Q513.0156,127.4219 514.1094,126.8125 Q515.2031,126.1875 516.4375,126.1875 Q517.1719,126.1875 517.8125,126.3594 Q518.4688,126.5156 519.0156,126.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="536.75" y="135.8535">CreateSharedBoardController</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="1222" y1="147" y2="147"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="1222" y1="155" y2="155"/><ellipse cx="18" cy="168.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="1190" x="27" y="171.6738">addSharedBoard(SharedBoardState state, int maxnumrows, int maxnumcolluns, Set&lt;SharedBoardRows&gt; rows, Set&lt;SharedBoardColumns&gt; columns, String path , String title, Set&lt;Cell&gt; cells)</text></g><!--MD5=[631a408429f696e3d99d668a29e41713]
+class SharedBoardService--><g id="elem_SharedBoardService"><rect codeLine="10" fill="#F1F1F1" height="79.2813" id="SharedBoardService" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="251" x="380.5" y="239"/><ellipse cx="436.25" cy="255" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M439.0156,250.875 Q439.1719,250.6563 439.3594,250.5469 Q439.5469,250.4375 439.7656,250.4375 Q440.1406,250.4375 440.375,250.7031 Q440.6094,250.9531 440.6094,251.5625 L440.6094,253.0156 Q440.6094,253.625 440.375,253.8906 Q440.1406,254.1563 439.7656,254.1563 Q439.4219,254.1563 439.2188,253.9531 Q439.0156,253.7656 438.9063,253.25 Q438.8594,252.8906 438.6719,252.7031 Q438.3438,252.3281 437.7344,252.1094 Q437.125,251.8906 436.5,251.8906 Q435.7344,251.8906 435.0938,252.2188 Q434.4688,252.5469 433.9688,253.2969 Q433.4844,254.0469 433.4844,255.0781 L433.4844,256.1719 Q433.4844,257.4063 434.375,258.2344 Q435.2656,259.0469 436.8594,259.0469 Q437.7969,259.0469 438.4531,258.7969 Q438.8438,258.6406 439.2656,258.2031 Q439.5313,257.9375 439.6719,257.8594 Q439.8281,257.7813 440.0313,257.7813 Q440.3594,257.7813 440.6094,258.0469 Q440.875,258.2969 440.875,258.6406 Q440.875,258.9844 440.5313,259.3906 Q440.0313,259.9688 439.2344,260.2969 Q438.1563,260.75 436.8594,260.75 Q435.3438,260.75 434.1406,260.125 Q433.1563,259.625 432.4688,258.5625 Q431.7813,257.4844 431.7813,256.2031 L431.7813,255.0469 Q431.7813,253.7188 432.3906,252.5781 Q433.0156,251.4219 434.1094,250.8125 Q435.2031,250.1875 436.4375,250.1875 Q437.1719,250.1875 437.8125,250.3594 Q438.4688,250.5156 439.0156,250.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="456.75" y="259.8535">SharedBoardService</text><line style="stroke:#181818;stroke-width:0.5;" x1="381.5" x2="630.5" y1="271" y2="271"/><line style="stroke:#181818;stroke-width:0.5;" x1="381.5" x2="630.5" y1="279" y2="279"/><ellipse cx="391.5" cy="292.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="400.5" y="295.6738">addNewSharedBoard(sharedboard)</text><ellipse cx="391.5" cy="307.9609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="192" x="400.5" y="311.3145">getProfileFromDatabase(user)</text></g><!--MD5=[3762909e135fb728396985e200594027]
+class SharedBoard--><g id="elem_SharedBoard"><rect codeLine="22" fill="#F1F1F1" height="48" id="SharedBoard" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="116" x="667" y="254.5"/><ellipse cx="682" cy="270.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M684.7656,266.375 Q684.9219,266.1563 685.1094,266.0469 Q685.2969,265.9375 685.5156,265.9375 Q685.8906,265.9375 686.125,266.2031 Q686.3594,266.4531 686.3594,267.0625 L686.3594,268.5156 Q686.3594,269.125 686.125,269.3906 Q685.8906,269.6563 685.5156,269.6563 Q685.1719,269.6563 684.9688,269.4531 Q684.7656,269.2656 684.6563,268.75 Q684.6094,268.3906 684.4219,268.2031 Q684.0938,267.8281 683.4844,267.6094 Q682.875,267.3906 682.25,267.3906 Q681.4844,267.3906 680.8438,267.7188 Q680.2188,268.0469 679.7188,268.7969 Q679.2344,269.5469 679.2344,270.5781 L679.2344,271.6719 Q679.2344,272.9063 680.125,273.7344 Q681.0156,274.5469 682.6094,274.5469 Q683.5469,274.5469 684.2031,274.2969 Q684.5938,274.1406 685.0156,273.7031 Q685.2813,273.4375 685.4219,273.3594 Q685.5781,273.2813 685.7813,273.2813 Q686.1094,273.2813 686.3594,273.5469 Q686.625,273.7969 686.625,274.1406 Q686.625,274.4844 686.2813,274.8906 Q685.7813,275.4688 684.9844,275.7969 Q683.9063,276.25 682.6094,276.25 Q681.0938,276.25 679.8906,275.625 Q678.9063,275.125 678.2188,274.0625 Q677.5313,272.9844 677.5313,271.7031 L677.5313,270.5469 Q677.5313,269.2188 678.1406,268.0781 Q678.7656,266.9219 679.8594,266.3125 Q680.9531,265.6875 682.1875,265.6875 Q682.9219,265.6875 683.5625,265.8594 Q684.2188,266.0156 684.7656,266.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="696" y="275.3535">SharedBoard</text><line style="stroke:#181818;stroke-width:0.5;" x1="668" x2="782" y1="286.5" y2="286.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="668" x2="782" y1="294.5" y2="294.5"/></g><!--MD5=[57224c86e551476e08ab8e72670c4c08]
+link CreateSharedBoardUI to CreateSharedBoardController--><g id="link_CreateSharedBoardUI_CreateSharedBoardController"><path codeLine="27" d="M615,55.07 C615,70.64 615,91.51 615,109.33 " fill="none" id="CreateSharedBoardUI-to-CreateSharedBoardController" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="615,114.75,619,105.75,615,109.75,611,105.75,615,114.75" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[73df178f5beb13a704e2820bcb8f2f8f]
+link CreateSharedBoardController to SharedBoard--><g id="link_CreateSharedBoardController_SharedBoard"><path codeLine="28" d="M641.35,179.02 C659.82,200.77 684.27,229.55 701.97,250.38 " fill="none" id="CreateSharedBoardController-to-SharedBoard" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="705.41,254.44,702.6485,244.9862,702.1796,250.6236,696.5423,250.1548,705.41,254.44" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[083dc0f6fccc1a835464e8dec007468b]
+link CreateSharedBoardController to SharedBoardService--><g id="link_CreateSharedBoardController_SharedBoardService"><path codeLine="29" d="M588.89,179.02 C574.84,195.71 557.29,216.56 541.97,234.77 " fill="none" id="CreateSharedBoardController-to-SharedBoardService" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="538.53,238.85,547.3898,234.5484,541.7533,235.0277,541.2741,229.3911,538.53,238.85" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[105bb5bfc4718d346a4b8f9b68115746]
+link SharedBoardService to SharedBoardRepository--><g id="link_SharedBoardService_SharedBoardRepository"><path codeLine="30" d="M506,318.13 C506,335.86 506,356.45 506,372.48 " fill="none" id="SharedBoardService-to-SharedBoardRepository" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="506,377.73,510,368.73,506,372.73,502,368.73,506,377.73" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[167c8e83334740b07a85af1e42e98136]
+@startuml
+'https://plantuml.com/class-diagram
+
+class CreateSharedBoardUI{
+}
+
+class CreateSharedBoardController{
++addSharedBoard(SharedBoardState state, int maxnumrows, int maxnumcolluns, Set<SharedBoardRows> rows, Set<SharedBoardColumns> columns, String path , String title, Set<Cell> cells)
+}
+
+class SharedBoardService{
++addNewSharedBoard(sharedboard)
++getProfileFromDatabase(user)
+}
+
+
+
+
+database SharedBoardRepository{
+}
+
+
+class SharedBoard{
+}
+
+
+
+CreateSharedBoardUI- -> CreateSharedBoardController
+CreateSharedBoardController- ->SharedBoard
+CreateSharedBoardController- ->SharedBoardService
+SharedBoardService - -> SharedBoardRepository
+
+
+
+
+
+@enduml
+
+@startuml
+
+class CreateSharedBoardUI{
+}
+
+class CreateSharedBoardController{
++addSharedBoard(SharedBoardState state, int maxnumrows, int maxnumcolluns, Set<SharedBoardRows> rows, Set<SharedBoardColumns> columns, String path , String title, Set<Cell> cells)
+}
+
+class SharedBoardService{
++addNewSharedBoard(sharedboard)
++getProfileFromDatabase(user)
+}
+
+
+
+
+database SharedBoardRepository{
+}
+
+
+class SharedBoard{
+}
+
+
+
+CreateSharedBoardUI- -> CreateSharedBoardController
+CreateSharedBoardController- ->SharedBoard
+CreateSharedBoardController- ->SharedBoardService
+SharedBoardService - -> SharedBoardRepository
+
+
+
+
+
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 19:12:26 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

@@ -1,0 +1,114 @@
+@startuml
+
+hide methods
+
+skinparam packageStyle rectangle
+skinparam linetype ortho
+
+top to bottom direction
+
+title Domain Driven Design
+
+package "<<aggregate>> User" <<Folder>> #ffb380 {
+
+   entity User <<root>> <<entity>>{
+        String fullName
+        String shortName
+    }
+
+    class Role <<(V,#B8255F) value object>> {}
+    class Password <<(V,#B8255F) value object>> {}
+    class Email <<Id>> <<unique>> <<(V,#B8255F) value object>>  {}
+    entity Student <<entity>>{}
+    entity Teacher <<entity>>{}
+    entity Manager <<entity>>{}
+
+    User "1" *--> "1" Email : has
+    User "1" *--> "1" Password : has
+    User "1" *--> "1" Role : has
+    Manager "1" --> "*" User : creates
+    Manager --|> User
+    Student --|> User
+    Teacher --|> User
+}
+
+package "<<aggregate>> SharedBoard" <<Folder>> #aabbcc {
+   entity SharedBoard <<root>> <<entity>>{}
+   entity BoardConfig <<entity>>{}
+
+    entity Owner <<entity>>{}
+    entity Participant <<entity>>{}
+    class "Title" as SharedBoardTitle <<(V,#B8255F) value object>> <<unique>> {}
+    class Row <<entity>> {}
+    class Column <<entity>> {}
+    class Cell <<entity>> {}
+    entity Post <<entity>>{}
+    class PostDescription as "Description" <<(V,#B8255F) value object>> {}
+    class Permission <<(V,#B8255F) value object>> {}
+    class TypeOfPost <<(V,#B8255F) value object>> {}
+    entity History <<entity>>{}
+    class View <<entity>> {}
+    class CellState <<(V,#B8255F) value object>> {}
+    class SharedBoardState <<(V,#B8255F) value object>> {}
+    class View {
+           File file
+    }
+
+    User "1" --> "1" Owner : is a
+    User "1" --> "1" Participant : is a
+    Owner "1" --> "1" SharedBoardState : changes
+    SharedBoard "1" *--> "1" Owner : has
+    SharedBoard "1" *--> "1" Participant : has
+    SharedBoard "1" *--> "1" BoardConfig : has
+    BoardConfig "1" *--> "*" Row : has max
+    BoardConfig "1" *--> "*" Column : has max
+    SharedBoard "1" *--> "*" Cell : has
+    Row "1" o--> "1" Cell : part of
+    Column "1" o--> "1" Cell : part of
+    Row "1" *--> "1" SharedBoardTitle : has
+    Column "1" *--> "1" SharedBoardTitle : has
+    SharedBoard "1" *--> "1" SharedBoardState : has
+    SharedBoard "1" *--> "1" SharedBoardTitle : has
+    Participant "1" *--> "*" Post : makes
+    Owner "1" *--> "*" Post : makes
+    Post "1" *--> "1" PostDescription : has
+    Post "1" *--> "1" TypeOfPost : has
+    Cell "1" *--> "1" Post : has
+    Cell "1" *--> "1" CellState : has
+    Participant "1" *--> "1" Permission : has
+    Owner "1" *--> "1" Permission : has
+    SharedBoard "1" *--> "1" History : has
+    History "1" --> "0..1" History : restore
+    SharedBoard "1" *--> "1" View : has
+    Owner "1" -r-> "1" Post : changes
+    Participant "1" --> "1" Post : changes
+
+}
+
+package "<<aggregate>> Profile" <<Folder>> #99b3ff {
+   entity Profile <<root>> <<entity>>{}
+
+    class TeacherProfile <<entity>> {}
+    class StudentProfile <<entity>> {}
+    class ManagerProfile <<entity>> <<NullObject>> {}
+    class TaxPayerNumber <<(V,#B8255F) value object>> {}
+    class DateOfBirth <<(V,#B8255F) value object>> {}
+    class MechanographicNumber <<(V,#B8255F) value object>> {}
+    class Acronym <<(V,#B8255F) value object>> {}
+    class Schedule <<entity>> {}
+    class "Day" as ProfileDay <<(V,#B8255F) value object>> {}
+
+    TeacherProfile --|> Profile
+    StudentProfile --|> Profile
+    ManagerProfile --|> Profile
+    TaxPayerNumber "1" <--* "1" Profile : has
+    DateOfBirth "1" <--* "1" Profile : has
+    MechanographicNumber "1" <--* "1" StudentProfile : has
+    Acronym "1" <--* "1" TeacherProfile : has
+    Schedule "1" <--* "1" Profile : has
+    ProfileDay "1..*" <--* "1" Schedule : has
+}
+
+Profile "1" *--> "*" SharedBoard : has
+
+@enduml

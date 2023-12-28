@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="733px" preserveAspectRatio="none" style="width:462px;height:733px;background:#FFFFFF;" version="1.1" viewBox="0 0 462 733" width="462px" zoomAndPan="magnify"><defs/><g><!--MD5=[fdfcc579904485561179703ace758b78]
+entity StudentRegistrationRepository--><g id="elem_StudentRegistrationRepository"><path d="M67.5,682 C67.5,672 174,672 174,672 C174,672 280.5,672 280.5,682 L280.5,706.6406 C280.5,716.6406 174,716.6406 174,716.6406 C174,716.6406 67.5,716.6406 67.5,706.6406 L67.5,682 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M67.5,682 C67.5,692 174,692 174,692 C174,692 280.5,692 280.5,682 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="77.5" y="708.6738">StudentRegistrationRepository</text></g><!--MD5=[260d70a725fee1b7da82f811cdfb9bcb]
+class AcceptUI--><g id="elem_AcceptUI"><rect codeLine="3" fill="#F1F1F1" height="48" id="AcceptUI" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="87" x="227.5" y="7"/><ellipse cx="242.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M245.2656,18.875 Q245.4219,18.6563 245.6094,18.5469 Q245.7969,18.4375 246.0156,18.4375 Q246.3906,18.4375 246.625,18.7031 Q246.8594,18.9531 246.8594,19.5625 L246.8594,21.0156 Q246.8594,21.625 246.625,21.8906 Q246.3906,22.1563 246.0156,22.1563 Q245.6719,22.1563 245.4688,21.9531 Q245.2656,21.7656 245.1563,21.25 Q245.1094,20.8906 244.9219,20.7031 Q244.5938,20.3281 243.9844,20.1094 Q243.375,19.8906 242.75,19.8906 Q241.9844,19.8906 241.3438,20.2188 Q240.7188,20.5469 240.2188,21.2969 Q239.7344,22.0469 239.7344,23.0781 L239.7344,24.1719 Q239.7344,25.4063 240.625,26.2344 Q241.5156,27.0469 243.1094,27.0469 Q244.0469,27.0469 244.7031,26.7969 Q245.0938,26.6406 245.5156,26.2031 Q245.7813,25.9375 245.9219,25.8594 Q246.0781,25.7813 246.2813,25.7813 Q246.6094,25.7813 246.8594,26.0469 Q247.125,26.2969 247.125,26.6406 Q247.125,26.9844 246.7813,27.3906 Q246.2813,27.9688 245.4844,28.2969 Q244.4063,28.75 243.1094,28.75 Q241.5938,28.75 240.3906,28.125 Q239.4063,27.625 238.7188,26.5625 Q238.0313,25.4844 238.0313,24.2031 L238.0313,23.0469 Q238.0313,21.7188 238.6406,20.5781 Q239.2656,19.4219 240.3594,18.8125 Q241.4531,18.1875 242.6875,18.1875 Q243.4219,18.1875 244.0625,18.3594 Q244.7188,18.5156 245.2656,18.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="256.5" y="27.8535">AcceptUI</text><line style="stroke:#181818;stroke-width:0.5;" x1="228.5" x2="313.5" y1="39" y2="39"/><line style="stroke:#181818;stroke-width:0.5;" x1="228.5" x2="313.5" y1="47" y2="47"/></g><!--MD5=[6ea26efc75a89f41331094c3ec022e42]
+class StudentResgistrationController--><g id="elem_StudentResgistrationController"><rect codeLine="6" fill="#F1F1F1" height="63.6406" id="StudentResgistrationController" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="369" x="86.5" y="115"/><ellipse cx="169.75" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M172.5156,126.875 Q172.6719,126.6563 172.8594,126.5469 Q173.0469,126.4375 173.2656,126.4375 Q173.6406,126.4375 173.875,126.7031 Q174.1094,126.9531 174.1094,127.5625 L174.1094,129.0156 Q174.1094,129.625 173.875,129.8906 Q173.6406,130.1563 173.2656,130.1563 Q172.9219,130.1563 172.7188,129.9531 Q172.5156,129.7656 172.4063,129.25 Q172.3594,128.8906 172.1719,128.7031 Q171.8438,128.3281 171.2344,128.1094 Q170.625,127.8906 170,127.8906 Q169.2344,127.8906 168.5938,128.2188 Q167.9688,128.5469 167.4688,129.2969 Q166.9844,130.0469 166.9844,131.0781 L166.9844,132.1719 Q166.9844,133.4063 167.875,134.2344 Q168.7656,135.0469 170.3594,135.0469 Q171.2969,135.0469 171.9531,134.7969 Q172.3438,134.6406 172.7656,134.2031 Q173.0313,133.9375 173.1719,133.8594 Q173.3281,133.7813 173.5313,133.7813 Q173.8594,133.7813 174.1094,134.0469 Q174.375,134.2969 174.375,134.6406 Q174.375,134.9844 174.0313,135.3906 Q173.5313,135.9688 172.7344,136.2969 Q171.6563,136.75 170.3594,136.75 Q168.8438,136.75 167.6406,136.125 Q166.6563,135.625 165.9688,134.5625 Q165.2813,133.4844 165.2813,132.2031 L165.2813,131.0469 Q165.2813,129.7188 165.8906,128.5781 Q166.5156,127.4219 167.6094,126.8125 Q168.7031,126.1875 169.9375,126.1875 Q170.6719,126.1875 171.3125,126.3594 Q171.9688,126.5156 172.5156,126.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="190.25" y="135.8535">StudentResgistrationController</text><line style="stroke:#181818;stroke-width:0.5;" x1="87.5" x2="454.5" y1="147" y2="147"/><line style="stroke:#181818;stroke-width:0.5;" x1="87.5" x2="454.5" y1="155" y2="155"/><ellipse cx="97.5" cy="168.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="343" x="106.5" y="171.6738">addStudentRegistration(studentProfile, status, course)</text></g><!--MD5=[8dc31e3bd52da9b85c8aa61b95e047a5]
+class StudentRegistrationService--><g id="elem_StudentRegistrationService"><rect codeLine="10" fill="#F1F1F1" height="79.2813" id="StudentRegistrationService" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="334" x="7" y="533"/><ellipse cx="83.75" cy="549" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M86.5156,544.875 Q86.6719,544.6563 86.8594,544.5469 Q87.0469,544.4375 87.2656,544.4375 Q87.6406,544.4375 87.875,544.7031 Q88.1094,544.9531 88.1094,545.5625 L88.1094,547.0156 Q88.1094,547.625 87.875,547.8906 Q87.6406,548.1563 87.2656,548.1563 Q86.9219,548.1563 86.7188,547.9531 Q86.5156,547.7656 86.4063,547.25 Q86.3594,546.8906 86.1719,546.7031 Q85.8438,546.3281 85.2344,546.1094 Q84.625,545.8906 84,545.8906 Q83.2344,545.8906 82.5938,546.2188 Q81.9688,546.5469 81.4688,547.2969 Q80.9844,548.0469 80.9844,549.0781 L80.9844,550.1719 Q80.9844,551.4063 81.875,552.2344 Q82.7656,553.0469 84.3594,553.0469 Q85.2969,553.0469 85.9531,552.7969 Q86.3438,552.6406 86.7656,552.2031 Q87.0313,551.9375 87.1719,551.8594 Q87.3281,551.7813 87.5313,551.7813 Q87.8594,551.7813 88.1094,552.0469 Q88.375,552.2969 88.375,552.6406 Q88.375,552.9844 88.0313,553.3906 Q87.5313,553.9688 86.7344,554.2969 Q85.6563,554.75 84.3594,554.75 Q82.8438,554.75 81.6406,554.125 Q80.6563,553.625 79.9688,552.5625 Q79.2813,551.4844 79.2813,550.2031 L79.2813,549.0469 Q79.2813,547.7188 79.8906,546.5781 Q80.5156,545.4219 81.6094,544.8125 Q82.7031,544.1875 83.9375,544.1875 Q84.6719,544.1875 85.3125,544.3594 Q85.9688,544.5156 86.5156,544.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="104.25" y="553.8535">StudentRegistrationService</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="340" y1="565" y2="565"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="340" y1="573" y2="573"/><ellipse cx="18" cy="586.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="308" x="27" y="589.6738">addNewStudentRegistration(studentRegistration)</text><ellipse cx="18" cy="601.9609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="27" y="605.3145">getAll()</text></g><!--MD5=[e8c189551b7885b999ad7cefb30fc2a3]
+class PersistenceContext--><g id="elem_PersistenceContext"><rect codeLine="16" fill="#F1F1F1" height="63.6406" id="PersistenceContext" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="97" y="246.5"/><ellipse cx="112" cy="262.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M114.7656,258.375 Q114.9219,258.1563 115.1094,258.0469 Q115.2969,257.9375 115.5156,257.9375 Q115.8906,257.9375 116.125,258.2031 Q116.3594,258.4531 116.3594,259.0625 L116.3594,260.5156 Q116.3594,261.125 116.125,261.3906 Q115.8906,261.6563 115.5156,261.6563 Q115.1719,261.6563 114.9688,261.4531 Q114.7656,261.2656 114.6563,260.75 Q114.6094,260.3906 114.4219,260.2031 Q114.0938,259.8281 113.4844,259.6094 Q112.875,259.3906 112.25,259.3906 Q111.4844,259.3906 110.8438,259.7188 Q110.2188,260.0469 109.7188,260.7969 Q109.2344,261.5469 109.2344,262.5781 L109.2344,263.6719 Q109.2344,264.9063 110.125,265.7344 Q111.0156,266.5469 112.6094,266.5469 Q113.5469,266.5469 114.2031,266.2969 Q114.5938,266.1406 115.0156,265.7031 Q115.2813,265.4375 115.4219,265.3594 Q115.5781,265.2813 115.7813,265.2813 Q116.1094,265.2813 116.3594,265.5469 Q116.625,265.7969 116.625,266.1406 Q116.625,266.4844 116.2813,266.8906 Q115.7813,267.4688 114.9844,267.7969 Q113.9063,268.25 112.6094,268.25 Q111.0938,268.25 109.8906,267.625 Q108.9063,267.125 108.2188,266.0625 Q107.5313,264.9844 107.5313,263.7031 L107.5313,262.5469 Q107.5313,261.2188 108.1406,260.0781 Q108.7656,258.9219 109.8594,258.3125 Q110.9531,257.6875 112.1875,257.6875 Q112.9219,257.6875 113.5625,257.8594 Q114.2188,258.0156 114.7656,258.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="126" y="267.3535">PersistenceContext</text><line style="stroke:#181818;stroke-width:0.5;" x1="98" x2="250" y1="278.5" y2="278.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="98" x2="250" y1="286.5" y2="286.5"/><ellipse cx="108" cy="299.8203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="117" y="303.1738">repositories()</text></g><!--MD5=[48590afff58a68e2fcba47824d6f8a11]
+class RepositoryFactory--><g id="elem_RepositoryFactory"><rect codeLine="20" fill="#F1F1F1" height="94.9219" id="RepositoryFactory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="231" x="58.5" y="378"/><ellipse cx="111.75" cy="394" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M114.5156,389.875 Q114.6719,389.6563 114.8594,389.5469 Q115.0469,389.4375 115.2656,389.4375 Q115.6406,389.4375 115.875,389.7031 Q116.1094,389.9531 116.1094,390.5625 L116.1094,392.0156 Q116.1094,392.625 115.875,392.8906 Q115.6406,393.1563 115.2656,393.1563 Q114.9219,393.1563 114.7188,392.9531 Q114.5156,392.7656 114.4063,392.25 Q114.3594,391.8906 114.1719,391.7031 Q113.8438,391.3281 113.2344,391.1094 Q112.625,390.8906 112,390.8906 Q111.2344,390.8906 110.5938,391.2188 Q109.9688,391.5469 109.4688,392.2969 Q108.9844,393.0469 108.9844,394.0781 L108.9844,395.1719 Q108.9844,396.4063 109.875,397.2344 Q110.7656,398.0469 112.3594,398.0469 Q113.2969,398.0469 113.9531,397.7969 Q114.3438,397.6406 114.7656,397.2031 Q115.0313,396.9375 115.1719,396.8594 Q115.3281,396.7813 115.5313,396.7813 Q115.8594,396.7813 116.1094,397.0469 Q116.375,397.2969 116.375,397.6406 Q116.375,397.9844 116.0313,398.3906 Q115.5313,398.9688 114.7344,399.2969 Q113.6563,399.75 112.3594,399.75 Q110.8438,399.75 109.6406,399.125 Q108.6563,398.625 107.9688,397.5625 Q107.2813,396.4844 107.2813,395.2031 L107.2813,394.0469 Q107.2813,392.7188 107.8906,391.5781 Q108.5156,390.4219 109.6094,389.8125 Q110.7031,389.1875 111.9375,389.1875 Q112.6719,389.1875 113.3125,389.3594 Q113.9688,389.5156 114.5156,389.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="132.25" y="398.8535">RepositoryFactory</text><line style="stroke:#181818;stroke-width:0.5;" x1="59.5" x2="288.5" y1="410" y2="410"/><line style="stroke:#181818;stroke-width:0.5;" x1="59.5" x2="288.5" y1="418" y2="418"/><ellipse cx="69.5" cy="431.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="78.5" y="434.6738">create()</text><ellipse cx="69.5" cy="446.9609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="78.5" y="450.3145">newTransactionalContext()</text><ellipse cx="69.5" cy="462.6016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="78.5" y="465.9551">create(TransactionalContext ctx)</text></g><!--MD5=[288bffab58163169a8d16c57b889bc0c]
+class TransactionalContext--><g id="elem_TransactionalContext"><rect codeLine="29" fill="#F1F1F1" height="79.2813" id="TransactionalContext" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="166" x="286" y="239"/><ellipse cx="301" cy="255" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M303.7656,250.875 Q303.9219,250.6563 304.1094,250.5469 Q304.2969,250.4375 304.5156,250.4375 Q304.8906,250.4375 305.125,250.7031 Q305.3594,250.9531 305.3594,251.5625 L305.3594,253.0156 Q305.3594,253.625 305.125,253.8906 Q304.8906,254.1563 304.5156,254.1563 Q304.1719,254.1563 303.9688,253.9531 Q303.7656,253.7656 303.6563,253.25 Q303.6094,252.8906 303.4219,252.7031 Q303.0938,252.3281 302.4844,252.1094 Q301.875,251.8906 301.25,251.8906 Q300.4844,251.8906 299.8438,252.2188 Q299.2188,252.5469 298.7188,253.2969 Q298.2344,254.0469 298.2344,255.0781 L298.2344,256.1719 Q298.2344,257.4063 299.125,258.2344 Q300.0156,259.0469 301.6094,259.0469 Q302.5469,259.0469 303.2031,258.7969 Q303.5938,258.6406 304.0156,258.2031 Q304.2813,257.9375 304.4219,257.8594 Q304.5781,257.7813 304.7813,257.7813 Q305.1094,257.7813 305.3594,258.0469 Q305.625,258.2969 305.625,258.6406 Q305.625,258.9844 305.2813,259.3906 Q304.7813,259.9688 303.9844,260.2969 Q302.9063,260.75 301.6094,260.75 Q300.0938,260.75 298.8906,260.125 Q297.9063,259.625 297.2188,258.5625 Q296.5313,257.4844 296.5313,256.2031 L296.5313,255.0469 Q296.5313,253.7188 297.1406,252.5781 Q297.7656,251.4219 298.8594,250.8125 Q299.9531,250.1875 301.1875,250.1875 Q301.9219,250.1875 302.5625,250.3594 Q303.2188,250.5156 303.7656,250.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="315" y="259.8535">TransactionalContext</text><line style="stroke:#181818;stroke-width:0.5;" x1="287" x2="451" y1="271" y2="271"/><line style="stroke:#181818;stroke-width:0.5;" x1="287" x2="451" y1="279" y2="279"/><ellipse cx="297" cy="292.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="306" y="295.6738">beginTransaction()</text><ellipse cx="297" cy="307.9609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="306" y="311.3145">commit()</text></g><!--MD5=[aa4c7126633b484cca5b752a38566834]
+link AcceptUI to StudentResgistrationController--><g id="link_AcceptUI_StudentResgistrationController"><path codeLine="34" d="M271,55.07 C271,70.64 271,91.51 271,109.33 " fill="none" id="AcceptUI-to-StudentResgistrationController" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="271,114.75,275,105.75,271,109.75,267,105.75,271,114.75" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[90716e1aeb39c882d7fc55c8c93bd76d]
+link StudentResgistrationController to PersistenceContext--><g id="link_StudentResgistrationController_PersistenceContext"><path codeLine="35" d="M247.77,179.02 C233.59,197.94 215.43,222.19 200.67,241.9 " fill="none" id="StudentResgistrationController-to-PersistenceContext" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="197.38,246.29,205.98,241.49,200.38,242.29,199.58,236.69,197.38,246.29" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[3f1c2cff67a3700148cf8b6cee35b527]
+link StudentResgistrationController to TransactionalContext--><g id="link_StudentResgistrationController_TransactionalContext"><path codeLine="36" d="M294.47,179.02 C307.11,195.71 322.88,216.56 336.66,234.77 " fill="none" id="StudentResgistrationController-to-TransactionalContext" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="339.75,238.85,337.5116,229.2589,336.734,234.862,331.1309,234.0845,339.75,238.85" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[fae5bdd25217c74e7e286e7c9dc5efb5]
+link StudentRegistrationService to StudentRegistrationRepository--><g id="link_StudentRegistrationService_StudentRegistrationRepository"><path codeLine="38" d="M174,612.13 C174,629.86 174,650.45 174,666.48 " fill="none" id="StudentRegistrationService-to-StudentRegistrationRepository" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="174,671.73,178,662.73,174,666.73,170,662.73,174,671.73" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[754b775031405e096442b27febffa290]
+link PersistenceContext to RepositoryFactory--><g id="link_PersistenceContext_RepositoryFactory"><path codeLine="40" d="M174,310.61 C174,328.63 174,351.8 174,372.52 " fill="none" id="PersistenceContext-to-RepositoryFactory" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="174,377.73,178,368.73,174,372.73,170,368.73,174,377.73" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0d36188b933d3ecc8596a42eac22c581]
+link RepositoryFactory to StudentRegistrationService--><g id="link_RepositoryFactory_StudentRegistrationService"><path codeLine="42" d="M174,473.18 C174,490.58 174,510.27 174,527.44 " fill="none" id="RepositoryFactory-to-StudentRegistrationService" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="174,532.68,178,523.68,174,527.68,170,523.68,174,532.68" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[761648c7e41924dd64d549ae86589d52]
+@startuml
+'https://plantuml.com/class-diagram
+
+class AcceptUI{
+}
+
+class StudentResgistrationController{
++addStudentRegistration(studentProfile, status, course)
+}
+
+class StudentRegistrationService{
++addNewStudentRegistration(studentRegistration)
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database StudentRegistrationRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+AcceptUI - -> StudentResgistrationController
+StudentResgistrationController- ->PersistenceContext
+StudentResgistrationController- ->TransactionalContext
+
+StudentRegistrationService - -> StudentRegistrationRepository
+
+PersistenceContext- ->RepositoryFactory
+
+RepositoryFactory- ->StudentRegistrationService
+
+@enduml
+
+@startuml
+
+class AcceptUI{
+}
+
+class StudentResgistrationController{
++addStudentRegistration(studentProfile, status, course)
+}
+
+class StudentRegistrationService{
++addNewStudentRegistration(studentRegistration)
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database StudentRegistrationRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+AcceptUI - -> StudentResgistrationController
+StudentResgistrationController- ->PersistenceContext
+StudentResgistrationController- ->TransactionalContext
+
+StudentRegistrationService - -> StudentRegistrationRepository
+
+PersistenceContext- ->RepositoryFactory
+
+RepositoryFactory- ->StudentRegistrationService
+
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 19:12:26 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

@@ -1,0 +1,74 @@
+    @startuml
+'https://plantuml.com/class-diagram
+
+class ArchiveBoardUi{
+}
+
+class ProfileController{
++getStudentProfiles()
+}
+
+class SharedBoardController{
+
+}
+
+class SharedBoardService{
++getAll()}
+
+
+class ProfileService{
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++exams()
++teacherRegistrations()
++create(TransactionalContext ctx)
+}
+
+database ProfileRepository{
+}
+
+database SharedBoardRepository{
+}
+
+
+
+class SharedBoard{
+}
+
+
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+ArchiveBoardUi --> ProfileController
+ArchiveBoardUi --> SharedBoardController
+ProfileService-->PersistenceContext
+ProfileService-->TransactionalContext
+ProfileService-->PersistenceContext
+ProfileService-->TransactionalContext
+ProfileController-->ProfileService
+ProfileService --> ProfileRepository
+SharedBoardService-->PersistenceContext
+SharedBoardService-->TransactionalContext
+SharedBoardService --> SharedBoard
+SharedBoardController-->SharedBoardService
+SharedBoardService --> SharedBoardRepository
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->ProfileRepository
+RepositoryFactory-->SharedBoardRepository
+
+@enduml

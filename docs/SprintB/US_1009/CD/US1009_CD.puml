@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class AcceptUI{
+}
+
+class StudentResgistrationController{
++addStudentRegistration(studentProfile, status, course)
+}
+
+class StudentRegistrationService{
++addNewStudentRegistration(studentRegistration)
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++create(TransactionalContext ctx)
+}
+
+database StudentRegistrationRepository{
+}
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+AcceptUI --> StudentResgistrationController
+StudentResgistrationController-->PersistenceContext
+StudentResgistrationController-->TransactionalContext
+
+StudentRegistrationService --> StudentRegistrationRepository
+
+PersistenceContext-->RepositoryFactory
+
+RepositoryFactory-->StudentRegistrationService
+
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+
+autonumber
+actor "Manager" as MNG
+actor ":System" as SYS
+
+activate MNG
+MNG -> SYS : Asks to set teachers of a course
+activate SYS
+SYS --> MNG : Shows all courses and request to choose one
+deactivate SYS
+MNG -> SYS : Chooses course
+activate SYS
+SYS --> MNG : Shows all teachers and request to choose one
+deactivate SYS
+MNG -> SYS : Chooses teacher
+activate SYS
+SYS --> MNG : Asks to select role the role of teacher
+deactivate SYS
+MNG -> SYS : Chooses role
+activate SYS
+SYS --> MNG : Informs operation success
+deactivate SYS
+deactivate MNG
+
+@enduml

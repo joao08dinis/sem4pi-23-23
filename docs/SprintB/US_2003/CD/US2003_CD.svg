@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="673.6px" preserveAspectRatio="none" style="width:646px;height:673px;background:#FFFFFF;" version="1.1" viewBox="0 0 646 673" width="646.4px" zoomAndPan="magnify"><defs/><g><!--MD5=[02974dcaa2f6cfce7c9619901fe00811]
+entity ExamRepository--><g id="elem_ExamRepository"><path d="M119.2,632.8 C119.2,624.8 168,624.8 168,624.8 C168,624.8 216.8,624.8 216.8,632.8 L216.8,652.5125 C216.8,660.5125 168,660.5125 168,660.5125 C168,660.5125 119.2,660.5125 119.2,652.5125 L119.2,632.8 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.4000000000000001;"/><path d="M119.2,632.8 C119.2,640.8 168,640.8 168,640.8 C168,640.8 216.8,640.8 216.8,632.8 " fill="none" style="stroke:#181818;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="81.6" x="127.2" y="654.1391">ExamRepository</text></g><!--MD5=[554eb3a9c6107010eee41a7a8d7990f3]
+entity TeacherRegistrationRepository--><g id="elem_TeacherRegistrationRepository"><path d="M314,632.8 C314,624.8 400.8,624.8 400.8,624.8 C400.8,624.8 487.6,624.8 487.6,632.8 L487.6,652.5125 C487.6,660.5125 400.8,660.5125 400.8,660.5125 C400.8,660.5125 314,660.5125 314,652.5125 L314,632.8 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.4000000000000001;"/><path d="M314,632.8 C314,640.8 400.8,640.8 400.8,640.8 C400.8,640.8 487.6,640.8 487.6,632.8 " fill="none" style="stroke:#181818;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="157.6" x="322" y="654.1391">TeacherRegistrationRepository</text></g><!--MD5=[9471e7400d68533e2bcd868360e69f7f]
+class ViewCourseExamsUi--><g id="elem_ViewCourseExamsUi"><rect codeLine="3" fill="#F1F1F1" height="38.4" id="ViewCourseExamsUi" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="128" x="244.8" y="5.6"/><ellipse cx="256.8" cy="18.4" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M259.0125,15.1 Q259.1375,14.925 259.2875,14.8375 Q259.4375,14.75 259.6125,14.75 Q259.9125,14.75 260.1,14.9625 Q260.2875,15.1625 260.2875,15.65 L260.2875,16.8125 Q260.2875,17.3 260.1,17.5125 Q259.9125,17.725 259.6125,17.725 Q259.3375,17.725 259.175,17.5625 Q259.0125,17.4125 258.925,17 Q258.8875,16.7125 258.7375,16.5625 Q258.475,16.2625 257.9875,16.0875 Q257.5,15.9125 257,15.9125 Q256.3875,15.9125 255.875,16.175 Q255.375,16.4375 254.975,17.0375 Q254.5875,17.6375 254.5875,18.4625 L254.5875,19.3375 Q254.5875,20.325 255.3,20.9875 Q256.0125,21.6375 257.2875,21.6375 Q258.0375,21.6375 258.5625,21.4375 Q258.875,21.3125 259.2125,20.9625 Q259.425,20.75 259.5375,20.6875 Q259.6625,20.625 259.825,20.625 Q260.0875,20.625 260.2875,20.8375 Q260.5,21.0375 260.5,21.3125 Q260.5,21.5875 260.225,21.9125 Q259.825,22.375 259.1875,22.6375 Q258.325,23 257.2875,23 Q256.075,23 255.1125,22.5 Q254.325,22.1 253.775,21.25 Q253.225,20.3875 253.225,19.3625 L253.225,18.4375 Q253.225,17.375 253.7125,16.4625 Q254.2125,15.5375 255.0875,15.05 Q255.9625,14.55 256.95,14.55 Q257.5375,14.55 258.05,14.6875 Q258.575,14.8125 259.0125,15.1 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="102.4" x="268" y="22.2828">ViewCourseExamsUi</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="245.6" x2="372" y1="31.2" y2="31.2"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="245.6" x2="372" y1="37.6" y2="37.6"/></g><!--MD5=[800f5c2a5fed2e9c841e129b50ad3ed4]
+class ExamController--><g id="elem_ExamController"><rect codeLine="6" fill="#F1F1F1" height="63.425" id="ExamController" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="102.4" x="154.4" y="98.4"/><ellipse cx="166.4" cy="111.2" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M168.6125,107.9 Q168.7375,107.725 168.8875,107.6375 Q169.0375,107.55 169.2125,107.55 Q169.5125,107.55 169.7,107.7625 Q169.8875,107.9625 169.8875,108.45 L169.8875,109.6125 Q169.8875,110.1 169.7,110.3125 Q169.5125,110.525 169.2125,110.525 Q168.9375,110.525 168.775,110.3625 Q168.6125,110.2125 168.525,109.8 Q168.4875,109.5125 168.3375,109.3625 Q168.075,109.0625 167.5875,108.8875 Q167.1,108.7125 166.6,108.7125 Q165.9875,108.7125 165.475,108.975 Q164.975,109.2375 164.575,109.8375 Q164.1875,110.4375 164.1875,111.2625 L164.1875,112.1375 Q164.1875,113.125 164.9,113.7875 Q165.6125,114.4375 166.8875,114.4375 Q167.6375,114.4375 168.1625,114.2375 Q168.475,114.1125 168.8125,113.7625 Q169.025,113.55 169.1375,113.4875 Q169.2625,113.425 169.425,113.425 Q169.6875,113.425 169.8875,113.6375 Q170.1,113.8375 170.1,114.1125 Q170.1,114.3875 169.825,114.7125 Q169.425,115.175 168.7875,115.4375 Q167.925,115.8 166.8875,115.8 Q165.675,115.8 164.7125,115.3 Q163.925,114.9 163.375,114.05 Q162.825,113.1875 162.825,112.1625 L162.825,111.2375 Q162.825,110.175 163.3125,109.2625 Q163.8125,108.3375 164.6875,107.85 Q165.5625,107.35 166.55,107.35 Q167.1375,107.35 167.65,107.4875 Q168.175,107.6125 168.6125,107.9 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="76.8" x="177.6" y="115.0828">ExamController</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="155.2" x2="256" y1="124" y2="124"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="155.2" x2="256" y1="130.4" y2="130.4"/><ellipse cx="163.2" cy="141.0563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="80.8" x="170.4" y="143.7391">addExam(exam)</text><ellipse cx="163.2" cy="153.5688" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="56.8" x="170.4" y="156.2516">getExams()</text></g><!--MD5=[bfe353e1b5479da86913b94eef07a7b8]
+class TeacherRegistrationController--><g id="elem_TeacherRegistrationController"><rect codeLine="12" fill="#F1F1F1" height="75.9375" id="TeacherRegistrationController" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="255.2" x="285.2" y="92"/><ellipse cx="333" cy="104.8" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M335.2125,101.5 Q335.3375,101.325 335.4875,101.2375 Q335.6375,101.15 335.8125,101.15 Q336.1125,101.15 336.3,101.3625 Q336.4875,101.5625 336.4875,102.05 L336.4875,103.2125 Q336.4875,103.7 336.3,103.9125 Q336.1125,104.125 335.8125,104.125 Q335.5375,104.125 335.375,103.9625 Q335.2125,103.8125 335.125,103.4 Q335.0875,103.1125 334.9375,102.9625 Q334.675,102.6625 334.1875,102.4875 Q333.7,102.3125 333.2,102.3125 Q332.5875,102.3125 332.075,102.575 Q331.575,102.8375 331.175,103.4375 Q330.7875,104.0375 330.7875,104.8625 L330.7875,105.7375 Q330.7875,106.725 331.5,107.3875 Q332.2125,108.0375 333.4875,108.0375 Q334.2375,108.0375 334.7625,107.8375 Q335.075,107.7125 335.4125,107.3625 Q335.625,107.15 335.7375,107.0875 Q335.8625,107.025 336.025,107.025 Q336.2875,107.025 336.4875,107.2375 Q336.7,107.4375 336.7,107.7125 Q336.7,107.9875 336.425,108.3125 Q336.025,108.775 335.3875,109.0375 Q334.525,109.4 333.4875,109.4 Q332.275,109.4 331.3125,108.9 Q330.525,108.5 329.975,107.65 Q329.425,106.7875 329.425,105.7625 L329.425,104.8375 Q329.425,103.775 329.9125,102.8625 Q330.4125,101.9375 331.2875,101.45 Q332.1625,100.95 333.15,100.95 Q333.7375,100.95 334.25,101.0875 Q334.775,101.2125 335.2125,101.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="152.8" x="349.4" y="108.6828">TeacherRegistrationController</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="286" x2="539.6" y1="117.6" y2="117.6"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="286" x2="539.6" y1="124" y2="124"/><ellipse cx="294" cy="134.6563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="229.6" x="301.2" y="137.3391">addTeacherRegistration(teacherRegistration)</text><ellipse cx="294" cy="147.1688" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="234.4" x="301.2" y="149.8516">saveTeacherRegistration(teacherRegistration)</text><ellipse cx="294" cy="159.6813" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="132.8" x="301.2" y="162.3641">getTeacherRegistrations()</text></g><!--MD5=[1eb5425911aafd92ddeb4263ca568d6f]
+class TeacherRegistrationService--><g id="elem_TeacherRegistrationService"><rect codeLine="18" fill="#F1F1F1" height="100.9625" id="TeacherRegistrationService" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="271.2" x="278" y="216"/><ellipse cx="339.8" cy="228.8" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M342.0125,225.5 Q342.1375,225.325 342.2875,225.2375 Q342.4375,225.15 342.6125,225.15 Q342.9125,225.15 343.1,225.3625 Q343.2875,225.5625 343.2875,226.05 L343.2875,227.2125 Q343.2875,227.7 343.1,227.9125 Q342.9125,228.125 342.6125,228.125 Q342.3375,228.125 342.175,227.9625 Q342.0125,227.8125 341.925,227.4 Q341.8875,227.1125 341.7375,226.9625 Q341.475,226.6625 340.9875,226.4875 Q340.5,226.3125 340,226.3125 Q339.3875,226.3125 338.875,226.575 Q338.375,226.8375 337.975,227.4375 Q337.5875,228.0375 337.5875,228.8625 L337.5875,229.7375 Q337.5875,230.725 338.3,231.3875 Q339.0125,232.0375 340.2875,232.0375 Q341.0375,232.0375 341.5625,231.8375 Q341.875,231.7125 342.2125,231.3625 Q342.425,231.15 342.5375,231.0875 Q342.6625,231.025 342.825,231.025 Q343.0875,231.025 343.2875,231.2375 Q343.5,231.4375 343.5,231.7125 Q343.5,231.9875 343.225,232.3125 Q342.825,232.775 342.1875,233.0375 Q341.325,233.4 340.2875,233.4 Q339.075,233.4 338.1125,232.9 Q337.325,232.5 336.775,231.65 Q336.225,230.7875 336.225,229.7625 L336.225,228.8375 Q336.225,227.775 336.7125,226.8625 Q337.2125,225.9375 338.0875,225.45 Q338.9625,224.95 339.95,224.95 Q340.5375,224.95 341.05,225.0875 Q341.575,225.2125 342.0125,225.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="140.8" x="356.2" y="232.6828">TeacherRegistrationService</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="278.8" x2="548.4" y1="241.6" y2="241.6"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="97.6" x="282.8" y="254.9391">class ExamService{</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="278.8" x2="548.4" y1="260.5125" y2="260.5125"/><ellipse cx="286.8" cy="271.1688" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="250.4" x="294" y="273.8516">addNewTeacherRegistration(teacherRegistration)</text><ellipse cx="286.8" cy="283.6813" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="40" x="294" y="286.3641">getAll()}</text><ellipse cx="286.8" cy="296.1938" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="101.6" x="294" y="298.8766">addNewExam(exam)</text><ellipse cx="286.8" cy="308.7063" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="36" x="294" y="311.3891">getAll()</text></g><!--MD5=[e8c189551b7885b999ad7cefb30fc2a3]
+class PersistenceContext--><g id="elem_PersistenceContext"><rect codeLine="29" fill="#F1F1F1" height="50.9125" id="PersistenceContext" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="123.2" x="143.2" y="370.8"/><ellipse cx="155.2" cy="383.6" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M157.4125,380.3 Q157.5375,380.125 157.6875,380.0375 Q157.8375,379.95 158.0125,379.95 Q158.3125,379.95 158.5,380.1625 Q158.6875,380.3625 158.6875,380.85 L158.6875,382.0125 Q158.6875,382.5 158.5,382.7125 Q158.3125,382.925 158.0125,382.925 Q157.7375,382.925 157.575,382.7625 Q157.4125,382.6125 157.325,382.2 Q157.2875,381.9125 157.1375,381.7625 Q156.875,381.4625 156.3875,381.2875 Q155.9,381.1125 155.4,381.1125 Q154.7875,381.1125 154.275,381.375 Q153.775,381.6375 153.375,382.2375 Q152.9875,382.8375 152.9875,383.6625 L152.9875,384.5375 Q152.9875,385.525 153.7,386.1875 Q154.4125,386.8375 155.6875,386.8375 Q156.4375,386.8375 156.9625,386.6375 Q157.275,386.5125 157.6125,386.1625 Q157.825,385.95 157.9375,385.8875 Q158.0625,385.825 158.225,385.825 Q158.4875,385.825 158.6875,386.0375 Q158.9,386.2375 158.9,386.5125 Q158.9,386.7875 158.625,387.1125 Q158.225,387.575 157.5875,387.8375 Q156.725,388.2 155.6875,388.2 Q154.475,388.2 153.5125,387.7 Q152.725,387.3 152.175,386.45 Q151.625,385.5875 151.625,384.5625 L151.625,383.6375 Q151.625,382.575 152.1125,381.6625 Q152.6125,380.7375 153.4875,380.25 Q154.3625,379.75 155.35,379.75 Q155.9375,379.75 156.45,379.8875 Q156.975,380.0125 157.4125,380.3 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="97.6" x="166.4" y="387.4828">PersistenceContext</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="144" x2="265.6" y1="396.4" y2="396.4"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="144" x2="265.6" y1="402.8" y2="402.8"/><ellipse cx="152" cy="413.4563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="67.2" x="159.2" y="416.1391">repositories()</text></g><!--MD5=[48590afff58a68e2fcba47824d6f8a11]
+class RepositoryFactory--><g id="elem_RepositoryFactory"><rect codeLine="33" fill="#F1F1F1" height="100.9625" id="RepositoryFactory" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="184.8" x="143.6" y="476"/><ellipse cx="186.2" cy="488.8" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M188.4125,485.5 Q188.5375,485.325 188.6875,485.2375 Q188.8375,485.15 189.0125,485.15 Q189.3125,485.15 189.5,485.3625 Q189.6875,485.5625 189.6875,486.05 L189.6875,487.2125 Q189.6875,487.7 189.5,487.9125 Q189.3125,488.125 189.0125,488.125 Q188.7375,488.125 188.575,487.9625 Q188.4125,487.8125 188.325,487.4 Q188.2875,487.1125 188.1375,486.9625 Q187.875,486.6625 187.3875,486.4875 Q186.9,486.3125 186.4,486.3125 Q185.7875,486.3125 185.275,486.575 Q184.775,486.8375 184.375,487.4375 Q183.9875,488.0375 183.9875,488.8625 L183.9875,489.7375 Q183.9875,490.725 184.7,491.3875 Q185.4125,492.0375 186.6875,492.0375 Q187.4375,492.0375 187.9625,491.8375 Q188.275,491.7125 188.6125,491.3625 Q188.825,491.15 188.9375,491.0875 Q189.0625,491.025 189.225,491.025 Q189.4875,491.025 189.6875,491.2375 Q189.9,491.4375 189.9,491.7125 Q189.9,491.9875 189.625,492.3125 Q189.225,492.775 188.5875,493.0375 Q187.725,493.4 186.6875,493.4 Q185.475,493.4 184.5125,492.9 Q183.725,492.5 183.175,491.65 Q182.625,490.7875 182.625,489.7625 L182.625,488.8375 Q182.625,487.775 183.1125,486.8625 Q183.6125,485.9375 184.4875,485.45 Q185.3625,484.95 186.35,484.95 Q186.9375,484.95 187.45,485.0875 Q187.975,485.2125 188.4125,485.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="92.8" x="202.6" y="492.6828">RepositoryFactory</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="144.4" x2="327.6" y1="501.6" y2="501.6"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="144.4" x2="327.6" y1="508" y2="508"/><ellipse cx="152.4" cy="518.6563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="40" x="159.6" y="521.3391">create()</text><ellipse cx="152.4" cy="531.1688" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="135.2" x="159.6" y="533.8516">newTransactionalContext()</text><ellipse cx="152.4" cy="543.6813" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="40" x="159.6" y="546.3641">exams()</text><ellipse cx="152.4" cy="556.1938" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="112.8" x="159.6" y="558.8766">teacherRegistrations()</text><ellipse cx="152.4" cy="568.7063" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="164" x="159.6" y="571.3891">create(TransactionalContext ctx)</text></g><!--MD5=[4ec975f1641a34b3290014bf4027a644]
+class Exam--><g id="elem_Exam"><rect codeLine="47" fill="#F1F1F1" height="38.4" id="Exam" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="52.8" x="5.6" y="377.2"/><ellipse cx="17.6" cy="390" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M19.8125,386.7 Q19.9375,386.525 20.0875,386.4375 Q20.2375,386.35 20.4125,386.35 Q20.7125,386.35 20.9,386.5625 Q21.0875,386.7625 21.0875,387.25 L21.0875,388.4125 Q21.0875,388.9 20.9,389.1125 Q20.7125,389.325 20.4125,389.325 Q20.1375,389.325 19.975,389.1625 Q19.8125,389.0125 19.725,388.6 Q19.6875,388.3125 19.5375,388.1625 Q19.275,387.8625 18.7875,387.6875 Q18.3,387.5125 17.8,387.5125 Q17.1875,387.5125 16.675,387.775 Q16.175,388.0375 15.775,388.6375 Q15.3875,389.2375 15.3875,390.0625 L15.3875,390.9375 Q15.3875,391.925 16.1,392.5875 Q16.8125,393.2375 18.0875,393.2375 Q18.8375,393.2375 19.3625,393.0375 Q19.675,392.9125 20.0125,392.5625 Q20.225,392.35 20.3375,392.2875 Q20.4625,392.225 20.625,392.225 Q20.8875,392.225 21.0875,392.4375 Q21.3,392.6375 21.3,392.9125 Q21.3,393.1875 21.025,393.5125 Q20.625,393.975 19.9875,394.2375 Q19.125,394.6 18.0875,394.6 Q16.875,394.6 15.9125,394.1 Q15.125,393.7 14.575,392.85 Q14.025,391.9875 14.025,390.9625 L14.025,390.0375 Q14.025,388.975 14.5125,388.0625 Q15.0125,387.1375 15.8875,386.65 Q16.7625,386.15 17.75,386.15 Q18.3375,386.15 18.85,386.2875 Q19.375,386.4125 19.8125,386.7 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="27.2" x="28.8" y="393.8828">Exam</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="6.4" x2="57.6" y1="402.8" y2="402.8"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="6.4" x2="57.6" y1="409.2" y2="409.2"/></g><!--MD5=[2cde1893743db7326c8898df7574159d]
+class TeacherRegistration--><g id="elem_TeacherRegistration"><rect codeLine="50" fill="#F1F1F1" height="38.4" id="TeacherRegistration" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="128.8" x="512.4" y="377.2"/><ellipse cx="524.4" cy="390" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M526.6125,386.7 Q526.7375,386.525 526.8875,386.4375 Q527.0375,386.35 527.2125,386.35 Q527.5125,386.35 527.7,386.5625 Q527.8875,386.7625 527.8875,387.25 L527.8875,388.4125 Q527.8875,388.9 527.7,389.1125 Q527.5125,389.325 527.2125,389.325 Q526.9375,389.325 526.775,389.1625 Q526.6125,389.0125 526.525,388.6 Q526.4875,388.3125 526.3375,388.1625 Q526.075,387.8625 525.5875,387.6875 Q525.1,387.5125 524.6,387.5125 Q523.9875,387.5125 523.475,387.775 Q522.975,388.0375 522.575,388.6375 Q522.1875,389.2375 522.1875,390.0625 L522.1875,390.9375 Q522.1875,391.925 522.9,392.5875 Q523.6125,393.2375 524.8875,393.2375 Q525.6375,393.2375 526.1625,393.0375 Q526.475,392.9125 526.8125,392.5625 Q527.025,392.35 527.1375,392.2875 Q527.2625,392.225 527.425,392.225 Q527.6875,392.225 527.8875,392.4375 Q528.1,392.6375 528.1,392.9125 Q528.1,393.1875 527.825,393.5125 Q527.425,393.975 526.7875,394.2375 Q525.925,394.6 524.8875,394.6 Q523.675,394.6 522.7125,394.1 Q521.925,393.7 521.375,392.85 Q520.825,391.9875 520.825,390.9625 L520.825,390.0375 Q520.825,388.975 521.3125,388.0625 Q521.8125,387.1375 522.6875,386.65 Q523.5625,386.15 524.55,386.15 Q525.1375,386.15 525.65,386.2875 Q526.175,386.4125 526.6125,386.7 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="103.2" x="535.6" y="393.8828">TeacherRegistration</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="513.2" x2="640.4" y1="402.8" y2="402.8"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="513.2" x2="640.4" y1="409.2" y2="409.2"/></g><!--MD5=[288bffab58163169a8d16c57b889bc0c]
+class TransactionalContext--><g id="elem_TransactionalContext"><rect codeLine="55" fill="#F1F1F1" height="63.425" id="TransactionalContext" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="132.8" x="294.4" y="364.8"/><ellipse cx="306.4" cy="377.6" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M308.6125,374.3 Q308.7375,374.125 308.8875,374.0375 Q309.0375,373.95 309.2125,373.95 Q309.5125,373.95 309.7,374.1625 Q309.8875,374.3625 309.8875,374.85 L309.8875,376.0125 Q309.8875,376.5 309.7,376.7125 Q309.5125,376.925 309.2125,376.925 Q308.9375,376.925 308.775,376.7625 Q308.6125,376.6125 308.525,376.2 Q308.4875,375.9125 308.3375,375.7625 Q308.075,375.4625 307.5875,375.2875 Q307.1,375.1125 306.6,375.1125 Q305.9875,375.1125 305.475,375.375 Q304.975,375.6375 304.575,376.2375 Q304.1875,376.8375 304.1875,377.6625 L304.1875,378.5375 Q304.1875,379.525 304.9,380.1875 Q305.6125,380.8375 306.8875,380.8375 Q307.6375,380.8375 308.1625,380.6375 Q308.475,380.5125 308.8125,380.1625 Q309.025,379.95 309.1375,379.8875 Q309.2625,379.825 309.425,379.825 Q309.6875,379.825 309.8875,380.0375 Q310.1,380.2375 310.1,380.5125 Q310.1,380.7875 309.825,381.1125 Q309.425,381.575 308.7875,381.8375 Q307.925,382.2 306.8875,382.2 Q305.675,382.2 304.7125,381.7 Q303.925,381.3 303.375,380.45 Q302.825,379.5875 302.825,378.5625 L302.825,377.6375 Q302.825,376.575 303.3125,375.6625 Q303.8125,374.7375 304.6875,374.25 Q305.5625,373.75 306.55,373.75 Q307.1375,373.75 307.65,373.8875 Q308.175,374.0125 308.6125,374.3 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="107.2" x="317.6" y="381.4828">TransactionalContext</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="295.2" x2="426.4" y1="390.4" y2="390.4"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="295.2" x2="426.4" y1="396.8" y2="396.8"/><ellipse cx="303.2" cy="407.4563" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="96" x="310.4" y="410.1391">beginTransaction()</text><ellipse cx="303.2" cy="419.9688" fill="#84BE84" rx="2.4" ry="2.4" style="stroke:#038048;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="43.2" x="310.4" y="422.6516">commit()</text></g><!--MD5=[6e9ada766f8be15fbe3b4678318c7898]
+class ExamService--><g id="elem_ExamService"><rect fill="#F1F1F1" height="38.4" id="ExamService" rx="2" ry="2" style="stroke:#181818;stroke-width:0.4000000000000001;" width="90.4" x="159.6" y="247.2"/><ellipse cx="171.6" cy="260" fill="#ADD1B2" rx="8.8" ry="8.8" style="stroke:#181818;stroke-width:0.8000000000000002;"/><path d="M173.8125,256.7 Q173.9375,256.525 174.0875,256.4375 Q174.2375,256.35 174.4125,256.35 Q174.7125,256.35 174.9,256.5625 Q175.0875,256.7625 175.0875,257.25 L175.0875,258.4125 Q175.0875,258.9 174.9,259.1125 Q174.7125,259.325 174.4125,259.325 Q174.1375,259.325 173.975,259.1625 Q173.8125,259.0125 173.725,258.6 Q173.6875,258.3125 173.5375,258.1625 Q173.275,257.8625 172.7875,257.6875 Q172.3,257.5125 171.8,257.5125 Q171.1875,257.5125 170.675,257.775 Q170.175,258.0375 169.775,258.6375 Q169.3875,259.2375 169.3875,260.0625 L169.3875,260.9375 Q169.3875,261.925 170.1,262.5875 Q170.8125,263.2375 172.0875,263.2375 Q172.8375,263.2375 173.3625,263.0375 Q173.675,262.9125 174.0125,262.5625 Q174.225,262.35 174.3375,262.2875 Q174.4625,262.225 174.625,262.225 Q174.8875,262.225 175.0875,262.4375 Q175.3,262.6375 175.3,262.9125 Q175.3,263.1875 175.025,263.5125 Q174.625,263.975 173.9875,264.2375 Q173.125,264.6 172.0875,264.6 Q170.875,264.6 169.9125,264.1 Q169.125,263.7 168.575,262.85 Q168.025,261.9875 168.025,260.9625 L168.025,260.0375 Q168.025,258.975 168.5125,258.0625 Q169.0125,257.1375 169.8875,256.65 Q170.7625,256.15 171.75,256.15 Q172.3375,256.15 172.85,256.2875 Q173.375,256.4125 173.8125,256.7 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="64.8" x="182.8" y="263.8828">ExamService</text><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="160.4" x2="249.2" y1="272.8" y2="272.8"/><line style="stroke:#181818;stroke-width:0.4000000000000001;" x1="160.4" x2="249.2" y1="279.2" y2="279.2"/></g><!--MD5=[f7e278b2912e7ff1e7992424ebc70bc6]
+link ViewCourseExamsUi to ExamController--><g id="link_ViewCourseExamsUi_ExamController"><path codeLine="61" d="M290.352,44.12 C276.208,58.32 256.312,78.296 239.344,95.32 " fill="none" id="ViewCourseExamsUi-to-ExamController" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="236.432,98.248,243.7802,95.4047,239.2547,95.4139,239.2456,90.8884,236.432,98.248" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[10fa7b9b207cdf2f645f59cc264ec13e]
+link ViewCourseExamsUi to TeacherRegistrationController--><g id="link_ViewCourseExamsUi_TeacherRegistrationController"><path codeLine="62" d="M327.392,44.12 C339.88,56.56 356.832,73.44 372.336,88.888 " fill="none" id="ViewCourseExamsUi-to-TeacherRegistrationController" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="375.416,91.96,372.5727,84.6118,372.5819,89.1373,368.0564,89.1464,375.416,91.96" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[abfeff49655e730f1be3dfd7d9280bc5]
+link ExamService to PersistenceContext--><g id="link_ExamService_PersistenceContext"><path codeLine="63" d="M197.352,285.872 C194.16,307.04 193.744,341.824 196.104,366.552 " fill="none" id="ExamService-to-PersistenceContext" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="196.536,370.736,198.9568,363.238,196.1131,366.7584,192.5927,363.9147,196.536,370.736" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[abfeff49655e730f1be3dfd7d9280bc5]
+link ExamService to PersistenceContext--><g id="link_ExamService_PersistenceContext"><path codeLine="65" d="M212.688,285.872 C216.064,307.04 216.504,341.824 214.008,366.552 " fill="none" id="ExamService-to-PersistenceContext-1" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="213.544,370.736,217.5067,363.9259,213.9782,366.7596,211.1445,363.2312,213.544,370.736" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[c05faeda1a8d341b199c1df10b132b3c]
+link ExamService to TransactionalContext--><g id="link_ExamService_TransactionalContext"><path codeLine="64" d="M214.472,285.648 C224.208,295.016 237.992,306.552 250.4,316.8 C268.488,331.736 288.592,348.136 306.792,362.088 " fill="none" id="ExamService-to-TransactionalContext" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="310.168,364.664,306.3832,357.7535,306.9873,362.2384,302.5023,362.8425,310.168,364.664" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[c05faeda1a8d341b199c1df10b132b3c]
+link ExamService to TransactionalContext--><g id="link_ExamService_TransactionalContext"><path codeLine="66" d="M239.584,285.648 C252.208,295.016 265.992,306.552 278.4,316.8 C296.416,331.68 316.424,348 332.48,361.912 " fill="none" id="ExamService-to-TransactionalContext-1" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="335.632,364.664,332.3053,357.5217,332.616,362.0365,328.1012,362.3472,335.632,364.664" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[b382325581df9a95992b1a2d8609aba2]
+link ExamService to Exam--><g id="link_ExamService_Exam"><path codeLine="67" d="M179.672,285.872 C147.912,309.472 93.384,349.992 60.216,374.632 " fill="none" id="ExamService-to-Exam" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="56.88,377.112,64.5709,375.4004,60.095,374.7322,60.7632,370.2563,56.88,377.112" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[0f32cfd596a88de87fc541b96894b8f0]
+link ExamController to ExamService--><g id="link_ExamController_ExamService"><path codeLine="68" d="M205.416,161.728 C205.272,186.456 205.064,220.568 204.936,242.848 " fill="none" id="ExamController-to-ExamService" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="204.912,246.864,208.1531,239.6824,204.9349,242.8641,201.7532,239.6458,204.912,246.864" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[cc4a9c3e48681b772cd9ee4679292ae6]
+link ExamService to ExamRepository--><g id="link_ExamService_ExamRepository"><path codeLine="69" d="M184.048,285.736 C165.52,303.8 139.68,333.112 128.8,364.8 C120.224,389.76 110.632,507.952 129.6,576.8 C134.032,592.888 143.528,609.072 151.96,621.288 " fill="none" id="ExamService-to-ExamRepository" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="154.304,624.624,152.7641,616.8969,151.9964,621.3568,147.5365,620.5891,154.304,624.624" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[2a551cf4fe216d28a861b0c3da604434]
+link TeacherRegistrationService to PersistenceContext--><g id="link_TeacherRegistrationService_PersistenceContext"><path codeLine="70" d="M332.872,316.84 C304.328,334.4 273.28,353.488 248.912,368.472 " fill="none" id="TeacherRegistrationService-to-PersistenceContext" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="245.368,370.656,253.178,369.6151,248.7766,368.5628,249.8289,364.1614,245.368,370.656" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[348ed08d4b1654e950df2c61dd4e1977]
+link TeacherRegistrationService to TransactionalContext--><g id="link_TeacherRegistrationService_TransactionalContext"><path codeLine="71" d="M393.184,316.84 C387.136,331.552 380.648,347.336 375.08,360.88 " fill="none" id="TeacherRegistrationService-to-TransactionalContext" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="373.528,364.64,379.2225,359.1945,375.047,360.9396,373.3019,356.7642,373.528,364.64" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[cd0364db1d2f6a491b6673b244ae188f]
+link TeacherRegistrationService to TeacherRegistration--><g id="link_TeacherRegistrationService_TeacherRegistration"><path codeLine="72" d="M476.696,316.84 C502.136,336.856 530.104,358.864 550,374.512 " fill="none" id="TeacherRegistrationService-to-TeacherRegistration" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="553.368,377.16,549.6824,370.1961,550.2223,374.6892,545.7292,375.2291,553.368,377.16" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[243bc203bd917657618c2b1eef67bfc7]
+link TeacherRegistrationController to TeacherRegistrationService--><g id="link_TeacherRegistrationController_TeacherRegistrationService"><path codeLine="73" d="M413.024,168.352 C413.104,181.808 413.192,197.256 413.28,211.816 " fill="none" id="TeacherRegistrationController-to-TeacherRegistrationService" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="413.304,215.904,416.4628,208.6858,413.2811,211.9041,410.0629,208.7224,413.304,215.904" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[00b56a2cb99586eb4539211164c2d776]
+link TeacherRegistrationService to TeacherRegistrationRepository--><g id="link_TeacherRegistrationService_TeacherRegistrationRepository"><path codeLine="74" d="M430.792,317.024 C435.232,332.176 439.376,349 441.6,364.8 C455.016,460.184 423.264,573.864 408.192,620.464 " fill="none" id="TeacherRegistrationService-to-TeacherRegistrationRepository" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="406.88,624.496,412.1451,618.6344,408.114,620.6911,406.0573,616.66,406.88,624.496" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[754b775031405e096442b27febffa290]
+link PersistenceContext to RepositoryFactory--><g id="link_PersistenceContext_RepositoryFactory"><path codeLine="76" d="M210.888,422.264 C214.336,436.44 218.784,454.744 222.976,471.992 " fill="none" id="PersistenceContext-to-RepositoryFactory" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="223.92,475.888,225.3427,468.1384,222.9822,471.9995,219.1211,469.6389,223.92,475.888" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[c84af2d92cd2d59f129e01e83fbcdd2c]
+link RepositoryFactory to ExamRepository--><g id="link_RepositoryFactory_ExamRepository"><path codeLine="78" d="M206.568,576.888 C197.4,592.368 187.768,608.624 180.432,621.016 " fill="none" id="RepositoryFactory-to-ExamRepository" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="178.232,624.728,184.6514,620.1594,180.2681,621.285,179.1425,616.9017,178.232,624.728" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[e6967b5ee16b013240efb79cc9d358a3]
+link RepositoryFactory to TeacherRegistrationRepository--><g id="link_RepositoryFactory_TeacherRegistrationRepository"><path codeLine="79" d="M307.328,576.888 C330.416,592.976 354.696,609.88 372.72,622.44 " fill="none" id="RepositoryFactory-to-TeacherRegistrationRepository" style="stroke:#181818;stroke-width:0.8000000000000002;"/><polygon fill="#181818" points="376.008,624.728,371.9304,617.9861,372.7262,622.4411,368.2713,623.2369,376.008,624.728" style="stroke:#181818;stroke-width:0.8000000000000002;"/></g><!--MD5=[bd807dd7d17c0dd95602a4c01f333e1e]
+@startuml
+'https://plantuml.com/class-diagram
+
+class ViewCourseExamsUi{
+}
+
+class ExamController{
++addExam(exam)
++getExams()
+
+}
+
+class TeacherRegistrationController{
++addTeacherRegistration(teacherRegistration)
++saveTeacherRegistration(teacherRegistration)
++getTeacherRegistrations()
+}
+
+class TeacherRegistrationService{
++addNewTeacherRegistration(teacherRegistration)
++getAll()}
+
+
+class ExamService{
++addNewExam(exam)
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++exams()
++teacherRegistrations()
++create(TransactionalContext ctx)
+}
+
+database ExamRepository{
+}
+
+database TeacherRegistrationRepository{
+}
+
+class Exam{
+}
+
+class TeacherRegistration{
+}
+
+
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+ViewCourseExamsUi - -> ExamController
+ViewCourseExamsUi - -> TeacherRegistrationController
+ExamService- ->PersistenceContext
+ExamService- ->TransactionalContext
+ExamService- ->PersistenceContext
+ExamService- ->TransactionalContext
+ExamService - -> Exam
+ExamController- ->ExamService
+ExamService - -> ExamRepository
+TeacherRegistrationService- ->PersistenceContext
+TeacherRegistrationService- ->TransactionalContext
+TeacherRegistrationService - -> TeacherRegistration
+TeacherRegistrationController- ->TeacherRegistrationService
+TeacherRegistrationService - -> TeacherRegistrationRepository
+
+PersistenceContext- ->RepositoryFactory
+
+RepositoryFactory- ->ExamRepository
+RepositoryFactory- ->TeacherRegistrationRepository
+
+@enduml
+
+@startuml
+
+class ViewCourseExamsUi{
+}
+
+class ExamController{
++addExam(exam)
++getExams()
+
+}
+
+class TeacherRegistrationController{
++addTeacherRegistration(teacherRegistration)
++saveTeacherRegistration(teacherRegistration)
++getTeacherRegistrations()
+}
+
+class TeacherRegistrationService{
++addNewTeacherRegistration(teacherRegistration)
++getAll()}
+
+
+class ExamService{
++addNewExam(exam)
++getAll()
+}
+
+
+class PersistenceContext{
++repositories()
+}
+
+class RepositoryFactory{
++create()
++newTransactionalContext()
++exams()
++teacherRegistrations()
++create(TransactionalContext ctx)
+}
+
+database ExamRepository{
+}
+
+database TeacherRegistrationRepository{
+}
+
+class Exam{
+}
+
+class TeacherRegistration{
+}
+
+
+
+class TransactionalContext{
++beginTransaction()
++commit()
+}
+
+
+ViewCourseExamsUi - -> ExamController
+ViewCourseExamsUi - -> TeacherRegistrationController
+ExamService- ->PersistenceContext
+ExamService- ->TransactionalContext
+ExamService- ->PersistenceContext
+ExamService- ->TransactionalContext
+ExamService - -> Exam
+ExamController- ->ExamService
+ExamService - -> ExamRepository
+TeacherRegistrationService- ->PersistenceContext
+TeacherRegistrationService- ->TransactionalContext
+TeacherRegistrationService - -> TeacherRegistration
+TeacherRegistrationController- ->TeacherRegistrationService
+TeacherRegistrationService - -> TeacherRegistrationRepository
+
+PersistenceContext- ->RepositoryFactory
+
+RepositoryFactory- ->ExamRepository
+RepositoryFactory- ->TeacherRegistrationRepository
+
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 19:12:26 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>
